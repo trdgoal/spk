@@ -1,0 +1,221 @@
+ORACLE 19c FOUR-NODE RAC DATA GUARD
+PR–DR PARAMETER SYNCHRONIZATION RECOMMENDATION
+================================================
+
+ENVIRONMENT
+-----------
+PR database: DB_UNIQUE_NAME = HOADR
+DR database: DB_UNIQUE_NAME = HOA
+Both are Oracle 19c four-node RAC databases with Data Guard.
+
+OBJECTIVE
+---------
+Align parameters that should follow a common configuration policy while preserving
+intentional differences in database identity, site networking, storage, and available
+compute resources.
+
+IMPORTANT SAFETY NOTES
+----------------------
+1. Do not copy the entire PR SPFILE over DR.
+2. Do not blindly make every parameter identical.
+3. Confirm the actual database role with V$DATABASE before making changes.
+4. Review effective values on all four instances using GV$PARAMETER and configured
+   values/overrides using V$SPPARAMETER.
+5. Take a baseline of current parameter settings and confirm the SPFILE is in use.
+6. Apply changes only after approval, with a rollback plan and post-change validation.
+7. SCOPE=BOTH is appropriate only when the parameter supports dynamic modification
+   and the database uses an SPFILE. Static parameters may require a controlled restart.
+
+PARAMETER-BY-PARAMETER RECOMMENDATIONS
+--------------------------------------
+
+1. db_recovery_file_dest_size
+   PR: 10G | DR: 300G
+   Recommendation: Do NOT reduce DR to 10G simply to match PR. Review FRA usage,
+   archive generation, retention policy, backup activity, and storage capacity.
+   Keep an appropriate DR capacity based on measured requirements.
+
+2. cpu_count
+   PR: 40 | DR: 42
+   Recommendation: Verify CPU resources allocated to each database/server. Align only
+   if the underlying resource allocation and intended configuration are equivalent.
+
+3. cpu_min_count
+   PR: 32 | DR: 42
+   Recommendation: Verify CPU configuration and resource-management requirements before
+   changing. Do not copy the PR value without confirming the supported target.
+
+4. job_queue_processes
+   PR: 800 | DR: 4000
+   Recommendation: Consider 800 only if the intended job capacity/policy should be the
+   same and workload/job requirements support it. Check scheduled jobs and standby
+   operational requirements first.
+
+5. undo_retention
+   PR: 10800 seconds | DR: 900 seconds
+   Recommendation: Consider 10800 seconds (3 hours) if DR needs the same retention
+   target and undo tablespace capacity/workload can support it. Validate undo pressure,
+   long-running queries, and flashback requirements.
+
+6. fast_start_mttr_target
+   PR: 300 | DR: 0
+   Recommendation: Consider 300 only if the same recovery target is intended for DR.
+   Assess checkpointing/I/O overhead and recovery objectives.
+
+7. log_buffer
+   PR: 11320K | DR: 218728K
+   Recommendation: Do NOT force synchronization yet. Investigate the large difference,
+   Oracle's effective allocation, workload, and memory configuration before deciding.
+
+8. streams_pool_size
+   PR: 1G | DR: 0
+   Recommendation: Confirm whether Streams, GoldenGate, or another feature requires
+   this memory. Set a common value only if feature use and memory capacity justify it.
+   This parameter appeared twice in the earlier 15-point list; it is one parameter.
+
+9. shared_servers
+   PR: 0 | DR: 1
+   Recommendation: Consider 0 only if DR does not require shared-server connections.
+   Review application services and connection architecture first.
+
+10. dispatchers
+    PR: empty | DR: XDB dispatcher configured
+    Recommendation: Do not clear the DR value until XDB and listener requirements have
+    been checked. Retain the configuration if it is required.
+
+11. result_cache_max_size
+    PR: 0 | DR: 157312K
+    Recommendation: Consider 0 only if the same result-cache policy is intended and
+    disabling the result cache is appropriate for DR workloads.
+
+12. max_pdbs
+    PR: 254 | DR: 4098
+    Recommendation: Review architecture, PDB requirements, and supported configuration
+    before changing. This is not a routine performance synchronization parameter.
+
+13. sessions
+    PR: 4920 | DR: 4956
+    Recommendation: Difference is small. Review processes, derived sizing, and workload
+    capacity before changing. Do not force the PR value solely to obtain a match.
+
+14. resource_manager_plan
+    PR: FORCE: | DR: FORCE:
+    Recommendation: Values match in the supplied output; no change indicated.
+
+15. streams_pool_size
+    Recommendation: Duplicate of item 8 in the original list, not a separate setting.
+
+PRIORITY SUMMARY
+----------------
+Potentially align after validation:
+- undo_retention
+- fast_start_mttr_target
+- job_queue_processes
+- shared_servers
+- dispatchers
+- result_cache_max_size
+
+Investigate before changing:
+- log_buffer
+- streams_pool_size
+- sessions
+- max_pdbs
+
+Do not synchronize blindly:
+- db_recovery_file_dest_size
+- cpu_count
+- cpu_min_count
+
+SITE-SPECIFIC VALUES TO PRESERVE
+--------------------------------
+Keep appropriate differences for:
+- db_unique_name (HOADR vs HOA)
+- control_files and SPFILE ASM paths
+- local_listener and remote_listener endpoints/SCAN names
+- service_names
+- audit_file_dest and diagnostic/core dump paths
+- Data Guard role-specific settings such as log_archive_dest_3, fal_client,
+  fal_server, and log_archive_dest_state_3
+
+Do not change Data Guard archive destination states until database roles, destination
+errors, intended transport design, and role-transition behavior have been verified.
+
+PRE-CHECKS ON DR (HOA)
+----------------------
+Run as a suitably privileged DBA:
+
+SELECT name, db_unique_name, database_role, open_mode
+FROM v$database;
+
+SELECT inst_id, instance_name, host_name, status, database_status
+FROM gv$instance
+ORDER BY inst_id;
+
+SHOW PARAMETER spfile
+SHOW PARAMETER undo_retention
+SHOW PARAMETER fast_start_mttr_target
+SHOW PARAMETER job_queue_processes
+SHOW PARAMETER shared_servers
+SHOW PARAMETER dispatchers
+SHOW PARAMETER result_cache_max_size
+
+Capture effective values on all instances:
+
+SELECT inst_id, name, value, isdefault, issys_modifiable
+FROM gv$parameter
+WHERE name IN (
+  'undo_retention',
+  'fast_start_mttr_target',
+  'job_queue_processes',
+  'shared_servers',
+  'dispatchers',
+  'result_cache_max_size',
+  'streams_pool_size',
+  'log_buffer',
+  'db_recovery_file_dest_size',
+  'cpu_count',
+  'cpu_min_count',
+  'sessions',
+  'max_pdbs'
+)
+ORDER BY name, inst_id;
+
+Review SPFILE overrides:
+
+SELECT sid, name, value, isspecified, ordinal
+FROM v$spparameter
+WHERE isspecified = 'TRUE'
+ORDER BY name, sid, ordinal;
+
+CONDITIONAL EXAMPLE COMMANDS — DO NOT RUN WITHOUT APPROVAL
+----------------------------------------------------------
+Only if validated as appropriate, and the parameter supports dynamic modification
+and the database uses an SPFILE:
+
+ALTER SYSTEM SET undo_retention = 10800 SCOPE=BOTH SID='*';
+ALTER SYSTEM SET fast_start_mttr_target = 300 SCOPE=BOTH SID='*';
+ALTER SYSTEM SET job_queue_processes = 800 SCOPE=BOTH SID='*';
+ALTER SYSTEM SET shared_servers = 0 SCOPE=BOTH SID='*';
+ALTER SYSTEM SET result_cache_max_size = 0 SCOPE=BOTH SID='*';
+
+These are conditional examples, not blanket instructions. Confirm current role,
+workload, resource capacity, parameter modifiability, and instance overrides before
+running any command. Do not clear DISPATCHERS without checking XDB requirements.
+Do not change LOG_BUFFER, CPU settings, FRA size, STREAMS_POOL_SIZE, or MAX_PDBS
+without a specific approved technical justification.
+
+POST-CHANGE VALIDATION
+----------------------
+1. Re-run GV$PARAMETER on all four DR instances.
+2. Compare PR and DR effective values, accounting for intentional site-specific values.
+3. Check alert logs for parameter or startup errors.
+4. Verify Data Guard transport and apply status, including V$ARCHIVE_DEST_STATUS and
+   V$DATAGUARD_STATS on the appropriate databases.
+5. Confirm applications, scheduled jobs, undo usage, FRA usage, and recovery behavior.
+6. Retain the pre-change parameter baseline and document every change.
+
+FINAL RECOMMENDATION
+--------------------
+Use a controlled, parameter-by-parameter change process. The supplied SHOW PARAMETER
+output is from Node 1 only and does not prove that all four instances have identical
+effective values or SPFILE overrides. Validate all instances before implementation.
