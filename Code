@@ -1,0 +1,4 @@
+If the function belongs to another schema, use ALL_ERRORS and filter by OWNER.
+My recommendation
+First execute Step 1 and Step 2. They will establish whether WORKFLOW_ROW_V2 is a table, view, SQL type, or an object in another schema.
+Please share the output of these two queries and, if possible, the full function declaration around lines 1–25. I can then identify the precise correction without risking changes to your existing function logic.
