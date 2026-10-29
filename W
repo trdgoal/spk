@@ -1,0 +1,35 @@
+grep -n 'Starting ORACLE instance' \
+/oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/alert_saarthi1.log \
+| tail -20
+
+
+
+LOG=/oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/alert_saarthi1.log
+
+awk '
+/^[0-9]{4}-[0-9]{2}-[0-9]{2}T/ {
+    d=substr($0,1,10)
+    if (d >= "2026-10-01" && d < "2026-11-01")
+        show=1
+    else
+        show=0
+}
+show && (
+    /Starting ORACLE instance/ ||
+    /Instance SGA_TARGET/ ||
+    /Sys-V shared memory/ ||
+    /PAGESIZE/ ||
+    /AVAILABLE_PAGES/ ||
+    /EXPECTED_PAGES/ ||
+    /ALLOCATED_PAGES/ ||
+    /USE_LARGE_PAGES/ ||
+    /HugePages/ ||
+    /Supported system pagesize/ ||
+    /System parameters with non-default values/ ||
+    /sga_target/ ||
+    /sga_max_size/ ||
+    /ORA-27102/ ||
+    /ORA-27125/ ||
+    /Linux Error/
+) {print}
+' "$LOG"
