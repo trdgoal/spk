@@ -1,0 +1,4914 @@
+[root@rfia-db1-dr ~]# grep normal /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/alert_saarthi1.log -C 200
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-SEP-2026 22:28:05
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-12T22:28:05.735379+05:30
+LMS1 (ospid: 1237713_1237721) waits for event 'gcs remote message' for 0 secs.
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lmhb_1237736.trc  (incident=2375939):
+ORA-29770: global enqueue process LMS1 (OSID 1237713_1237721) is hung for more than 70 seconds
+2026-09-12T22:28:05.828700+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-SEP-2026 22:28:05
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+Incident details in: /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/incident/incdir_2375939/saarthi1_lmhb_1237736_i2375939.trc
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+2026-09-12T22:28:05.838015+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+    nt secondary err code: 0
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+    nt OS err code: 0
+  Version 19.32.0.0.0
+  Time: 12-SEP-2026 22:28:05
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-12T22:28:06.058320+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-SEP-2026 22:28:06
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-12T22:28:06.089965+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-SEP-2026 22:28:06
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-12T22:28:06.283369+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-SEP-2026 22:28:06
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-12T22:28:06.319134+05:30
+
+
+***********************************************************************
+2026-09-12T22:28:06.319192+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+
+NI cryptographic checksum mismatch error: 12599.
+  Version 19.32.0.0.0
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Time: 12-SEP-2026 22:28:06
+  Version 19.32.0.0.0
+  Tracing not turned on.
+  Time: 12-SEP-2026 22:28:06
+  Tracing not turned on.
+  Tns error struct:
+  Tns error struct:
+    ns main err code: 12599
+    ns main err code: 12599
+
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+TNS-12599: TNS:cryptographic checksum mismatch
+    nt main err code: 0
+    nt secondary err code: 0
+    ns secondary err code: 12656
+    nt OS err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-12T22:28:06.335504+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-SEP-2026 22:28:06
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+LMHB (ospid: 1237736): terminating the instance due to ORA error 29770
+Cause - 'ERROR: Some process(s) is not making progress.
+LMHB (ospid: 1237736) is terminating the instance.
+Please check LMHB trace file for more details.
+Please also check CPU load, I/O load and other system properties for anomalous behavior
+'
+2026-09-12T22:28:08.901189+05:30
+Dumping diagnostic data in directory=[cdmp_20260912222806], requested by (instance=1, osid=1237736 (LMHB)), summary=[abnormal instance termination].
+2026-09-12T22:28:12.020774+05:30
+Process termination requested for pid 1237662 [source = unknown], [info = 233284845] [request issued by pid: 1237662, uid: 54321]
+2026-09-12T22:28:13.072450+05:30
+Instance terminated by LMHB, pid = 1237736
+2026-09-12T22:28:38.684787+05:30
+Starting ORACLE instance (normal) (OS id: 3201364)
+2026-09-12T22:28:38.876134+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-09-12T22:28:38.877375+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-09-12T22:28:38.884341+05:30
+**********************************************************************
+2026-09-12T22:28:38.884681+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-09-12T22:28:38.885242+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-09-12T22:28:38.885588+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-09-12T22:28:38.885857+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-09-12T22:28:38.886629+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-09-12T22:28:38.887741+05:30
+ Supported system pagesize(s):
+2026-09-12T22:28:38.888068+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-09-12T22:28:38.888397+05:30
+        4K       Configured              19         15728659        NONE
+2026-09-12T22:28:38.889275+05:30
+     2048K            30800           30721                0        NONE
+2026-09-12T22:28:38.889613+05:30
+**********************************************************************
+2026-09-12T22:28:45.428447+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-09-12T22:28:46.003892+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.20.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Sun Jun 28 21:16:58 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-09-12T22:28:46.323903+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.30.128       Subnet: 169.254.30.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+2026-09-12T22:28:46.645511+05:30
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+2026-09-12T22:28:48.193496+05:30
+Starting background process PMON
+2026-09-12T22:28:48.237978+05:30
+PMON started with pid=2, OS id=3202458
+Starting background process CLMN
+2026-09-12T22:28:48.284729+05:30
+CLMN started with pid=3, OS id=3202465
+Starting background process PSP0
+2026-09-12T22:28:48.330503+05:30
+PSP0 started with pid=4, OS id=3202469
+Starting background process IPC0
+2026-09-12T22:28:52.408272+05:30
+IPC0 started with pid=5, OS id=3202612
+2026-09-12T22:28:52.410883+05:30
+Starting background process VKTM
+Starting background process GEN0
+2026-09-12T22:28:52.455873+05:30
+VKTM started with pid=6, OS id=3202823 at elevated (RT) priority
+2026-09-12T22:28:52.493549+05:30
+GEN0 started with pid=7, OS id=3202829
+Starting background process MMAN
+2026-09-12T22:28:52.535613+05:30
+MMAN started with pid=8, OS id=3202833
+Starting background process GEN1
+2026-09-12T22:28:52.624328+05:30
+GEN1 started with pid=10, OS id=3202839_3202840
+Starting background process DIAG
+2026-09-12T22:28:52.658026+05:30
+DIAG started with pid=12, OS id=3202842
+Starting background process OFSD
+2026-09-12T22:28:52.715481+05:30
+OFSD started with pid=13, OS id=3202844_3202845
+Starting background process DBRM
+2026-09-12T22:28:52.756569+05:30
+DBRM started with pid=15, OS id=3202847
+Starting background process VKRM
+2026-09-12T22:28:52.791652+05:30
+VKRM started with pid=16, OS id=3202851
+Starting background process PING
+2026-09-12T22:28:52.827597+05:30
+PING started with pid=17, OS id=3202853
+Starting background process SVCB
+2026-09-12T22:28:52.872037+05:30
+SVCB started with pid=18, OS id=3202855
+Starting background process ACMS
+2026-09-12T22:28:52.916476+05:30
+ACMS started with pid=19, OS id=3202857
+Starting background process PMAN
+2026-09-12T22:28:52.958661+05:30
+PMAN started with pid=20, OS id=3202861
+Starting background process DIA0
+2026-09-12T22:28:52.995447+05:30
+DIA0 started with pid=21, OS id=3202865
+Starting background process LMON
+Starting background process LMD0
+2026-09-12T22:28:53.038435+05:30
+LMON started with pid=22, OS id=3202868
+2026-09-12T22:28:53.080150+05:30
+LMD0 started with pid=23, OS id=3202872
+Starting background process LMD1
+2026-09-12T22:28:53.096372+05:30
+LMS0 started with pid=24, OS id=3202874_3202883 at elevated (RT) priority
+2026-09-12T22:28:53.098536+05:30
+LMS2 started with pid=28, OS id=3202878_3202884 at elevated (RT) priority
+2026-09-12T22:28:53.101575+05:30
+LMS1 started with pid=26, OS id=3202876_3202885 at elevated (RT) priority
+2026-09-12T22:28:53.118603+05:30
+LMD1 started with pid=30, OS id=3202882
+Starting background process RMS0
+Starting background process LMHB
+2026-09-12T22:28:53.166513+05:30
+RMS0 started with pid=31, OS id=3202895
+2026-09-12T22:28:53.202945+05:30
+LMHB started with pid=32, OS id=3202899
+Starting background process LCK1
+Starting background process DBW0
+2026-09-12T22:28:53.253995+05:30
+LCK1 started with pid=33, OS id=3202901
+Starting background process DBW1
+2026-09-12T22:28:53.306445+05:30
+DBW0 started with pid=34, OS id=3202905
+2026-09-12T22:28:53.361497+05:30
+DBW1 started with pid=35, OS id=3202909
+Starting background process DBW2
+2026-09-12T22:28:53.409846+05:30
+DBW2 started with pid=36, OS id=3202913
+2026-09-12T22:28:53.409895+05:30
+Starting background process DBW3
+Starting background process LGWR
+2026-09-12T22:28:53.466168+05:30
+DBW3 started with pid=37, OS id=3202917
+2026-09-12T22:28:53.511627+05:30
+LGWR started with pid=38, OS id=3202921
+Starting background process CKPT
+2026-09-12T22:28:53.573333+05:30
+CKPT started with pid=39, OS id=3202925
+Starting background process SMON
+2026-09-12T22:28:53.656529+05:30
+--
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 13-SEP-2026 22:07:19
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-13T22:07:20.108449+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_dw03_1539675.trc:
+ORA-27072: File I/O error
+Linux-x86_64 Error: 28: No space left on device
+Additional information: 4
+Additional information: 1640007
+Additional information: 4294967295
+2026-09-13T22:07:20.146533+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 13-SEP-2026 22:07:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-13T22:07:20.352138+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 13-SEP-2026 22:07:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-13T22:07:20.408399+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 13-SEP-2026 22:07:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-13T22:07:20.564221+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 13-SEP-2026 22:07:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-13T22:07:20.612050+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 13-SEP-2026 22:07:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-13T22:07:20.628705+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 13-SEP-2026 22:07:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-13T22:07:20.716701+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_dw01_1539648.trc:
+ORA-27072: File I/O error
+Linux-x86_64 Error: 28: No space left on device
+Additional information: 4
+Additional information: 1640263
+Additional information: 4294967295
+2026-09-13T22:07:20.763570+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 13-SEP-2026 22:07:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-13T22:07:20.821059+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 13-SEP-2026 22:07:20
+  Tracing no2026-09-15T09:52:49.175726+05:30
+Starting ORACLE instance (normal) (OS id: 28685)
+2026-09-15T09:52:49.338267+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-09-15T09:52:49.339765+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-09-15T09:52:49.347267+05:30
+**********************************************************************
+2026-09-15T09:52:49.347830+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-09-15T09:52:49.348579+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-09-15T09:52:49.349040+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-09-15T09:52:49.349567+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-09-15T09:52:49.350443+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-09-15T09:52:49.351612+05:30
+ Supported system pagesize(s):
+2026-09-15T09:52:49.352004+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-09-15T09:52:49.352647+05:30
+        4K       Configured              19         15728659        NONE
+2026-09-15T09:52:49.353719+05:30
+     2048K            30800           30721                0        NONE
+2026-09-15T09:52:49.354144+05:30
+**********************************************************************
+2026-09-15T09:52:55.547511+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-09-15T09:52:56.133248+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.20.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Sun Jun 28 21:16:58 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-09-15T09:52:56.533228+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.30.128       Subnet: 169.254.30.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+2026-09-15T09:52:56.561287+05:30
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+Starting background process PMON
+2026-09-15T09:52:57.013372+05:30
+PMON started with pid=2, OS id=30330
+Starting background process CLMN
+2026-09-15T09:52:57.062120+05:30
+CLMN started with pid=3, OS id=30343
+Starting background process PSP0
+2026-09-15T09:52:57.115857+05:30
+PSP0 started with pid=4, OS id=30353
+Starting background process IPC0
+2026-09-15T09:53:01.194521+05:30
+IPC0 started with pid=5, OS id=30512
+2026-09-15T09:53:01.197613+05:30
+Starting background process VKTM
+2026-09-15T09:53:01.249498+05:30
+VKTM started with pid=6, OS id=30964 at elevated (RT) priority
+Starting background process GEN0
+2026-09-15T09:53:01.290135+05:30
+GEN0 started with pid=7, OS id=30980
+Starting background process MMAN
+2026-09-15T09:53:01.333643+05:30
+MMAN started with pid=8, OS id=30988
+Starting background process GEN1
+2026-09-15T09:53:01.435853+05:30
+GEN1 started with pid=10, OS id=31003_31007
+Starting background process DIAG
+2026-09-15T09:53:01.468604+05:30
+DIAG started with pid=12, OS id=31017
+Starting background process OFSD
+2026-09-15T09:53:01.527018+05:30
+OFSD started with pid=13, OS id=31024_31033
+Starting background process DBRM
+2026-09-15T09:53:01.578671+05:30
+DBRM started with pid=15, OS id=31035
+Starting background process VKRM
+2026-09-15T09:53:01.621777+05:30
+VKRM started with pid=16, OS id=31043
+Starting background process PING
+2026-09-15T09:53:01.676713+05:30
+PING started with pid=17, OS id=31053
+Starting background process SVCB
+2026-09-15T09:53:01.717325+05:30
+SVCB started with pid=18, OS id=31072
+Starting background process ACMS
+2026-09-15T09:53:01.766732+05:30
+ACMS started with pid=19, OS id=31087
+Starting background process PMAN
+2026-09-15T09:53:01.811520+05:30
+PMAN started with pid=20, OS id=31099
+Starting background process DIA0
+Starting background process LMON
+2026-09-15T09:53:01.851957+05:30
+DIA0 started with pid=21, OS id=31111
+2026-09-15T09:53:01.901070+05:30
+LMON started with pid=22, OS id=31117
+Starting background process LMD0
+2026-09-15T09:53:01.951925+05:30
+LMD0 started with pid=23, OS id=31125
+Starting background process LMD1
+2026-09-15T09:53:01.967043+05:30
+LMS1 started with pid=26, OS id=31129_31142 at elevated (RT) priority
+2026-09-15T09:53:01.969293+05:30
+LMS0 started with pid=24, OS id=31127_31143 at elevated (RT) priority
+2026-09-15T09:53:01.973296+05:30
+LMS2 started with pid=28, OS id=31131_31146 at elevated (RT) priority
+2026-09-15T09:53:01.992526+05:30
+LMD1 started with pid=30, OS id=31145
+Starting background process RMS0
+2026-09-15T09:53:02.040695+05:30
+RMS0 started with pid=31, OS id=31168
+Starting background process LMHB
+2026-09-15T09:53:02.079972+05:30
+LMHB started with pid=32, OS id=31180
+Starting background process LCK1
+2026-09-15T09:53:02.130829+05:30
+LCK1 started with pid=33, OS id=31188
+Starting background process DBW0
+Starting background process DBW1
+2026-09-15T09:53:02.178688+05:30
+DBW0 started with pid=34, OS id=31192
+2026-09-15T09:53:02.225035+05:30
+DBW1 started with pid=35, OS id=31202
+2026-09-15T09:53:02.225097+05:30
+Starting background process DBW2
+Starting background process DBW3
+2026-09-15T09:53:02.268264+05:30
+DBW2 started with pid=36, OS id=31211
+Starting background process LGWR
+2026-09-15T09:53:02.319951+05:30
+DBW3 started with pid=37, OS id=31229
+2026-09-15T09:53:02.372264+05:30
+LGWR started with pid=38, OS id=31241
+Starting background process CKPT
+2026-09-15T09:53:02.415588+05:30
+CKPT started with pid=39, OS id=31249
+Starting background process SMON
+2026-09-15T09:53:02.505210+05:30
+SMON started with pid=41, OS id=31266
+--
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-19T22:26:26.484068+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 19-SEP-2026 22:26:26
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-19T22:44:45.042484+05:30
+
+
+***********************************************************************
+
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 19-SEP-2026 22:44:45
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+
+2026-09-19T22:44:45.067725+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+TNS-12535: TNS:operation timed out
+    ns secondary err code: 12606
+    nt main err code: 0
+  Time: 19-SEP-2026 22:44:45
+    nt secondary err code: 0
+    nt OS err code: 0
+  Tracing not turned on.
+  Client address: (ADDRESS=(PROTOCOL=tcp)(HOST=10.177.194.80)(PORT=49614))
+  Tns error struct:
+    ns main err code: 12599
+2026-09-19T22:44:45.088317+05:30
+WARNING: inbound connection timed out (ORA-3136)
+2026-09-19T22:44:45.093601+05:30
+
+
+***********************************************************************
+
+
+NI cryptographic checksum mismatch error: 12599.
+TNS-12599: TNS:cryptographic checksum mismatch
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 19-SEP-2026 22:44:45
+  Tracing not turned on.
+  Tns error struct:
+    ns secondary err code: 12656
+2026-09-19T22:44:45.112997+05:30
+
+
+***********************************************************************
+2026-09-19T22:44:45.115553+05:30
+
+
+***********************************************************************
+    ns main err code: 12599
+
+NI cryptographic checksum mismatch error: 12599.
+
+2026-09-19T22:44:45.104011+05:30
+ERROR: terminating instance because ASMB is stuck for 1046 seconds
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+    nt main err code: 0
+  Version 19.32.0.0.0
+    nt secondary err code: 0
+TNS-12599: TNS:cryptographic checksum mismatch
+  Time: 19-SEP-2026 22:44:45
+2026-09-19T22:44:45.126130+05:30
+LMS1 (ospid: 31129_31142) has not called a wait for 892 secs.
+
+NI cryptographic checksum mismatch error: 12599.
+    nt OS err code: 0
+    ns secondary err code: 12656
+  Tracing not turned on.
+2026-09-19T22:44:45.138234+05:30
+
+
+***********************************************************************
+  Tns error struct:
+    nt main err code: 0
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+
+NI cryptographic checksum mismatch error: 12599.
+    ns main err code: 12599
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+    nt secondary err code: 0
+  Version 19.32.0.0.0
+
+  Time: 19-SEP-2026 22:44:45
+    nt OS err code: 0
+  Tracing not turned on.
+TNS-12599: TNS:cryptographic checksum mismatch
+  Tns error struct:
+    ns secondary err code: 12656
+  Version 19.32.0.0.0
+    nt main err code: 0
+    ns main err code: 12599
+    nt secondary err code: 0
+
+TNS-12599: TNS:cryptographic checksum mismatch
+  Time: 19-SEP-2026 22:44:45
+  Tracing not turned on.
+    nt OS err code: 0
+  Tns error struct:
+    ns main err code: 12599
+
+    ns secondary err code: 12656
+    nt main err code: 0
+TNS-12599: TNS:cryptographic checksum mismatch
+    nt secondary err code: 0
+GEN0 (ospid: 30980): terminating the instance due to ORA error 15082
+    nt OS err code: 0
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-19T22:44:45.257925+05:30
+
+
+***********************************************************************
+
+Fatal NI connect error 12537, connecting to:
+ (ADDRESS=(PROTOCOL=tcp)(HOST=10.177.194.80)(PORT=54256))
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 19-SEP-2026 22:44:45
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12537
+
+TNS-12537: TNS:connection closed
+    ns secondary err code: 12560
+    nt main err code: 507
+
+2026-09-19T22:44:45.325348+05:30
+opiodr aborting process unknown ospid (1696119) as a result of ORA-1092
+TNS-00507: Connection closed
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-19T22:44:45.340056+05:30
+opiodr aborting process unknown ospid (1696126) as a result of ORA-609
+2026-09-19T22:44:45.346123+05:30
+ORA-1092 : opitsk aborting process
+2026-09-19T22:44:45.347748+05:30
+opiodr aborting process unknown ospid (1696132) as a result of ORA-1092
+2026-09-19T22:44:45.355515+05:30
+System state dump requested by (instance=1, osid=30980 (GEN0)), summary=[abnormal instance termination]. error - 'Instance is terminating.
+2026-09-19T22:44:45.373573+05:30
+ORA-1092 : opitsk aborting process
+2026-09-19T22:44:48.271349+05:30
+'
+2026-09-19T22:44:49.869393+05:30
+Process termination requested for pid 31188 [source = unknown], [info = 233284845] [request issued by pid: 31188, uid: 54321]
+2026-09-19T22:44:50.523560+05:30
+Process termination requested for pid 1631687 [source = unknown], [info = 233284845] [request issued by pid: 1631687, uid: 54325]
+2026-09-19T22:44:50.659295+05:30
+Process termination requested for pid 31364 [source = unknown], [info = 233284845] [request issued by pid: 31364, uid: 54321]
+2026-09-19T22:44:50.790528+05:30
+Process termination requested for pid 31168 [source = unknown], [info = 233284845] [request issued by pid: 31168, uid: 54321]
+2026-09-19T22:44:50.851827+05:30
+Process termination requested for pid 1631536 [source = unknown], [info = 233284845] [request issued by pid: 1631536, uid: 54325]
+2026-09-19T22:44:50.856919+05:30
+Process termination requested for pid 31053 [source = unknown], [info = 233284845] [request issued by pid: 31053, uid: 54321]
+2026-09-19T22:44:51.301058+05:30
+Process termination requested for pid 31125 [source = unknown], [info = 233284845] [request issued by pid: 31125, uid: 54321]
+2026-09-19T22:44:51.469411+05:30
+Process termination requested for pid 37484 [source = unknown], [info = 233284845] [request issued by pid: 37484, uid: 54321]
+2026-09-19T22:44:51.738837+05:30
+Process termination requested for pid 1630361 [source = unknown], [info = 233284845] [request issued by pid: 1630361, uid: 54325]
+2026-09-19T22:44:52.378188+05:30
+ORA-1092 : opitsk aborting process
+2026-09-19T22:44:52.451214+05:30
+System State dumped to trace file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_diag_31017.trc
+2026-09-19T22:44:52.764194+05:30
+Process termination requested for pid 31777 [source = unknown], [info = 233284845] [request issued by pid: 31777, uid: 54321]
+2026-09-19T22:44:52.854584+05:30
+Process termination requested for pid 31087 [source = unknown], [info = 233284845] [request issued by pid: 31087, uid: 54321]
+2026-09-19T22:44:55.265147+05:30
+Instance terminated by GEN0, pid = 30980
+2026-09-19T22:45:54.098771+05:30
+Starting ORACLE instance (normal) (OS id: 1699115)
+2026-09-19T22:45:54.279111+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-09-19T22:45:54.280730+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-09-19T22:45:54.289988+05:30
+**********************************************************************
+2026-09-19T22:45:54.290502+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-09-19T22:45:54.291237+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-09-19T22:45:54.291597+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-09-19T22:45:54.292054+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-09-19T22:45:54.292827+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-09-19T22:45:54.293732+05:30
+ Supported system pagesize(s):
+2026-09-19T22:45:54.294246+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-09-19T22:45:54.294595+05:30
+        4K       Configured              19         15728659        NONE
+2026-09-19T22:45:54.295495+05:30
+     2048K            30800           30721                0        NONE
+2026-09-19T22:45:54.295935+05:30
+**********************************************************************
+2026-09-19T22:46:00.681553+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-09-19T22:46:01.208440+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.20.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Sun Jun 28 21:16:58 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-09-19T22:46:01.558865+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.30.128       Subnet: 169.254.30.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+2026-09-19T22:46:01.866174+05:30
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+2026-09-19T22:46:03.680045+05:30
+Starting background process PMON
+2026-09-19T22:46:03.742980+05:30
+PMON started with pid=2, OS id=1699323
+Starting background process CLMN
+2026-09-19T22:46:03.797414+05:30
+CLMN started with pid=3, OS id=1699327
+Starting background process PSP0
+2026-09-19T22:46:03.849455+05:30
+PSP0 started with pid=4, OS id=1699331
+Starting background process IPC0
+2026-09-19T22:46:07.938971+05:30
+IPC0 started with pid=5, OS id=1699337
+2026-09-19T22:46:07.942270+05:30
+Starting background process VKTM
+2026-09-19T22:46:07.992291+05:30
+VKTM started with pid=6, OS id=1699370 at elevated (RT) priority
+Starting background process GEN0
+2026-09-19T22:46:08.036380+05:30
+GEN0 started with pid=7, OS id=1699376
+Starting background process MMAN
+2026-09-19T22:46:08.074026+05:30
+MMAN started with pid=8, OS id=1699380
+Starting background process GEN1
+2026-09-19T22:46:08.190861+05:30
+GEN1 started with pid=10, OS id=1699386_1699387
+Starting background process DIAG
+2026-09-19T22:46:08.229949+05:30
+DIAG started with pid=12, OS id=1699389
+Starting background process OFSD
+2026-09-19T22:46:08.285592+05:30
+OFSD started with pid=13, OS id=1699391_1699392
+Starting background process DBRM
+Starting background process VKRM
+2026-09-19T22:46:08.331728+05:30
+DBRM started with pid=15, OS id=1699394
+2026-09-19T22:46:08.376718+05:30
+VKRM started with pid=16, OS id=1699398
+Starting background process PING
+2026-09-19T22:46:08.414852+05:30
+PING started with pid=17, OS id=1699401
+Starting background process SVCB
+2026-09-19T22:46:08.452223+05:30
+SVCB started with pid=18, OS id=1699403
+Starting background process ACMS
+2026-09-19T22:46:08.500104+05:30
+ACMS started with pid=19, OS id=1699405
+Starting background process PMAN
+2026-09-19T22:46:08.543900+05:30
+PMAN started with pid=20, OS id=1699409
+Starting background process DIA0
+2026-09-19T22:46:08.582301+05:30
+DIA0 started with pid=21, OS id=1699413
+Starting background process LMON
+2026-09-19T22:46:08.631639+05:30
+LMON started with pid=22, OS id=1699415
+Starting background process LMD0
+2026-09-19T22:46:08.682917+05:30
+LMD0 started with pid=23, OS id=1699419
+Starting background process LMD1
+2026-09-19T22:46:08.704811+05:30
+LMS1 started with pid=26, OS id=1699423_1699429 at elevated (RT) priority
+2026-09-19T22:46:08.706863+05:30
+LMS0 started with pid=24, OS id=1699421_1699431 at elevated (RT) priority
+2026-09-19T22:46:08.709664+05:30
+LMS2 started with pid=28, OS id=1699425_1699432 at elevated (RT) priority
+2026-09-19T22:46:08.729272+05:30
+LMD1 started with pid=30, OS id=1699430
+Starting background process RMS0
+2026-09-19T22:46:08.778483+05:30
+RMS0 started with pid=31, OS id=1699442
+Starting background process LMHB
+2026-09-19T22:46:08.815968+05:30
+LMHB started with pid=32, OS id=1699446
+Starting background process LCK1
+2026-09-19T22:46:08.995291+05:30
+LCK1 started with pid=33, OS id=1699448
+2026-09-19T22:46:08.995980+05:30
+Starting background process DBW0
+2026-09-19T22:46:09.057611+05:30
+DBW0 started with pid=34, OS id=1699452
+Starting background process DBW1
+2026-09-19T22:46:09.111248+05:30
+DBW1 started with pid=35, OS id=1699456
+Starting background process DBW2
+2026-09-19T22:46:09.156264+05:30
+DBW2 started with pid=36, OS id=1699460
+Starting background process DBW3
+2026-09-19T22:46:09.216694+05:30
+DBW3 started with pid=37, OS id=1699464
+Starting background process LGWR
+2026-09-19T22:46:09.271972+05:30
+LGWR started with pid=38, OS id=1699468
+Starting background process CKPT
+2026-09-19T22:46:09.323674+05:30
+CKPT started with pid=39, OS id=1699472
+Starting background process SMON
+2026-09-19T22:46:09.414911+05:30
+--
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-26T22:28:21.792394+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-SEP-2026 22:28:21
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-26T22:28:21.823210+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-SEP-2026 22:28:21
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-26T22:28:22.049375+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-SEP-2026 22:28:22
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-26T22:28:22.264555+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-SEP-2026 22:28:22
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-26T22:28:22.484498+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-SEP-2026 22:28:22
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-26T22:28:22.690407+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-SEP-2026 22:28:22
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-26T22:28:22.898979+05:30
+NOTE: ASMB (index:0) (1699503) connected to ASM instance +ASM1, osid: 648608 (Flex mode; client id 0xc75bee85aecfa787)
+NOTE: ASMB (1699503) rebuilding ASM server state for all pending groups
+NOTE: ASMB (1699503) rebuilding ASM server state for group 2 (DG_DATA)
+ERROR: Detected cluster incarnation mismatch for group 2 (DG_DATA)
+WARNING: group 2 is being dismounted.
+WARNING: ASMB force dismounting group 2 (DG_DATA) due to failover
+2026-09-26T22:28:22.929283+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-SEP-2026 22:28:22
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-26T22:28:23.022499+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_1699483.trc:
+ORA-00345: redo log write error block 712941 count 2
+ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+2026-09-26T22:28:23.022828+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_1699476.trc:
+ORA-00345: redo log write error block 712937 count 2
+ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+2026-09-26T22:28:23.029093+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_1699483.trc:
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15079: ASM file is closed
+SUCCESS: diskgroup DG_DATA was dismounted
+2026-09-26T22:28:23.133692+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_1699483.trc:
+ORA-00204: error in reading (block 1, # blocks 1) of control file
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15079: ASM file is closed
+2026-09-26T22:28:23.138709+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_1699476.trc:
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+2026-09-26T22:28:23.170878+05:30
+
+DW02 terminating with fatal err=39081, pid=826, wid=3, job SYS.SYS_EXPORT_SCHEMA_15
+2026-09-26T22:28:23.226416+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_1699476.trc:
+ORA-00204: error in reading (block 1, # blocks 1) of control file
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+2026-09-26T22:28:23.289839+05:30
+System state dump requested by (instance=1, osid=1699323 (PMON)), summary=[abnormal instance termination]. error - 'Instance is terminating.
+'
+2026-09-26T22:28:23.299460+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_imr0_1699549.trc:
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+2026-09-26T22:28:23.307304+05:30
+PMON (ospid: 1699323): terminating the instance due to ORA error 12752
+2026-09-26T22:28:23.309181+05:30
+Cause - 'Instance is being terminated due to fatal process death (pid: 42, ospid: 1699483, LG01)'
+2026-09-26T22:28:23.471751+05:30
+System State dumped to trace file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_diag_1699389.trc
+2026-09-26T22:28:28.888955+05:30
+Instance terminated by PMON, pid = 1699323
+2026-09-26T22:28:48.363718+05:30
+Starting ORACLE instance (normal) (OS id: 650024)
+2026-09-26T22:28:48.612610+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-09-26T22:28:48.614343+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-09-26T22:28:48.623538+05:30
+**********************************************************************
+2026-09-26T22:28:48.624373+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-09-26T22:28:48.625960+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-09-26T22:28:48.626865+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-09-26T22:28:48.627542+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-09-26T22:28:48.629030+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-09-26T22:28:48.630370+05:30
+ Supported system pagesize(s):
+2026-09-26T22:28:48.630904+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-09-26T22:28:48.631465+05:30
+        4K       Configured              19         15728659        NONE
+2026-09-26T22:28:48.633471+05:30
+     2048K            30800           30721                0        NONE
+2026-09-26T22:28:48.634075+05:30
+**********************************************************************
+2026-09-26T22:28:54.779760+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-09-26T22:28:55.435450+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.20.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Sun Jun 28 21:16:58 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-09-26T22:28:55.893472+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.30.128       Subnet: 169.254.30.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+Starting background process PMON
+2026-09-26T22:28:56.371387+05:30
+PMON started with pid=2, OS id=650803
+Starting background process CLMN
+2026-09-26T22:28:56.432735+05:30
+CLMN started with pid=3, OS id=650807
+Starting background process PSP0
+Starting background process IPC0
+2026-09-26T22:28:56.495840+05:30
+PSP0 started with pid=4, OS id=650814
+2026-09-26T22:29:00.584268+05:30
+IPC0 started with pid=5, OS id=650826
+2026-09-26T22:29:00.587822+05:30
+Starting background process VKTM
+2026-09-26T22:29:00.654922+05:30
+VKTM started with pid=6, OS id=650855 at elevated (RT) priority
+Starting background process GEN0
+2026-09-26T22:29:00.709807+05:30
+GEN0 started with pid=7, OS id=650861
+Starting background process MMAN
+2026-09-26T22:29:00.763202+05:30
+MMAN started with pid=8, OS id=650865
+Starting background process GEN1
+2026-09-26T22:29:00.902363+05:30
+GEN1 started with pid=10, OS id=650871_650872
+Starting background process DIAG
+2026-09-26T22:29:00.952821+05:30
+DIAG started with pid=12, OS id=650874
+Starting background process OFSD
+2026-09-26T22:29:01.044910+05:30
+OFSD started with pid=13, OS id=650876_650877
+Starting background process DBRM
+2026-09-26T22:29:01.100795+05:30
+DBRM started with pid=15, OS id=650879
+Starting background process VKRM
+2026-09-26T22:29:01.146902+05:30
+VKRM started with pid=16, OS id=650883
+Starting background process PING
+2026-09-26T22:29:01.196059+05:30
+PING started with pid=17, OS id=650885
+Starting background process SVCB
+2026-09-26T22:29:01.242939+05:30
+SVCB started with pid=18, OS id=650887
+Starting background process ACMS
+2026-09-26T22:29:01.309274+05:30
+ACMS started with pid=19, OS id=650889
+Starting background process PMAN
+2026-09-26T22:29:01.379274+05:30
+PMAN started with pid=20, OS id=650894
+Starting background process DIA0
+2026-09-26T22:29:01.437543+05:30
+DIA0 started with pid=21, OS id=650898
+Starting background process LMON
+2026-09-26T22:29:01.500477+05:30
+LMON started with pid=22, OS id=650900
+Starting background process LMD0
+2026-09-26T22:29:01.582817+05:30
+LMD0 started with pid=23, OS id=650904
+2026-09-26T22:29:01.583783+05:30
+Starting background process LMD1
+2026-09-26T22:29:01.610419+05:30
+LMS0 started with pid=24, OS id=650906_650913 at elevated (RT) priority
+2026-09-26T22:29:01.618115+05:30
+LMS2 started with pid=28, OS id=650910_650916 at elevated (RT) priority
+2026-09-26T22:29:01.621142+05:30
+LMS1 started with pid=26, OS id=650908_650919 at elevated (RT) priority
+2026-09-26T22:29:01.639250+05:30
+LMD1 started with pid=30, OS id=650915
+Starting background process RMS0
+Starting background process LMHB
+2026-09-26T22:29:01.694370+05:30
+RMS0 started with pid=31, OS id=650927
+2026-09-26T22:29:01.752279+05:30
+LMHB started with pid=32, OS id=650931
+Starting background process LCK1
+2026-09-26T22:29:01.812512+05:30
+LCK1 started with pid=33, OS id=650933
+Starting background process DBW0
+Starting background process DBW1
+2026-09-26T22:29:01.878598+05:30
+DBW0 started with pid=34, OS id=650937
+2026-09-26T22:29:01.944993+05:30
+DBW1 started with pid=35, OS id=650941
+Starting background process DBW2
+2026-09-26T22:29:02.013686+05:30
+DBW2 started with pid=36, OS id=650945
+Starting background process DBW3
+2026-09-26T22:29:02.092889+05:30
+DBW3 started with pid=37, OS id=650949
+Starting background process LGWR
+2026-09-26T22:29:02.147474+05:30
+LGWR started with pid=38, OS id=650953
+Starting background process CKPT
+2026-09-26T22:29:02.227784+05:30
+CKPT started with pid=39, OS id=650957
+Starting background process SMON
+2026-09-26T22:29:02.337173+05:30
+SMON started with pid=41, OS id=650964
+Starting background process SMCO
+--
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 28-SEP-2026 22:23:25
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+Incident details in: /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/incident/incdir_2631940/saarthi1_lmhb_650931_i2631940.trc
+2026-09-28T22:23:26.004917+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+2026-09-28T22:23:26.005697+05:30
+
+
+***********************************************************************
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+
+NI cryptographic checksum mismatch error: 12599.
+  Version 19.32.0.0.0
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Time: 28-SEP-2026 22:23:26
+  Version 19.32.0.0.0
+  Tracing not turned on.
+  Time: 28-SEP-2026 22:23:26
+  Tns error struct:
+  Tracing not turned on.
+    ns main err code: 12599
+  Tns error struct:
+
+    ns main err code: 12599
+TNS-12599: TNS:cryptographic checksum mismatch
+
+    ns secondary err code: 12656
+TNS-12599: TNS:cryptographic checksum mismatch
+    nt main err code: 0
+    ns secondary err code: 12656
+    nt secondary err code: 0
+    nt OS err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-28T22:23:26.126626+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 28-SEP-2026 22:23:26
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-28T22:23:26.196712+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 28-SEP-2026 22:23:26
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-28T22:23:26.222210+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 28-SEP-2026 22:23:26
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-28T22:23:26.231717+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 28-SEP-2026 22:23:26
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-28T22:23:26.354075+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 28-SEP-2026 22:23:26
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-09-28T22:23:26.406707+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 28-SEP-2026 22:23:26
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+LMHB (ospid: 650931): terminating the instance due to ORA error 29770
+2026-09-28T22:23:26.441823+05:30
+Cause - 'ERROR: Some process(s) is not making progress.
+LMHB (ospid: 650931) is terminating the instance.
+Please check LMHB trace file for more details.
+Please also check CPU load, I/O load and other system properties for anomalous behavior
+'
+2026-09-28T22:23:26.581647+05:30
+Process termination requested for pid 650976 [source = unknown], [info = 233284845] [request issued by pid: 650976, uid: 54321]
+2026-09-28T22:23:26.595583+05:30
+Dumping diagnostic data in directory=[cdmp_20260928222326], requested by (instance=1, osid=650931 (LMHB)), summary=[abnormal instance termination].
+2026-09-28T22:23:30.171692+05:30
+Instance terminated by LMHB, pid = 650931
+2026-09-28T22:24:52.748367+05:30
+Starting ORACLE instance (normal) (OS id: 471723)
+2026-09-28T22:24:52.931420+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-09-28T22:24:52.932796+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-09-28T22:24:52.942263+05:30
+**********************************************************************
+2026-09-28T22:24:52.942667+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-09-28T22:24:52.943354+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-09-28T22:24:52.943745+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-09-28T22:24:52.944107+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-09-28T22:24:52.945138+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-09-28T22:24:52.946195+05:30
+ Supported system pagesize(s):
+2026-09-28T22:24:52.946660+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-09-28T22:24:52.947128+05:30
+        4K       Configured              19         15728659        NONE
+2026-09-28T22:24:52.948092+05:30
+     2048K            30800           30721                0        NONE
+2026-09-28T22:24:52.948423+05:30
+**********************************************************************
+2026-09-28T22:24:58.566281+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-09-28T22:24:59.133246+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.20.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Sun Jun 28 21:16:58 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-09-28T22:24:59.506493+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.30.128       Subnet: 169.254.30.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+2026-09-28T22:24:59.842335+05:30
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+Starting background process PMON
+2026-09-28T22:24:59.916151+05:30
+PMON started with pid=2, OS id=471991
+Starting background process CLMN
+2026-09-28T22:24:59.980558+05:30
+CLMN started with pid=3, OS id=471995
+Starting background process PSP0
+2026-09-28T22:25:00.031463+05:30
+PSP0 started with pid=4, OS id=471999
+Starting background process IPC0
+2026-09-28T22:25:04.133278+05:30
+IPC0 started with pid=5, OS id=472006
+2026-09-28T22:25:04.136510+05:30
+Starting background process VKTM
+2026-09-28T22:25:04.184707+05:30
+VKTM started with pid=6, OS id=472040 at elevated (RT) priority
+Starting background process GEN0
+2026-09-28T22:25:04.234540+05:30
+GEN0 started with pid=7, OS id=472046
+Starting background process MMAN
+2026-09-28T22:25:04.285224+05:30
+MMAN started with pid=8, OS id=472050
+Starting background process GEN1
+2026-09-28T22:25:04.390268+05:30
+GEN1 started with pid=10, OS id=472057_472058
+Starting background process DIAG
+2026-09-28T22:25:04.428549+05:30
+DIAG started with pid=12, OS id=472060
+Starting background process OFSD
+2026-09-28T22:25:04.492313+05:30
+OFSD started with pid=13, OS id=472062_472063
+Starting background process DBRM
+2026-09-28T22:25:04.545967+05:30
+DBRM started with pid=15, OS id=472065
+Starting background process VKRM
+2026-09-28T22:25:04.581251+05:30
+VKRM started with pid=16, OS id=472069
+Starting background process PING
+2026-09-28T22:25:04.626255+05:30
+PING started with pid=17, OS id=472071
+Starting background process SVCB
+2026-09-28T22:25:04.681433+05:30
+SVCB started with pid=18, OS id=472073
+Starting background process ACMS
+Starting background process PMAN
+2026-09-28T22:25:04.728547+05:30
+ACMS started with pid=19, OS id=472075
+2026-09-28T22:25:04.769646+05:30
+PMAN started with pid=20, OS id=472079
+Starting background process DIA0
+2026-09-28T22:25:04.809447+05:30
+DIA0 started with pid=21, OS id=472083
+Starting background process LMON
+2026-09-28T22:25:04.853411+05:30
+LMON started with pid=22, OS id=472085
+Starting background process LMD0
+2026-09-28T22:25:04.913336+05:30
+LMD0 started with pid=23, OS id=472089
+Starting background process LMD1
+2026-09-28T22:25:04.923648+05:30
+LMS0 started with pid=24, OS id=472091_472097 at elevated (RT) priority
+2026-09-28T22:25:04.924930+05:30
+LMS2 started with pid=28, OS id=472095_472099 at elevated (RT) priority
+2026-09-28T22:25:04.926383+05:30
+LMS1 started with pid=26, OS id=472093_472100 at elevated (RT) priority
+2026-09-28T22:25:04.954959+05:30
+LMD1 started with pid=30, OS id=472103
+Starting background process RMS0
+2026-09-28T22:25:05.002532+05:30
+RMS0 started with pid=31, OS id=472112
+Starting background process LMHB
+2026-09-28T22:25:05.053465+05:30
+LMHB started with pid=32, OS id=472116
+Starting background process LCK1
+2026-09-28T22:25:05.098738+05:30
+LCK1 started with pid=33, OS id=472119
+Starting background process DBW0
+2026-09-28T22:25:05.148762+05:30
+Starting background process DBW1
+2026-09-28T22:25:05.148767+05:30
+DBW0 started with pid=34, OS id=472123
+2026-09-28T22:25:05.197797+05:30
+DBW1 started with pid=35, OS id=472127
+Starting background process DBW2
+Starting background process DBW3
+2026-09-28T22:25:05.271672+05:30
+DBW2 started with pid=36, OS id=472131
+2026-09-28T22:25:05.322716+05:30
+DBW3 started with pid=37, OS id=472136
+Starting background process LGWR
+Starting background process CKPT
+2026-09-28T22:25:05.371163+05:30
+LGWR started with pid=38, OS id=472142
+2026-09-28T22:25:05.424013+05:30
+CKPT started with pid=39, OS id=472146
+Starting background process SMON
+2026-09-28T22:25:05.523910+05:30
+SMON started with pid=41, OS id=472152
+--
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-01T13:26:40.474379+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 01-OCT-2026 13:26:40
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-01T13:26:40.494155+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 01-OCT-2026 13:26:40
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-01T13:26:40.693118+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 01-OCT-2026 13:26:40
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-01T13:26:40.703524+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 01-OCT-2026 13:26:40
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-01T13:26:40.912016+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 01-OCT-2026 13:26:40
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-01T13:26:41.131208+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 01-OCT-2026 13:26:41
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-01T13:26:41.339197+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 01-OCT-2026 13:26:41
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-01T13:26:41.550029+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 01-OCT-2026 13:26:41
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-01T13:26:41.704224+05:30
+Shutting down ORACLE instance (abort) (OS id: 473015)
+2026-10-01T13:26:41.707982+05:30
+Shutdown is initiated by oraagent.bin@rfia-db1-dr (TNS V1-V3).
+License high water mark = 650
+USER (ospid: 473015): terminating the instance
+2026-10-01T13:26:41.752475+05:30
+opiodr aborting process unknown ospid (2712117) as a result of ORA-1092
+2026-10-01T13:26:42.457958+05:30
+opiodr aborting process unknown ospid (2712119) as a result of ORA-1092
+2026-10-01T13:26:42.750649+05:30
+opiodr aborting process unknown ospid (473141) as a result of ORA-1092
+2026-10-01T13:26:42.751396+05:30
+ORA-1092 : opitsk aborting process
+2026-10-01T13:26:43.162836+05:30
+ORA-1092 : opitsk aborting process
+2026-10-01T13:26:52.482812+05:30
+Instance terminated by USER, pid = 473015
+2026-10-01T13:27:02.887162+05:30
+Instance shutdown complete (OS id: 473015)
+2026-10-01T13:35:54.028881+05:30
+Starting ORACLE instance (normal) (OS id: 16588)
+2026-10-01T13:35:54.272532+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-10-01T13:35:54.272773+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-10-01T13:35:54.275443+05:30
+**********************************************************************
+2026-10-01T13:35:54.275502+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-10-01T13:35:54.275605+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-10-01T13:35:54.275663+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-10-01T13:35:54.275735+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-10-01T13:35:54.275862+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-10-01T13:35:54.275976+05:30
+ Supported system pagesize(s):
+2026-10-01T13:35:54.276031+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-10-01T13:35:54.276087+05:30
+        4K       Configured              19         15728659        NONE
+2026-10-01T13:35:54.276341+05:30
+     2048K            30800           30721                0        NONE
+2026-10-01T13:35:54.276395+05:30
+**********************************************************************
+2026-10-01T13:36:02.400485+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-10-01T13:36:02.983575+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.44.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-10-01T13:36:03.305402+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.29.65        Subnet: 169.254.29.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+2026-10-01T13:36:03.857646+05:30
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+Starting background process PMON
+2026-10-01T13:36:04.283592+05:30
+PMON started with pid=2, OS id=19897
+Starting background process CLMN
+2026-10-01T13:36:04.314127+05:30
+CLMN started with pid=3, OS id=19901
+Starting background process PSP0
+2026-10-01T13:36:04.342736+05:30
+PSP0 started with pid=4, OS id=19905
+Starting background process IPC0
+2026-10-01T13:36:08.384836+05:30
+IPC0 started with pid=5, OS id=19984
+2026-10-01T13:36:08.386320+05:30
+Starting background process VKTM
+Starting background process GEN0
+2026-10-01T13:36:08.414059+05:30
+VKTM started with pid=6, OS id=20951 at elevated (RT) priority
+2026-10-01T13:36:08.439009+05:30
+GEN0 started with pid=7, OS id=20981
+Starting background process MMAN
+2026-10-01T13:36:08.462595+05:30
+MMAN started with pid=8, OS id=20999
+Starting background process GEN1
+2026-10-01T13:36:08.529793+05:30
+GEN1 started with pid=10, OS id=21022_21041
+Starting background process DIAG
+2026-10-01T13:36:08.551807+05:30
+DIAG started with pid=12, OS id=21043
+Starting background process OFSD
+2026-10-01T13:36:08.583762+05:30
+OFSD started with pid=13, OS id=21059_21062
+Starting background process DBRM
+2026-10-01T13:36:08.607975+05:30
+DBRM started with pid=15, OS id=21070
+Starting background process VKRM
+Starting background process PING
+2026-10-01T13:36:08.640766+05:30
+VKRM started with pid=16, OS id=21080
+2026-10-01T13:36:08.661260+05:30
+PING started with pid=17, OS id=21093
+Starting background process SVCB
+2026-10-01T13:36:08.679530+05:30
+SVCB started with pid=18, OS id=21101
+Starting background process ACMS
+2026-10-01T13:36:08.704926+05:30
+ACMS started with pid=19, OS id=21112
+Starting background process PMAN
+2026-10-01T13:36:08.733947+05:30
+PMAN started with pid=20, OS id=21127
+Starting background process DIA0
+2026-10-01T13:36:08.753916+05:30
+DIA0 started with pid=21, OS id=21168
+Starting background process LMON
+Starting background process LMD0
+2026-10-01T13:36:08.785600+05:30
+LMON started with pid=22, OS id=21173
+2026-10-01T13:36:08.816723+05:30
+LMD0 started with pid=23, OS id=21180
+Starting background process LMD1
+2026-10-01T13:36:08.827300+05:30
+LMS0 started with pid=24, OS id=21184_21193 at elevated (RT) priority
+2026-10-01T13:36:08.830898+05:30
+LMS1 started with pid=26, OS id=21187_21196 at elevated (RT) priority
+2026-10-01T13:36:08.840634+05:30
+LMS2 started with pid=28, OS id=21189_21201 at elevated (RT) priority
+2026-10-01T13:36:08.843479+05:30
+LMD1 started with pid=30, OS id=21195
+Starting background process RMS0
+Starting background process LMHB
+2026-10-01T13:36:08.874440+05:30
+RMS0 started with pid=31, OS id=21207
+2026-10-01T13:36:08.897341+05:30
+LMHB started with pid=32, OS id=21211
+Starting background process LCK1
+Starting background process DBW0
+2026-10-01T13:36:08.931464+05:30
+LCK1 started with pid=33, OS id=21213
+Starting background process DBW1
+2026-10-01T13:36:08.990717+05:30
+DBW0 started with pid=34, OS id=21227
+2026-10-01T13:36:09.033712+05:30
+DBW1 started with pid=35, OS id=21234
+Starting background process DBW2
+2026-10-01T13:36:09.082721+05:30
+DBW2 started with pid=36, OS id=21239
+Starting background process DBW3
+2026-10-01T13:36:09.136395+05:30
+DBW3 started with pid=37, OS id=21252
+Starting background process LGWR
+Starting background process CKPT
+2026-10-01T13:36:09.170956+05:30
+LGWR started with pid=38, OS id=21262
+2026-10-01T13:36:09.207406+05:30
+CKPT started with pid=39, OS id=21270
+Starting background process SMON
+2026-10-01T13:36:09.280079+05:30
+SMON started with pid=41, OS id=21284
+Starting background process SMCO
+--
+NI cryptographic checksum mismatch error: 12599.
+    ns secondary err code: 12656
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+    nt main err code: 0
+  Version 19.32.0.0.0
+    nt secondary err code: 0
+  Time: 10-OCT-2026 22:29:01
+    nt OS err code: 0
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-10T22:29:01.459241+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 10-OCT-2026 22:29:01
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+2026-10-10T22:29:01.463446+05:30
+
+
+***********************************************************************
+
+TNS-12599: TNS:cryptographic checksum mismatch
+
+NI cryptographic checksum mismatch error: 12599.
+    ns secondary err code: 12656
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+    nt main err code: 0
+  Time: 10-OCT-2026 22:29:01
+    nt secondary err code: 0
+  Tracing not turned on.
+    nt OS err code: 0
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-10T22:29:01.722924+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+2026-10-10T22:29:01.724393+05:30
+
+
+***********************************************************************
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+
+NI cryptographic checksum mismatch error: 12599.
+  Version 19.32.0.0.0
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Time: 10-OCT-2026 22:29:01
+  Tracing not turned on.
+  Version 19.32.0.0.0
+  Time: 10-OCT-2026 22:29:01
+  Tns error struct:
+    ns main err code: 12599
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+
+TNS-12599: TNS:cryptographic checksum mismatch
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt main err code: 0
+    nt OS err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-10T22:29:01.781885+05:30
+NOTE: ASMB (index:0) (21346) connected to ASM instance +ASM1, osid: 3968274 (Flex mode; client id 0xc75bee85aee04a20)
+NOTE: ASMB (21346) rebuilding ASM server state for all pending groups
+NOTE: ASMB (21346) rebuilding ASM server state for group 2 (DG_DATA)
+ERROR: Detected cluster incarnation mismatch for group 2 (DG_DATA)
+2026-10-10T22:29:01.799851+05:30
+WARNING: group 2 dismounted: failed to write virtual extent 6293 of file 265
+2026-10-10T22:29:01.806044+05:30
+WARNING: group 2 is being dismounted.
+WARNING: ASMB force dismounting group 2 (DG_DATA) due to failover
+2026-10-10T22:29:01.897025+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_21281.trc:
+ORA-00345: redo log write error block 397004 count 120
+ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+ORA-00345: redo log write error block 397124 count 138
+ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+2026-10-10T22:29:01.897038+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_21293.trc:
+ORA-00345: redo log write error block 397262 count 20
+ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+ORA-00345: redo log write error block 397282 count 5
+ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+2026-10-10T22:29:01.933707+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_21293.trc:
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15079: ASM file is closed
+SUCCESS: diskgroup DG_DATA was dismounted
+2026-10-10T22:29:02.273681+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_21293.trc:
+ORA-00204: error in reading (block 1, # blocks 1) of control file
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15079: ASM file is closed
+2026-10-10T22:29:02.290298+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_21281.trc:
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+2026-10-10T22:29:02.325468+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_imr0_21944.trc:
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+2026-10-10T22:29:02.607510+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_21281.trc:
+ORA-00204: error in reading (block 1, # blocks 1) of control file
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+2026-10-10T22:29:02.749315+05:30
+
+DW03 terminating with fatal err=39081, pid=864, wid=4, job SYS.SYS_EXPORT_SCHEMA_17
+2026-10-10T22:29:05.015963+05:30
+
+
+***********************************************************************
+2026-10-10T22:29:05.015964+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_ckpt_21270.trc:
+ORA-00206: error in writing (block 3, # blocks 1) of control file
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+ORA-15078: ASM diskgroup was forcibly dismounted
+
+NI cryptographic checksum mismatch error: 12599.
+2026-10-10T22:29:05.021988+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_ckpt_21270.trc:
+ORA-00221: error on write to control file
+ORA-00206: error in writing (block 3, # blocks 1) of control file
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+ORA-15078: ASM diskgroup was forcibly dismounted
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 10-OCT-2026 22:29:05
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_ckpt_21270.trc  (incident=2759994):
+ORA-221 [] [] [] [] [] [] [] [] [] [] [] []
+Incident details in: /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/incident/incdir_2759994/saarthi1_ckpt_21270_i2759994.trc
+2026-10-10T22:29:05.662493+05:30
+PMON (ospid: 19897): terminating the instance due to ORA error 12752
+2026-10-10T22:29:05.665805+05:30
+Cause - 'Instance is being terminated due to fatal process death (pid: 40, ospid: 21281, LG00)'
+2026-10-10T22:29:07.462894+05:30
+System state dump requested by (instance=1, osid=19897 (PMON)), summary=[abnormal instance termination]. error - 'Instance is terminating.
+'
+2026-10-10T22:29:12.291516+05:30
+Process termination requested for pid 24720 [source = unknown], [info = 233284845] [request issued by pid: 24720, uid: 54321]
+2026-10-10T22:29:12.401715+05:30
+Process termination requested for pid 23342 [source = unknown], [info = 233284845] [request issued by pid: 23342, uid: 54321]
+2026-10-10T22:29:13.791871+05:30
+Process termination requested for pid 24316 [source = unknown], [info = 233284845] [request issued by pid: 24316, uid: 54321]
+2026-10-10T22:29:14.315042+05:30
+System State dumped to trace file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_diag_21043.trc
+2026-10-10T22:29:21.972093+05:30
+Instance terminated by PMON, pid = 19897
+2026-10-10T22:29:36.626473+05:30
+Starting ORACLE instance (normal) (OS id: 3969679)
+2026-10-10T22:29:36.873835+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-10-10T22:29:36.875151+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-10-10T22:29:36.881785+05:30
+**********************************************************************
+2026-10-10T22:29:36.882097+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-10-10T22:29:36.882567+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-10-10T22:29:36.882999+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-10-10T22:29:36.883507+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-10-10T22:29:36.884164+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-10-10T22:29:36.884710+05:30
+ Supported system pagesize(s):
+2026-10-10T22:29:36.885019+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-10-10T22:29:36.885293+05:30
+        4K       Configured              19         15728659        NONE
+2026-10-10T22:29:36.885987+05:30
+     2048K            30800           30721                0        NONE
+2026-10-10T22:29:36.886282+05:30
+**********************************************************************
+2026-10-10T22:29:43.457828+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-10-10T22:29:44.012634+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.44.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-10-10T22:29:44.456790+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.29.65        Subnet: 169.254.29.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+2026-10-10T22:29:46.423422+05:30
+Starting background process PMON
+2026-10-10T22:29:46.469191+05:30
+PMON started with pid=2, OS id=3970511
+Starting background process CLMN
+2026-10-10T22:29:46.516411+05:30
+CLMN started with pid=3, OS id=3970515
+Starting background process PSP0
+2026-10-10T22:29:46.561403+05:30
+PSP0 started with pid=4, OS id=3970519
+Starting background process IPC0
+2026-10-10T22:29:50.633741+05:30
+IPC0 started with pid=5, OS id=3970544
+2026-10-10T22:29:50.637304+05:30
+Starting background process VKTM
+2026-10-10T22:29:50.677501+05:30
+VKTM started with pid=6, OS id=3970642 at elevated (RT) priority
+Starting background process GEN0
+2026-10-10T22:29:50.716636+05:30
+GEN0 started with pid=7, OS id=3970648
+Starting background process MMAN
+2026-10-10T22:29:50.755009+05:30
+MMAN started with pid=8, OS id=3970652
+Starting background process GEN1
+2026-10-10T22:29:50.866824+05:30
+GEN1 started with pid=10, OS id=3970659_3970660
+Starting background process DIAG
+2026-10-10T22:29:50.906256+05:30
+DIAG started with pid=12, OS id=3970662
+Starting background process OFSD
+Starting background process DBRM
+2026-10-10T22:29:50.953816+05:30
+OFSD started with pid=13, OS id=3970664_3970665
+Starting background process VKRM
+2026-10-10T22:29:50.998596+05:30
+DBRM started with pid=15, OS id=3970667
+2026-10-10T22:29:51.033385+05:30
+VKRM started with pid=16, OS id=3970671
+Starting background process PING
+2026-10-10T22:29:51.066339+05:30
+PING started with pid=17, OS id=3970673
+Starting background process SVCB
+2026-10-10T22:29:51.105873+05:30
+SVCB started with pid=18, OS id=3970675
+Starting background process ACMS
+2026-10-10T22:29:51.144102+05:30
+ACMS started with pid=19, OS id=3970677
+Starting background process PMAN
+2026-10-10T22:29:51.183262+05:30
+PMAN started with pid=20, OS id=3970681
+Starting background process DIA0
+Starting background process LMON
+2026-10-10T22:29:51.216206+05:30
+DIA0 started with pid=21, OS id=3970690
+2026-10-10T22:29:51.252850+05:30
+LMON started with pid=22, OS id=3970700
+Starting background process LMD0
+2026-10-10T22:29:51.302330+05:30
+LMD0 started with pid=23, OS id=3970717
+Starting background process LMD1
+2026-10-10T22:29:51.318406+05:30
+LMS1 started with pid=26, OS id=3970723_3970733 at elevated (RT) priority
+2026-10-10T22:29:51.321185+05:30
+LMS0 started with pid=24, OS id=3970720_3970732 at elevated (RT) priority
+2026-10-10T22:29:51.329662+05:30
+LMS2 started with pid=28, OS id=3970726_3970736 at elevated (RT) priority
+Starting background process RMS0
+2026-10-10T22:29:51.345440+05:30
+LMD1 started with pid=30, OS id=3970731
+2026-10-10T22:29:51.392833+05:30
+RMS0 started with pid=31, OS id=3970745
+Starting background process LMHB
+2026-10-10T22:29:51.436816+05:30
+LMHB started with pid=32, OS id=3970749
+Starting background process LCK1
+2026-10-10T22:29:51.493013+05:30
+LCK1 started with pid=33, OS id=3970751
+Starting background process DBW0
+Starting background process DBW1
+2026-10-10T22:29:51.553685+05:30
+DBW0 started with pid=34, OS id=3970755
+2026-10-10T22:29:51.610423+05:30
+DBW1 started with pid=35, OS id=3970759
+Starting background process DBW2
+2026-10-10T22:29:51.657497+05:30
+DBW2 started with pid=36, OS id=3970764
+2026-10-10T22:29:51.657698+05:30
+Starting background process DBW3
+2026-10-10T22:29:51.710596+05:30
+DBW3 started with pid=37, OS id=3970768
+Starting background process LGWR
+Starting background process CKPT
+2026-10-10T22:29:51.751431+05:30
+LGWR started with pid=38, OS id=3970772
+2026-10-10T22:29:51.796633+05:30
+CKPT started with pid=39, OS id=3970781
+Starting background process SMON
+2026-10-10T22:29:51.877239+05:30
+SMON started with pid=41, OS id=3970862
+--
+  Version 19.32.0.0.0
+  Time: 12-OCT-2026 10:43:34
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-12T10:43:34.759911+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-OCT-2026 10:43:34
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-12T10:43:34.795647+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-OCT-2026 10:43:34
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-12T10:43:34.967212+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+2026-10-12T10:43:34.968661+05:30
+
+
+***********************************************************************
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+
+NI cryptographic checksum mismatch error: 12599.
+  Version 19.32.0.0.0
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Time: 12-OCT-2026 10:43:34
+  Version 19.32.0.0.0
+  Tracing not turned on.
+  Time: 12-OCT-2026 10:43:34
+  Tns error struct:
+    ns main err code: 12599
+  Tracing not turned on.
+  Tns error struct:
+
+    ns main err code: 12599
+TNS-12599: TNS:cryptographic checksum mismatch
+
+    ns secondary err code: 12656
+    nt main err code: 0
+TNS-12599: TNS:cryptographic checksum mismatch
+    nt secondary err code: 0
+    ns secondary err code: 12656
+    nt OS err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-12T10:43:34.995780+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-OCT-2026 10:43:34
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-12T10:43:35.179681+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-OCT-2026 10:43:35
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-12T10:43:35.200320+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 12-OCT-2026 10:43:35
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-12T10:43:35.401025+05:30
+Shutting down ORACLE instance (abort) (OS id: 3972571)
+2026-10-12T10:43:35.403640+05:30
+Shutdown is initiated by oraagent.bin@rfia-db1-dr (TNS V1-V3).
+License high water mark = 690
+USER (ospid: 3972571): terminating the instance
+2026-10-12T10:43:36.765287+05:30
+opiodr aborting process unknown ospid (3981618) as a result of ORA-1092
+2026-10-12T10:43:39.181852+05:30
+opiodr aborting process unknown ospid (3978337) as a result of ORA-1092
+2026-10-12T10:43:40.699302+05:30
+opiodr aborting process unknown ospid (3978017) as a result of ORA-1092
+2026-10-12T10:43:40.893506+05:30
+opiodr aborting process unknown ospid (3978026) as a result of ORA-1092
+2026-10-12T10:43:41.104779+05:30
+opiodr aborting process unknown ospid (3978028) as a result of ORA-1092
+2026-10-12T10:43:41.403199+05:30
+ORA-1092 : opitsk aborting process
+2026-10-12T10:43:41.460514+05:30
+ORA-1092 : opitsk aborting process
+2026-10-12T10:43:41.510689+05:30
+opiodr aborting process unknown ospid (3978177) as a result of ORA-1092
+2026-10-12T10:43:41.579057+05:30
+opiodr aborting process unknown ospid (3978426) as a result of ORA-1092
+2026-10-12T10:43:44.007979+05:30
+opiodr aborting process unknown ospid (3978237) as a result of ORA-1092
+2026-10-12T10:43:44.182881+05:30
+ORA-1092 : opitsk aborting process
+2026-10-12T10:43:53.222136+05:30
+Termination issued to instance processes. Waiting for the processes to exit, wait time 5 sec
+2026-10-12T10:43:57.313399+05:30
+Instance terminated by USER, pid = 3972571
+2026-10-12T10:44:05.887993+05:30
+Instance shutdown complete (OS id: 3972571)
+2026-10-12T10:45:55.219579+05:30
+Starting ORACLE instance (normal) (OS id: 3333016)
+2026-10-12T10:45:55.367076+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-10-12T10:45:55.368012+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-10-12T10:45:55.374100+05:30
+**********************************************************************
+2026-10-12T10:45:55.374443+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-10-12T10:45:55.375018+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-10-12T10:45:55.375338+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-10-12T10:45:55.375627+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-10-12T10:45:55.376217+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-10-12T10:45:55.376819+05:30
+ Supported system pagesize(s):
+2026-10-12T10:45:55.377109+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-10-12T10:45:55.377602+05:30
+        4K       Configured              19         15728659        NONE
+2026-10-12T10:45:55.378499+05:30
+     2048K            30800           30721                0        NONE
+2026-10-12T10:45:55.378856+05:30
+**********************************************************************
+2026-10-12T10:46:01.973903+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-10-12T10:46:02.526397+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.44.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-10-12T10:46:02.866121+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.29.65        Subnet: 169.254.29.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+2026-10-12T10:46:03.223581+05:30
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+Starting background process PMON
+2026-10-12T10:46:03.298851+05:30
+PMON started with pid=2, OS id=3333309
+Starting background process CLMN
+2026-10-12T10:46:03.343847+05:30
+CLMN started with pid=3, OS id=3333313
+Starting background process PSP0
+2026-10-12T10:46:03.383872+05:30
+PSP0 started with pid=4, OS id=3333317
+Starting background process IPC0
+2026-10-12T10:46:07.445580+05:30
+IPC0 started with pid=5, OS id=3333410
+2026-10-12T10:46:07.447846+05:30
+Starting background process VKTM
+Starting background process GEN0
+2026-10-12T10:46:07.490914+05:30
+VKTM started with pid=6, OS id=3333491 at elevated (RT) priority
+2026-10-12T10:46:07.525184+05:30
+GEN0 started with pid=7, OS id=3333497
+Starting background process MMAN
+2026-10-12T10:46:07.562032+05:30
+MMAN started with pid=8, OS id=3333501
+Starting background process GEN1
+2026-10-12T10:46:07.659865+05:30
+GEN1 started with pid=10, OS id=3333507_3333508
+Starting background process DIAG
+2026-10-12T10:46:07.702165+05:30
+DIAG started with pid=12, OS id=3333510
+Starting background process OFSD
+2026-10-12T10:46:07.747452+05:30
+OFSD started with pid=13, OS id=3333512_3333513
+Starting background process DBRM
+2026-10-12T10:46:07.789792+05:30
+DBRM started with pid=15, OS id=3333515
+Starting background process VKRM
+2026-10-12T10:46:07.825614+05:30
+VKRM started with pid=16, OS id=3333535
+Starting background process PING
+2026-10-12T10:46:07.867908+05:30
+PING started with pid=17, OS id=3333538
+Starting background process SVCB
+2026-10-12T10:46:07.906155+05:30
+SVCB started with pid=18, OS id=3333540
+Starting background process ACMS
+2026-10-12T10:46:07.948304+05:30
+ACMS started with pid=19, OS id=3333542
+Starting background process PMAN
+2026-10-12T10:46:07.992209+05:30
+PMAN started with pid=20, OS id=3333546
+Starting background process DIA0
+2026-10-12T10:46:08.031952+05:30
+DIA0 started with pid=21, OS id=3333550
+Starting background process LMON
+2026-10-12T10:46:08.075177+05:30
+LMON started with pid=22, OS id=3333553
+Starting background process LMD0
+Starting background process LMD1
+2026-10-12T10:46:08.124185+05:30
+LMD0 started with pid=23, OS id=3333557
+2026-10-12T10:46:08.132677+05:30
+LMS0 started with pid=24, OS id=3333559_3333564 at elevated (RT) priority
+2026-10-12T10:46:08.134162+05:30
+LMS2 started with pid=28, OS id=3333563_3333567 at elevated (RT) priority
+2026-10-12T10:46:08.142501+05:30
+LMS1 started with pid=26, OS id=3333561_3333570 at elevated (RT) priority
+2026-10-12T10:46:08.164068+05:30
+LMD1 started with pid=30, OS id=3333569
+Starting background process RMS0
+2026-10-12T10:46:08.210688+05:30
+RMS0 started with pid=31, OS id=3333580
+Starting background process LMHB
+2026-10-12T10:46:08.246917+05:30
+LMHB started with pid=32, OS id=3333584
+Starting background process LCK1
+2026-10-12T10:46:08.289233+05:30
+LCK1 started with pid=33, OS id=3333586
+Starting background process DBW0
+2026-10-12T10:46:08.337407+05:30
+DBW0 started with pid=34, OS id=3333590
+Starting background process DBW1
+Starting background process DBW2
+2026-10-12T10:46:08.380964+05:30
+DBW1 started with pid=35, OS id=3333594
+2026-10-12T10:46:08.431427+05:30
+DBW2 started with pid=36, OS id=3333598
+Starting background process DBW3
+2026-10-12T10:46:08.480580+05:30
+DBW3 started with pid=37, OS id=3333602
+2026-10-12T10:46:08.480771+05:30
+Starting background process LGWR
+2026-10-12T10:46:08.525002+05:30
+LGWR started with pid=38, OS id=3333606
+Starting background process CKPT
+2026-10-12T10:46:08.567351+05:30
+CKPT started with pid=39, OS id=3333610
+Starting background process SMON
+2026-10-12T10:46:08.657466+05:30
+SMON started with pid=41, OS id=3333616
+--
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-17T22:24:53.619715+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 17-OCT-2026 22:24:53
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-17T22:24:53.642930+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 17-OCT-2026 22:24:53
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-17T22:24:53.679878+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 17-OCT-2026 22:24:53
+  Tracing not turned on.
+  Tns error struct:
+2026-10-17T22:24:53.684012+05:30
+
+
+***********************************************************************
+    ns main err code: 12599
+
+NI cryptographic checksum mismatch error: 12599.
+
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+TNS-12599: TNS:cryptographic checksum mismatch
+  Version 19.32.0.0.0
+    ns secondary err code: 12656
+    nt main err code: 0
+  Time: 17-OCT-2026 22:24:53
+  Tracing not turned on.
+    nt secondary err code: 0
+  Tns error struct:
+    nt OS err code: 0
+    ns main err code: 12599
+2026-10-17T22:24:53.700211+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lmhb_3333584.trc  (incident=2887945):
+ORA-29770: global enqueue process LMD1 (OSID 3333569) is hung for more than 70 seconds
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lmhb_3333584.trc  (incident=2951682):
+ORA-29770: global enqueue process LMON (OSID 3333553) is hung for more than 70 seconds
+2026-10-17T22:24:53.841502+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 17-OCT-2026 22:24:53
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-17T22:24:53.885012+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 17-OCT-2026 22:24:53
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-17T22:24:53.914872+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 17-OCT-2026 22:24:53
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-17T22:24:53.936516+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 17-OCT-2026 22:24:53
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+LMHB (ospid: 3333584): terminating the instance due to ORA error 29770
+2026-10-17T22:24:54.019868+05:30
+Cause - 'ERROR: Some process(s) is not making progress.
+LMHB (ospid: 3333584) is terminating the instance.
+Please check LMHB trace file for more details.
+Please also check CPU load, I/O load and other system properties for anomalous behavior
+'
+2026-10-17T22:24:54.055238+05:30
+opiodr aborting process unknown ospid (2502317) as a result of ORA-1092
+2026-10-17T22:24:54.405283+05:30
+Dumping diagnostic data in directory=[cdmp_20261017222454], requested by (instance=1, osid=3333584 (LMHB)), summary=[abnormal instance termination].
+2026-10-17T22:24:57.311480+05:30
+Process termination requested for pid 3333628 [source = unknown], [info = 233284845] [request issued by pid: 3333628, uid: 54321]
+2026-10-17T22:25:00.970916+05:30
+Instance terminated by LMHB, pid = 3333584
+2026-10-17T22:25:28.796568+05:30
+Starting ORACLE instance (normal) (OS id: 2504599)
+2026-10-17T22:25:28.986774+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-10-17T22:25:28.988382+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-10-17T22:25:28.994889+05:30
+**********************************************************************
+2026-10-17T22:25:28.995363+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-10-17T22:25:28.995943+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-10-17T22:25:28.996275+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-10-17T22:25:28.996623+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-10-17T22:25:28.997353+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-10-17T22:25:28.998047+05:30
+ Supported system pagesize(s):
+2026-10-17T22:25:28.998422+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-10-17T22:25:28.998748+05:30
+        4K       Configured              19         15728659        NONE
+2026-10-17T22:25:28.999491+05:30
+     2048K            30800           30721                0        NONE
+2026-10-17T22:25:28.999857+05:30
+**********************************************************************
+2026-10-17T22:25:34.907590+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-10-17T22:25:35.449689+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.44.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-10-17T22:25:36.013059+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.29.65        Subnet: 169.254.29.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+Starting background process PMON
+2026-10-17T22:25:36.460168+05:30
+PMON started with pid=2, OS id=2505318
+Starting background process CLMN
+2026-10-17T22:25:36.506530+05:30
+CLMN started with pid=3, OS id=2505322
+Starting background process PSP0
+2026-10-17T22:25:36.555009+05:30
+PSP0 started with pid=4, OS id=2505326
+Starting background process IPC0
+2026-10-17T22:25:40.629096+05:30
+IPC0 started with pid=5, OS id=2505334
+2026-10-17T22:25:40.632261+05:30
+Starting background process VKTM
+Starting background process GEN0
+2026-10-17T22:25:40.682444+05:30
+VKTM started with pid=6, OS id=2505368 at elevated (RT) priority
+Starting background process MMAN
+2026-10-17T22:25:40.724695+05:30
+GEN0 started with pid=7, OS id=2505374
+2026-10-17T22:25:40.764642+05:30
+MMAN started with pid=8, OS id=2505378
+Starting background process GEN1
+2026-10-17T22:25:40.869765+05:30
+GEN1 started with pid=10, OS id=2505384_2505385
+Starting background process DIAG
+2026-10-17T22:25:40.905635+05:30
+DIAG started with pid=12, OS id=2505387
+Starting background process OFSD
+2026-10-17T22:25:40.957743+05:30
+OFSD started with pid=13, OS id=2505389_2505390
+Starting background process DBRM
+2026-10-17T22:25:41.007718+05:30
+DBRM started with pid=15, OS id=2505392
+Starting background process VKRM
+2026-10-17T22:25:41.046423+05:30
+VKRM started with pid=16, OS id=2505396
+Starting background process PING
+2026-10-17T22:25:41.088330+05:30
+PING started with pid=17, OS id=2505398
+Starting background process SVCB
+2026-10-17T22:25:41.124245+05:30
+SVCB started with pid=18, OS id=2505400
+Starting background process ACMS
+2026-10-17T22:25:41.168179+05:30
+ACMS started with pid=19, OS id=2505402
+Starting background process PMAN
+2026-10-17T22:25:41.210834+05:30
+PMAN started with pid=20, OS id=2505406
+Starting background process DIA0
+2026-10-17T22:25:41.258593+05:30
+DIA0 started with pid=21, OS id=2505410
+Starting background process LMON
+2026-10-17T22:25:41.305335+05:30
+LMON started with pid=22, OS id=2505415
+Starting background process LMD0
+Starting background process LMD1
+2026-10-17T22:25:41.351019+05:30
+LMD0 started with pid=23, OS id=2505419
+2026-10-17T22:25:41.375095+05:30
+LMS0 started with pid=24, OS id=2505421_2505430 at elevated (RT) priority
+2026-10-17T22:25:41.375392+05:30
+LMS1 started with pid=26, OS id=2505423_2505432 at elevated (RT) priority
+2026-10-17T22:25:41.384902+05:30
+LMS2 started with pid=28, OS id=2505425_2505436 at elevated (RT) priority
+2026-10-17T22:25:41.387527+05:30
+LMD1 started with pid=30, OS id=2505429
+Starting background process RMS0
+Starting background process LMHB
+2026-10-17T22:25:41.435443+05:30
+RMS0 started with pid=31, OS id=2505443
+2026-10-17T22:25:41.471878+05:30
+LMHB started with pid=32, OS id=2505447
+Starting background process LCK1
+2026-10-17T22:25:41.518617+05:30
+LCK1 started with pid=33, OS id=2505449
+Starting background process DBW0
+Starting background process DBW1
+2026-10-17T22:25:41.567416+05:30
+DBW0 started with pid=34, OS id=2505453
+Starting background process DBW2
+2026-10-17T22:25:41.624492+05:30
+DBW1 started with pid=35, OS id=2505457
+2026-10-17T22:25:41.673315+05:30
+DBW2 started with pid=36, OS id=2505461
+2026-10-17T22:25:41.673503+05:30
+Starting background process DBW3
+2026-10-17T22:25:41.721954+05:30
+DBW3 started with pid=37, OS id=2505465
+Starting background process LGWR
+2026-10-17T22:25:41.761275+05:30
+LGWR started with pid=38, OS id=2505469
+Starting background process CKPT
+2026-10-17T22:25:41.805850+05:30
+CKPT started with pid=39, OS id=2505473
+Starting background process SMON
+2026-10-17T22:25:41.903456+05:30
+SMON started with pid=41, OS id=2505479
+Starting background process SMCO
+--
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-19T22:12:21.808871+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 19-OCT-2026 22:12:21
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-19T22:12:22.019829+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 19-OCT-2026 22:12:22
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-19T22:12:22.229637+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 19-OCT-2026 22:12:22
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-19T22:12:22.442756+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 19-OCT-2026 22:12:22
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-19T22:12:22.657400+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 19-OCT-2026 22:12:22
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-19T22:12:22.861913+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 19-OCT-2026 22:12:22
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-19T22:12:22.938850+05:30
+NOTE: ASMB (index:0) (2505504) connected to ASM instance +ASM1, osid: 2584264 (Flex mode; client id 0xc75bee85aef5de3d)
+NOTE: ASMB (2505504) rebuilding ASM server state for all pending groups
+NOTE: ASMB (2505504) rebuilding ASM server state for group 2 (DG_DATA)
+ERROR: Detected cluster incarnation mismatch for group 2 (DG_DATA)
+WARNING: group 2 is being dismounted.
+2026-10-19T22:12:22.948533+05:30
+WARNING: ASMB force dismounting group 2 (DG_DATA) due to failover
+2026-10-19T22:12:22.949940+05:30
+WARNING: group 2 dismounted: failed to write virtual extent 7015 of file 265
+SUCCESS: diskgroup DG_DATA was dismounted
+2026-10-19T22:12:22.994363+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_2505477.trc:
+ORA-00345: redo log write error block 213073 count 82
+ORA-00312: online log 12 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_12.271.1230036669'
+2026-10-19T22:12:22.997131+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_2505483.trc:
+ORA-00345: redo log write error block 213157 count 2
+ORA-00312: online log 12 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_12.271.1230036669'
+2026-10-19T22:12:23.001929+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_2505477.trc:
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+2026-10-19T22:12:23.116351+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_2505477.trc:
+ORA-00204: error in reading (block 1, # blocks 1) of control file
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+2026-10-19T22:12:23.120231+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_2505483.trc:
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+2026-10-19T22:12:23.204826+05:30
+
+DW02 terminating with fatal err=6512, pid=855, wid=3, job SYS.SYS_EXPORT_SCHEMA_19
+2026-10-19T22:12:23.213784+05:30
+Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_2505483.trc:
+ORA-00204: error in reading (block 1, # blocks 1) of control file
+ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+ORA-15078: ASM diskgroup was forcibly dismounted
+2026-10-19T22:12:23.268878+05:30
+PMON (ospid: 2505318): terminating the instance due to ORA error 12752
+2026-10-19T22:12:23.270675+05:30
+Cause - 'Instance is being terminated due to fatal process death (pid: 40, ospid: 2505477, LG00)'
+2026-10-19T22:12:25.698136+05:30
+opiodr aborting process unknown ospid (2510025) as a result of ORA-1092
+2026-10-19T22:12:25.699308+05:30
+opiodr aborting process unknown ospid (2509921) as a result of ORA-1092
+2026-10-19T22:12:25.700061+05:30
+opiodr aborting process unknown ospid (2509977) as a result of ORA-1092
+2026-10-19T22:12:25.700133+05:30
+opiodr aborting process unknown ospid (2510027) as a result of ORA-1092
+2026-10-19T22:12:25.723415+05:30
+opiodr aborting process unknown ospid (2510011) as a result of ORA-1092
+2026-10-19T22:12:26.416283+05:30
+opiodr aborting process unknown ospid (2509951) as a result of ORA-1092
+2026-10-19T22:12:26.941712+05:30
+opiodr aborting process unknown ospid (2509905) as a result of ORA-1092
+2026-10-19T22:12:30.138815+05:30
+System state dump requested by (instance=1, osid=2505318 (PMON)), summary=[abnormal instance termination]. error - 'Instance is terminating.
+2026-10-19T22:12:30.159438+05:30
+Process termination requested for pid 2509951 [source = unknown], [info = 233284845] [request issued by pid: 2509951, uid: 54325]
+'
+2026-10-19T22:12:31.005069+05:30
+System State dumped to trace file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_diag_2505387.trc
+2026-10-19T22:12:31.163750+05:30
+Process termination requested for pid 2506045 [source = unknown], [info = 233284845] [request issued by pid: 2506045, uid: 54321]
+2026-10-19T22:12:39.197506+05:30
+Instance terminated by PMON, pid = 2505318
+2026-10-19T22:13:01.614674+05:30
+Starting ORACLE instance (normal) (OS id: 2585395)
+2026-10-19T22:13:01.805516+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-10-19T22:13:01.807782+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-10-19T22:13:01.815844+05:30
+**********************************************************************
+2026-10-19T22:13:01.816235+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-10-19T22:13:01.817006+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-10-19T22:13:01.817601+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-10-19T22:13:01.818117+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-10-19T22:13:01.818907+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-10-19T22:13:01.819904+05:30
+ Supported system pagesize(s):
+2026-10-19T22:13:01.820307+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-10-19T22:13:01.820783+05:30
+        4K       Configured              19         15728659        NONE
+2026-10-19T22:13:01.821903+05:30
+     2048K            30800           30721                0        NONE
+2026-10-19T22:13:01.822290+05:30
+**********************************************************************
+2026-10-19T22:13:07.899774+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-10-19T22:13:08.325746+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.44.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-10-19T22:13:08.627133+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.29.65        Subnet: 169.254.29.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+2026-10-19T22:13:08.974377+05:30
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+Starting background process PMON
+2026-10-19T22:13:09.051136+05:30
+PMON started with pid=2, OS id=2585762
+Starting background process CLMN
+2026-10-19T22:13:09.094277+05:30
+CLMN started with pid=3, OS id=2585766
+Starting background process PSP0
+2026-10-19T22:13:09.140422+05:30
+PSP0 started with pid=4, OS id=2585770
+Starting background process IPC0
+2026-10-19T22:13:13.197601+05:30
+IPC0 started with pid=5, OS id=2585793
+2026-10-19T22:13:13.201158+05:30
+Starting background process VKTM
+2026-10-19T22:13:13.242651+05:30
+VKTM started with pid=6, OS id=2585802 at elevated (RT) priority
+Starting background process GEN0
+Starting background process MMAN
+2026-10-19T22:13:13.275200+05:30
+GEN0 started with pid=7, OS id=2585808
+2026-10-19T22:13:13.353890+05:30
+MMAN started with pid=8, OS id=2585812
+Starting background process GEN1
+2026-10-19T22:13:13.429286+05:30
+GEN1 started with pid=10, OS id=2585818_2585819
+Starting background process DIAG
+2026-10-19T22:13:13.456612+05:30
+DIAG started with pid=12, OS id=2585821
+Starting background process OFSD
+2026-10-19T22:13:13.501252+05:30
+OFSD started with pid=13, OS id=2585823_2585824
+Starting background process DBRM
+Starting background process VKRM
+2026-10-19T22:13:13.541357+05:30
+DBRM started with pid=15, OS id=2585826
+2026-10-19T22:13:13.565829+05:30
+VKRM started with pid=16, OS id=2585830
+Starting background process PING
+2026-10-19T22:13:13.593784+05:30
+PING started with pid=17, OS id=2585832
+Starting background process SVCB
+2026-10-19T22:13:13.621965+05:30
+SVCB started with pid=18, OS id=2585834
+Starting background process ACMS
+2026-10-19T22:13:13.659479+05:30
+ACMS started with pid=19, OS id=2585836
+Starting background process PMAN
+2026-10-19T22:13:13.697812+05:30
+PMAN started with pid=20, OS id=2585848
+Starting background process DIA0
+2026-10-19T22:13:13.726507+05:30
+DIA0 started with pid=21, OS id=2585862
+Starting background process LMON
+Starting background process LMD0
+2026-10-19T22:13:13.766651+05:30
+LMON started with pid=22, OS id=2585864
+2026-10-19T22:13:13.800445+05:30
+LMD0 started with pid=23, OS id=2585868
+Starting background process LMD1
+2026-10-19T22:13:13.814248+05:30
+LMS1 started with pid=26, OS id=2585872_2585878 at elevated (RT) priority
+2026-10-19T22:13:13.821070+05:30
+LMS2 started with pid=28, OS id=2585874_2585881 at elevated (RT) priority
+2026-10-19T22:13:13.828425+05:30
+LMS0 started with pid=24, OS id=2585870_2585884 at elevated (RT) priority
+2026-10-19T22:13:13.834477+05:30
+LMD1 started with pid=30, OS id=2585879
+Starting background process RMS0
+2026-10-19T22:13:13.869302+05:30
+RMS0 started with pid=31, OS id=2585891
+Starting background process LMHB
+2026-10-19T22:13:13.898676+05:30
+LMHB started with pid=32, OS id=2585895
+Starting background process LCK1
+2026-10-19T22:13:13.930199+05:30
+LCK1 started with pid=33, OS id=2585897
+Starting background process DBW0
+2026-10-19T22:13:13.969682+05:30
+DBW0 started with pid=34, OS id=2585901
+Starting background process DBW1
+2026-10-19T22:13:14.003242+05:30
+DBW1 started with pid=35, OS id=2585905
+Starting background process DBW2
+2026-10-19T22:13:14.038005+05:30
+DBW2 started with pid=36, OS id=2585909
+Starting background process DBW3
+2026-10-19T22:13:14.072008+05:30
+DBW3 started with pid=37, OS id=2585914
+Starting background process LGWR
+2026-10-19T22:13:14.102421+05:30
+LGWR started with pid=38, OS id=2585918
+Starting background process CKPT
+2026-10-19T22:13:14.133642+05:30
+CKPT started with pid=39, OS id=2585922
+Starting background process SMON
+2026-10-19T22:13:14.198009+05:30
+SMON started with pid=41, OS id=2585928
+2026-10-19T22:13:14.225240+05:30
+--
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-26T18:25:39.086615+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-OCT-2026 18:25:39
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-26T18:25:39.293018+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-OCT-2026 18:25:39
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-26T18:25:39.488929+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-OCT-2026 18:25:39
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-26T18:25:39.691199+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-OCT-2026 18:25:39
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-26T18:25:39.884501+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-OCT-2026 18:25:39
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-26T18:25:40.002485+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-OCT-2026 18:25:40
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-26T18:25:40.093023+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-OCT-2026 18:25:40
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-26T18:25:40.208209+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 26-OCT-2026 18:25:40
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-26T18:25:40.835132+05:30
+Shutting down ORACLE instance (abort) (OS id: 2586435)
+2026-10-26T18:25:40.838219+05:30
+Shutdown is initiated by oraagent.bin@rfia-db1-dr (TNS V1-V3).
+License high water mark = 690
+USER (ospid: 2586435): terminating the instance
+2026-10-26T18:25:40.871832+05:30
+opiodr aborting process unknown ospid (1057206) as a result of ORA-1092
+2026-10-26T18:25:40.875957+05:30
+ORA-1092 : opitsk aborting process
+2026-10-26T18:25:41.379845+05:30
+opiodr aborting process unknown ospid (921487) as a result of ORA-1092
+2026-10-26T18:25:42.595700+05:30
+Process termination requested for pid 2586367 [source = unknown], [info = 233284845] [request issued by pid: 2586367, uid: 54321]
+2026-10-26T18:25:45.190824+05:30
+Instance terminated by USER, pid = 2586435
+2026-10-26T18:26:02.248359+05:30
+Instance shutdown complete (OS id: 2586435)
+2026-10-26T18:36:18.342353+05:30
+Starting ORACLE instance (normal) (OS id: 19584)
+2026-10-26T18:36:18.478044+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-10-26T18:36:18.479227+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-10-26T18:36:18.485431+05:30
+**********************************************************************
+2026-10-26T18:36:18.485790+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-10-26T18:36:18.486498+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-10-26T18:36:18.487003+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-10-26T18:36:18.487407+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-10-26T18:36:18.488516+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-10-26T18:36:18.489349+05:30
+ Supported system pagesize(s):
+2026-10-26T18:36:18.489614+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-10-26T18:36:18.489961+05:30
+        4K       Configured              19         15728659        NONE
+2026-10-26T18:36:18.490772+05:30
+     2048K            30800           30721                0        NONE
+2026-10-26T18:36:18.491100+05:30
+**********************************************************************
+2026-10-26T18:36:24.470063+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-10-26T18:36:24.884126+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.44.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-10-26T18:36:25.141461+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.29.65        Subnet: 169.254.29.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+2026-10-26T18:36:25.544044+05:30
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+Starting background process PMON
+2026-10-26T18:36:25.614515+05:30
+PMON started with pid=2, OS id=20098
+Starting background process CLMN
+2026-10-26T18:36:25.648740+05:30
+CLMN started with pid=3, OS id=20102
+Starting background process PSP0
+2026-10-26T18:36:25.686422+05:30
+PSP0 started with pid=4, OS id=20106
+Starting background process IPC0
+2026-10-26T18:36:29.735747+05:30
+IPC0 started with pid=5, OS id=20173
+2026-10-26T18:36:29.737787+05:30
+Starting background process VKTM
+Starting background process GEN0
+2026-10-26T18:36:29.768451+05:30
+VKTM started with pid=6, OS id=20205 at elevated (RT) priority
+2026-10-26T18:36:29.795827+05:30
+GEN0 started with pid=7, OS id=20211
+Starting background process MMAN
+2026-10-26T18:36:29.819104+05:30
+MMAN started with pid=8, OS id=20215
+Starting background process GEN1
+2026-10-26T18:36:29.887749+05:30
+GEN1 started with pid=10, OS id=20221_20222
+Starting background process DIAG
+2026-10-26T18:36:29.909825+05:30
+DIAG started with pid=12, OS id=20224
+Starting background process OFSD
+2026-10-26T18:36:29.945154+05:30
+OFSD started with pid=13, OS id=20226_20227
+Starting background process DBRM
+Starting background process VKRM
+2026-10-26T18:36:29.974363+05:30
+DBRM started with pid=15, OS id=20229
+Starting background process PING
+2026-10-26T18:36:29.999851+05:30
+VKRM started with pid=16, OS id=20233
+2026-10-26T18:36:30.024216+05:30
+PING started with pid=17, OS id=20235
+Starting background process SVCB
+2026-10-26T18:36:30.047937+05:30
+SVCB started with pid=18, OS id=20237
+Starting background process ACMS
+2026-10-26T18:36:30.075059+05:30
+ACMS started with pid=19, OS id=20239
+Starting background process PMAN
+Starting background process DIA0
+2026-10-26T18:36:30.107133+05:30
+PMAN started with pid=20, OS id=20243
+Starting background process LMON
+2026-10-26T18:36:30.131502+05:30
+DIA0 started with pid=21, OS id=20247
+2026-10-26T18:36:30.163694+05:30
+LMON started with pid=22, OS id=20251
+Starting background process LMD0
+2026-10-26T18:36:30.196775+05:30
+LMD0 started with pid=23, OS id=20255
+Starting background process LMD1
+2026-10-26T18:36:30.206984+05:30
+LMS0 started with pid=24, OS id=20257_20264 at elevated (RT) priority
+2026-10-26T18:36:30.212316+05:30
+LMS1 started with pid=26, OS id=20259_20268 at elevated (RT) priority
+2026-10-26T18:36:30.218469+05:30
+LMS2 started with pid=28, OS id=20261_20267 at elevated (RT) priority
+Starting background process RMS0
+2026-10-26T18:36:30.228053+05:30
+LMD1 started with pid=30, OS id=20266
+2026-10-26T18:36:30.253854+05:30
+RMS0 started with pid=31, OS id=20278
+Starting background process LMHB
+Starting background process LCK1
+2026-10-26T18:36:30.278113+05:30
+LMHB started with pid=32, OS id=20282
+2026-10-26T18:36:30.311428+05:30
+LCK1 started with pid=33, OS id=20284
+Starting background process DBW0
+2026-10-26T18:36:30.354937+05:30
+DBW0 started with pid=34, OS id=20288
+Starting background process DBW1
+2026-10-26T18:36:30.395113+05:30
+DBW1 started with pid=35, OS id=20293
+Starting background process DBW2
+2026-10-26T18:36:30.431508+05:30
+DBW2 started with pid=36, OS id=20297
+Starting background process DBW3
+2026-10-26T18:36:30.471113+05:30
+DBW3 started with pid=37, OS id=20301
+Starting background process LGWR
+2026-10-26T18:36:30.502460+05:30
+LGWR started with pid=38, OS id=20305
+Starting background process CKPT
+2026-10-26T18:36:30.535484+05:30
+CKPT started with pid=39, OS id=20309
+Starting background process SMON
+2026-10-26T18:36:30.593515+05:30
+SMON started with pid=41, OS id=20315
+Starting background process SMCO
+--
+    nt OS err code: 0
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-27T16:46:20.364616+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 27-OCT-2026 16:46:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-27T16:46:20.573084+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+2026-10-27T16:46:20.575367+05:30
+
+
+***********************************************************************
+  Time: 27-OCT-2026 16:46:20
+
+NI cryptographic checksum mismatch error: 12599.
+  Tracing not turned on.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Tns error struct:
+  Version 19.32.0.0.0
+  Time: 27-OCT-2026 16:46:20
+    ns main err code: 12599
+  Tracing not turned on.
+
+  Tns error struct:
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns main err code: 12599
+    ns secondary err code: 12656
+
+    nt main err code: 0
+TNS-12599: TNS:cryptographic checksum mismatch
+    nt secondary err code: 0
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt OS err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-27T16:46:20.737338+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 27-OCT-2026 16:46:20
+  Tracing not turned on.
+2026-10-27T16:46:20.739873+05:30
+
+
+***********************************************************************
+  Tns error struct:
+    ns main err code: 12599
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+
+  Version 19.32.0.0.0
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+  Time: 27-OCT-2026 16:46:20
+    nt main err code: 0
+    nt secondary err code: 0
+  Tracing not turned on.
+    nt OS err code: 0
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-27T16:46:20.767860+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 27-OCT-2026 16:46:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-27T16:46:20.951173+05:30
+
+
+***********************************************************************
+
+NI cryptographic checksum mismatch error: 12599.
+
+  VERSION INFORMATION:
+        TNS for Linux: Version 19.0.0.0.0 - Production
+        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+  Version 19.32.0.0.0
+  Time: 27-OCT-2026 16:46:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12599
+
+TNS-12599: TNS:cryptographic checksum mismatch
+    ns secondary err code: 12656
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+2026-10-27T16:46:21.068069+05:30
+Shutting down ORACLE instance (abort) (OS id: 21879)
+2026-10-27T16:46:21.069895+05:30
+Shutdown is initiated by oraagent.bin@rfia-db1-dr (TNS V1-V3).
+License high water mark = 651
+USER (ospid: 21879): terminating the instance
+2026-10-27T16:46:21.251499+05:30
+opiodr aborting process unknown ospid (3460856) as a result of ORA-1092
+2026-10-27T16:46:21.453979+05:30
+ORA-1092 : opitsk aborting process
+2026-10-27T16:46:21.457125+05:30
+opiodr aborting process unknown ospid (21967) as a result of ORA-1092
+2026-10-27T16:46:21.472962+05:30
+opiodr aborting process unknown ospid (3460827) as a result of ORA-1092
+2026-10-27T16:46:21.607725+05:30
+ORA-1092 : opitsk aborting process
+2026-10-27T16:46:21.707470+05:30
+opiodr aborting process unknown ospid (3460834) as a result of ORA-1092
+2026-10-27T16:46:21.946567+05:30
+ORA-1092 : opitsk aborting process
+2026-10-27T16:46:22.162898+05:30
+ORA-1092 : opitsk aborting process
+2026-10-27T16:46:22.727570+05:30
+opiodr aborting process unknown ospid (24519) as a result of ORA-1092
+2026-10-27T16:46:22.832652+05:30
+ORA-1092 : opitsk aborting process
+2026-10-27T16:46:34.006861+05:30
+Termination issued to instance processes. Waiting for the processes to exit, wait time 5 sec
+2026-10-27T16:46:39.489900+05:30
+Termination issued to instance processes. Waiting for the processes to exit, wait time 0 sec
+2026-10-27T16:46:40.981055+05:30
+Instance termination failed to kill one or more processes
+2026-10-27T16:46:45.056097+05:30
+Termination issued to instance processes. Waiting for the processes to exit, wait time 5 sec
+2026-10-27T16:46:47.075966+05:30
+Instance terminated by USER, pid = 21879
+2026-10-27T16:46:55.107084+05:30
+Instance shutdown complete (OS id: 21879)
+2026-10-27T16:49:44.362220+05:30
+Starting ORACLE instance (normal) (OS id: 19145)
+2026-10-27T16:49:44.517047+05:30
+************************************************************
+Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+************************************************************
+2026-10-27T16:49:44.519375+05:30
+****************************************************
+ Sys-V shared memory will be used for creating SGA
+ ****************************************************
+2026-10-27T16:49:44.526620+05:30
+**********************************************************************
+2026-10-27T16:49:44.527138+05:30
+Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+
+2026-10-27T16:49:44.527689+05:30
+ Domain name: system.slice/oracle-ohasd.service
+2026-10-27T16:49:44.528019+05:30
+ Per process system memlock (soft) limit = UNLIMITED
+2026-10-27T16:49:44.528436+05:30
+ Expected per process system memlock (soft) limit to lock
+ instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2026-10-27T16:49:44.529333+05:30
+ Available system pagesizes:
+  4K, 2048K
+2026-10-27T16:49:44.529944+05:30
+ Supported system pagesize(s):
+2026-10-27T16:49:44.530323+05:30
+  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2026-10-27T16:49:44.530654+05:30
+        4K       Configured              19         15728659        NONE
+2026-10-27T16:49:44.531438+05:30
+     2048K            30800           30721                0        NONE
+2026-10-27T16:49:44.531722+05:30
+**********************************************************************
+2026-10-27T16:49:51.367281+05:30
+LICENSE_MAX_USERS = 0
+SYS auditing is enabled
+2026-10-27T16:49:51.824439+05:30
+NOTE: Cluster configuration type = CLUSTER [4]
+Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0.
+ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+System name:    Linux
+Node name:      rfia-db1-dr
+Release:        5.14.0-687.54.1.el9_8.x86_64
+Version:        #1 SMP PREEMPT_DYNAMIC Tue Sep 29 21:16:19 EDT 2026
+Machine:        x86_64
+Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+System parameters with non-default values:
+  processes                = 8000
+  sessions                 = 12064
+  sga_max_size             = 60G
+  large_pool_size          = 1G
+  pga_aggregate_limit      = 0
+  nls_language             = "AMERICAN"
+  nls_territory            = "AMERICA"
+  sga_target               = 60G
+  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+  db_block_size            = 8192
+  compatible               = "19.0.0"
+  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+  log_archive_format       = "%t_%s_%r.arc"
+  db_files                 = 500
+  cluster_database         = TRUE
+  db_create_file_dest      = "+DG_DATA"
+  db_recovery_file_dest    = "+DG_ARCH"
+  db_recovery_file_dest_size= 300G
+  thread                   = 1
+  adg_account_info_tracking= "GLOBAL"
+  undo_tablespace          = "UNDOTBS1"
+  undo_retention           = 17000
+  instance_number          = 1
+  db_securefile            = "ALWAYS"
+  remote_login_passwordfile= "EXCLUSIVE"
+  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+  local_listener           = "-oraagent-dummy-"
+  session_cached_cursors   = 1000
+  job_queue_processes      = 1000
+  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+  audit_trail              = "DB"
+  db_name                  = "saarthi"
+  open_cursors             = 1000
+  pga_aggregate_target     = 20G
+  sec_protocol_error_trace_action= "LOG"
+  sec_protocol_error_further_action= "(DROP,3)"
+  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2026-10-27T16:49:52.142284+05:30
+Cluster Communication is configured to use IPs from: GPnP
+IP: 169.254.27.167       Subnet: 169.254.27.0
+KSIPC Loopback IP addresses(OSD):
+127.0.0.1
+KSIPC Available Transports for cluster communication: UDP:TCP
+KSIPC: Client: KCL       Transport: UDP
+KSIPC: Client: DLM       Transport: UDP
+2026-10-27T16:49:52.652496+05:30
+KSXP: ksxpsg_ipclwtrans: 2 UDP
+cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+IPC Vendor 1 proto 2
+Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+============================================================
+============================================================
+Starting background process PMON
+2026-10-27T16:49:53.153130+05:30
+PMON started with pid=2, OS id=19681
+Starting background process CLMN
+2026-10-27T16:49:53.185787+05:30
+CLMN started with pid=3, OS id=19685
+Starting background process PSP0
+2026-10-27T16:49:53.223879+05:30
+PSP0 started with pid=4, OS id=19689
+Starting background process IPC0
+2026-10-27T16:49:57.291056+05:30
+IPC0 started with pid=5, OS id=19698
+2026-10-27T16:49:57.293909+05:30
+Starting background process VKTM
+2026-10-27T16:49:57.329321+05:30
+VKTM started with pid=6, OS id=19763 at elevated (RT) priority
+Starting background process GEN0
+2026-10-27T16:49:57.357884+05:30
+GEN0 started with pid=7, OS id=19770
+Starting background process MMAN
+2026-10-27T16:49:57.386885+05:30
+MMAN started with pid=8, OS id=19774
+Starting background process GEN1
+2026-10-27T16:49:57.466899+05:30
+GEN1 started with pid=10, OS id=19780_19781
+Starting background process DIAG
+2026-10-27T16:49:57.490449+05:30
+DIAG started with pid=12, OS id=19783
+Starting background process OFSD
+2026-10-27T16:49:57.521503+05:30
+OFSD started with pid=13, OS id=19785_19788
+Starting background process DBRM
+2026-10-27T16:49:57.550796+05:30
+DBRM started with pid=15, OS id=19790
+Starting background process VKRM
+2026-10-27T16:49:57.574341+05:30
+VKRM started with pid=16, OS id=19794
+Starting background process PING
+2026-10-27T16:49:57.597715+05:30
+PING started with pid=17, OS id=19796
+Starting background process SVCB
+2026-10-27T16:49:57.622434+05:30
+SVCB started with pid=18, OS id=19798
+Starting background process ACMS
+2026-10-27T16:49:57.652221+05:30
+ACMS started with pid=19, OS id=19800
+Starting background process PMAN
+2026-10-27T16:49:57.681457+05:30
+PMAN started with pid=20, OS id=19804
+Starting background process DIA0
+2026-10-27T16:49:57.704323+05:30
+DIA0 started with pid=21, OS id=19808
+Starting background process LMON
+Starting background process LMD0
+2026-10-27T16:49:57.738264+05:30
+LMON started with pid=22, OS id=19810
+2026-10-27T16:49:57.767935+05:30
+LMD0 started with pid=23, OS id=19814
+Starting background process LMD1
+2026-10-27T16:49:57.779130+05:30
+LMS0 started with pid=24, OS id=19816_19824 at elevated (RT) priority
+2026-10-27T16:49:57.782466+05:30
+LMS1 started with pid=26, OS id=19818_19826 at elevated (RT) priority
+2026-10-27T16:49:57.785011+05:30
+LMS2 started with pid=28, OS id=19820_19828 at elevated (RT) priority
+2026-10-27T16:49:57.794584+05:30
+LMD1 started with pid=30, OS id=19825
+Starting background process RMS0
+Starting background process LMHB
+2026-10-27T16:49:57.821175+05:30
+RMS0 started with pid=31, OS id=19837
+2026-10-27T16:49:57.847696+05:30
+LMHB started with pid=32, OS id=19841
+Starting background process LCK1
+2026-10-27T16:49:57.874996+05:30
+LCK1 started with pid=33, OS id=19843
+Starting background process DBW0
+2026-10-27T16:49:57.907465+05:30
+DBW0 started with pid=34, OS id=19847
+Starting background process DBW1
+2026-10-27T16:49:57.939383+05:30
+DBW1 started with pid=35, OS id=19851
+Starting background process DBW2
+2026-10-27T16:49:57.974116+05:30
+DBW2 started with pid=36, OS id=19855
+Starting background process DBW3
+2026-10-27T16:49:58.013542+05:30
+DBW3 started with pid=37, OS id=19859
+Starting background process LGWR
+2026-10-27T16:49:58.055015+05:30
+LGWR started with pid=38, OS id=19863
+Starting background process CKPT
+2026-10-27T16:49:58.089963+05:30
+CKPT started with pid=39, OS id=19867
+Starting background process SMON
+2026-10-27T16:49:58.164659+05:30
+SMON started with pid=41, OS id=19875
+Starting background process SMCO
+[root@rfia-db1-dr ~]#
