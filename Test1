@@ -1,0 +1,17 @@
+echo "===== HOST MEMORY ====="
+free -h
+grep -E 'MemAvailable|AnonPages|Shmem|Slab|SUnreclaim|PageTables|HugePages|Hugepagesize' /proc/meminfo
+
+echo "===== TOP ORACLE PROCESSES ====="
+ps -eo pid,ppid,user,comm,rss,args --sort=-rss | head -25
+
+echo "===== HUGE PAGES ====="
+grep -E 'HugePages|Hugepagesize|Hugetlb' /proc/meminfo
+
+echo "===== ORACLE PROCESS MEMORY MAPS ====="
+for p in 34449 35148 20451 20448 20446 20444; do
+  if [ -r /proc/$p/smaps_rollup ]; then
+    echo "===== PID $p ====="
+    grep -E '^(Rss|Pss|Pss_Anon|Pss_File|Pss_Shmem|Private_Clean|Private_Dirty|Shared_Clean|Shared_Dirty):' /proc/$p/smaps_rollup
+  fi
+done
