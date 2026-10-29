@@ -1,2 +1,41 @@
+SET LINESIZE 200
+SET PAGESIZE 100
 
-sw
+SHOW PARAMETER sga
+SHOW PARAMETER pga
+SHOW PARAMETER memory
+SHOW PARAMETER use_large_pages
+
+SELECT name,
+       bytes / 1024 / 1024 / 1024 AS size_gb,
+       resizeable
+FROM v$sgainfo
+ORDER BY bytes DESC;
+
+
+SELECT name, value
+FROM v$parameter
+WHERE name IN (
+    'use_large_pages',
+    'sga_target',
+    'sga_max_size',
+    'pga_aggregate_target',
+    'pga_aggregate_limit',
+    'memory_target',
+    'memory_max_target'
+)
+ORDER BY name;
+
+
+for p in 34449 35148 20451 20448 20446 20444; do
+  if [ -r /proc/$p/smaps_rollup ]; then
+    echo "===== PID $p ====="
+    grep -E '^(Rss|Pss|Shared_Hugetlb|Private_Hugetlb|AnonHugePages|ShmemPmdMapped):' \
+      /proc/$p/smaps_rollup
+  fi
+done
+
+
+sysctl vm.nr_hugepages
+grep -E 'HugePages|Hugepagesize|Hugetlb' /proc/meminfo
+
