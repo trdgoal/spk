@@ -1,35 +1,2443 @@
-grep -n 'Starting ORACLE instance' \
+[root@rfia-db1-dr ~]# grep -n 'Starting ORACLE instance' \
 /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/alert_saarthi1.log \
 | tail -20
-
-
-
-LOG=/oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/alert_saarthi1.log
-
-awk '
-/^[0-9]{4}-[0-9]{2}-[0-9]{2}T/ {
-    d=substr($0,1,10)
-    if (d >= "2026-10-01" && d < "2026-11-01")
-        show=1
-    else
-        show=0
-}
-show && (
-    /Starting ORACLE instance/ ||
-    /Instance SGA_TARGET/ ||
-    /Sys-V shared memory/ ||
-    /PAGESIZE/ ||
-    /AVAILABLE_PAGES/ ||
-    /EXPECTED_PAGES/ ||
-    /ALLOCATED_PAGES/ ||
-    /USE_LARGE_PAGES/ ||
-    /HugePages/ ||
-    /Supported system pagesize/ ||
-    /System parameters with non-default values/ ||
-    /sga_target/ ||
-    /sga_max_size/ ||
-    /ORA-27102/ ||
-    /ORA-27125/ ||
-    /Linux Error/
-) {print}
-' "$LOG"
+2849691:Starting ORACLE instance (normal) (OS id: 3201364)
+10418564:Starting ORACLE instance (normal) (OS id: 28685)
+45193256:Starting ORACLE instance (normal) (OS id: 1699115)
+98877009:Starting ORACLE instance (normal) (OS id: 650024)
+114140611:Starting ORACLE instance (normal) (OS id: 471723)
+134812195:Starting ORACLE instance (normal) (OS id: 16588)
+217397062:Starting ORACLE instance (normal) (OS id: 3969679)
+226660279:Starting ORACLE instance (normal) (OS id: 3333016)
+277120885:Starting ORACLE instance (normal) (OS id: 2504599)
+295440139:Starting ORACLE instance (normal) (OS id: 2585395)
+358576197:Starting ORACLE instance (normal) (OS id: 19584)
+367983718:Starting ORACLE instance (normal) (OS id: 19145)
+[root@rfia-db1-dr ~]#
+[root@rfia-db1-dr ~]# grep -n 'Starting ORACLE instance' /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/alert_saarthi1.log | tail -20 -C 100
+tail: option used in invalid context -- 2
+[root@rfia-db1-dr ~]# grep -n 'Starting ORACLE instance' /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/alert_saarthi1.log  -C 100
+2849591-
+2849592-
+2849593-***********************************************************************
+2849594-
+2849595-NI cryptographic checksum mismatch error: 12599.
+2849596-
+2849597-  VERSION INFORMATION:
+2849598-        TNS for Linux: Version 19.0.0.0.0 - Production
+2849599-        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+2849600-        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+2849601-  Version 19.32.0.0.0
+2849602-  Time: 12-SEP-2026 22:28:06
+2849603-  Tracing not turned on.
+2849604-  Tns error struct:
+2849605-    ns main err code: 12599
+2849606-
+2849607-TNS-12599: TNS:cryptographic checksum mismatch
+2849608-    ns secondary err code: 12656
+2849609-    nt main err code: 0
+2849610-    nt secondary err code: 0
+2849611-    nt OS err code: 0
+2849612-2026-09-12T22:28:06.319134+05:30
+2849613-
+2849614-
+2849615-***********************************************************************
+2849616-2026-09-12T22:28:06.319192+05:30
+2849617-
+2849618-
+2849619-***********************************************************************
+2849620-
+2849621-NI cryptographic checksum mismatch error: 12599.
+2849622-
+2849623-  VERSION INFORMATION:
+2849624-        TNS for Linux: Version 19.0.0.0.0 - Production
+2849625-        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+2849626-        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+2849627-
+2849628-NI cryptographic checksum mismatch error: 12599.
+2849629-  Version 19.32.0.0.0
+2849630-
+2849631-  VERSION INFORMATION:
+2849632-        TNS for Linux: Version 19.0.0.0.0 - Production
+2849633-        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+2849634-        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+2849635-  Time: 12-SEP-2026 22:28:06
+2849636-  Version 19.32.0.0.0
+2849637-  Tracing not turned on.
+2849638-  Time: 12-SEP-2026 22:28:06
+2849639-  Tracing not turned on.
+2849640-  Tns error struct:
+2849641-  Tns error struct:
+2849642-    ns main err code: 12599
+2849643-    ns main err code: 12599
+2849644-
+2849645-
+2849646-TNS-12599: TNS:cryptographic checksum mismatch
+2849647-    ns secondary err code: 12656
+2849648-TNS-12599: TNS:cryptographic checksum mismatch
+2849649-    nt main err code: 0
+2849650-    nt secondary err code: 0
+2849651-    ns secondary err code: 12656
+2849652-    nt OS err code: 0
+2849653-    nt main err code: 0
+2849654-    nt secondary err code: 0
+2849655-    nt OS err code: 0
+2849656-2026-09-12T22:28:06.335504+05:30
+2849657-
+2849658-
+2849659-***********************************************************************
+2849660-
+2849661-NI cryptographic checksum mismatch error: 12599.
+2849662-
+2849663-  VERSION INFORMATION:
+2849664-        TNS for Linux: Version 19.0.0.0.0 - Production
+2849665-        Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+2849666-        TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+2849667-  Version 19.32.0.0.0
+2849668-  Time: 12-SEP-2026 22:28:06
+2849669-  Tracing not turned on.
+2849670-  Tns error struct:
+2849671-    ns main err code: 12599
+2849672-
+2849673-TNS-12599: TNS:cryptographic checksum mismatch
+2849674-    ns secondary err code: 12656
+2849675-    nt main err code: 0
+2849676-    nt secondary err code: 0
+2849677-    nt OS err code: 0
+2849678-LMHB (ospid: 1237736): terminating the instance due to ORA error 29770
+2849679-Cause - 'ERROR: Some process(s) is not making progress.
+2849680-LMHB (ospid: 1237736) is terminating the instance.
+2849681-Please check LMHB trace file for more details.
+2849682-Please also check CPU load, I/O load and other system properties for anomalous behavior
+2849683-'
+2849684-2026-09-12T22:28:08.901189+05:30
+2849685-Dumping diagnostic data in directory=[cdmp_20260912222806], requested by (instance=1, osid=1237736 (LMHB)), summary=[abnormal instance termination].
+2849686-2026-09-12T22:28:12.020774+05:30
+2849687-Process termination requested for pid 1237662 [source = unknown], [info = 233284845] [request issued by pid: 1237662, uid: 54321]
+2849688-2026-09-12T22:28:13.072450+05:30
+2849689-Instance terminated by LMHB, pid = 1237736
+2849690-2026-09-12T22:28:38.684787+05:30
+2849691:Starting ORACLE instance (normal) (OS id: 3201364)
+2849692-2026-09-12T22:28:38.876134+05:30
+2849693-************************************************************
+2849694-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+2849695-************************************************************
+2849696-2026-09-12T22:28:38.877375+05:30
+2849697-****************************************************
+2849698- Sys-V shared memory will be used for creating SGA
+2849699- ****************************************************
+2849700-2026-09-12T22:28:38.884341+05:30
+2849701-**********************************************************************
+2849702-2026-09-12T22:28:38.884681+05:30
+2849703-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+2849704-
+2849705-2026-09-12T22:28:38.885242+05:30
+2849706- Domain name: system.slice/oracle-ohasd.service
+2849707-2026-09-12T22:28:38.885588+05:30
+2849708- Per process system memlock (soft) limit = UNLIMITED
+2849709-2026-09-12T22:28:38.885857+05:30
+2849710- Expected per process system memlock (soft) limit to lock
+2849711- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+2849712-2026-09-12T22:28:38.886629+05:30
+2849713- Available system pagesizes:
+2849714-  4K, 2048K
+2849715-2026-09-12T22:28:38.887741+05:30
+2849716- Supported system pagesize(s):
+2849717-2026-09-12T22:28:38.888068+05:30
+2849718-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+2849719-2026-09-12T22:28:38.888397+05:30
+2849720-        4K       Configured              19         15728659        NONE
+2849721-2026-09-12T22:28:38.889275+05:30
+2849722-     2048K            30800           30721                0        NONE
+2849723-2026-09-12T22:28:38.889613+05:30
+2849724-**********************************************************************
+2849725-2026-09-12T22:28:45.428447+05:30
+2849726-LICENSE_MAX_USERS = 0
+2849727-SYS auditing is enabled
+2849728-2026-09-12T22:28:46.003892+05:30
+2849729-NOTE: Cluster configuration type = CLUSTER [4]
+2849730-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+2849731-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+2849732-Version 19.32.0.0.0.
+2849733-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+2849734-System name:    Linux
+2849735-Node name:      rfia-db1-dr
+2849736-Release:        5.14.0-687.20.1.el9_8.x86_64
+2849737-Version:        #1 SMP PREEMPT_DYNAMIC Sun Jun 28 21:16:58 EDT 2026
+2849738-Machine:        x86_64
+2849739-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+2849740-System parameters with non-default values:
+2849741-  processes                = 8000
+2849742-  sessions                 = 12064
+2849743-  sga_max_size             = 60G
+2849744-  large_pool_size          = 1G
+2849745-  pga_aggregate_limit      = 0
+2849746-  nls_language             = "AMERICAN"
+2849747-  nls_territory            = "AMERICA"
+2849748-  sga_target               = 60G
+2849749-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+2849750-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+2849751-  db_block_size            = 8192
+2849752-  compatible               = "19.0.0"
+2849753-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+2849754-  log_archive_format       = "%t_%s_%r.arc"
+2849755-  db_files                 = 500
+2849756-  cluster_database         = TRUE
+2849757-  db_create_file_dest      = "+DG_DATA"
+2849758-  db_recovery_file_dest    = "+DG_ARCH"
+2849759-  db_recovery_file_dest_size= 300G
+2849760-  thread                   = 1
+2849761-  adg_account_info_tracking= "GLOBAL"
+2849762-  undo_tablespace          = "UNDOTBS1"
+2849763-  undo_retention           = 17000
+2849764-  instance_number          = 1
+2849765-  db_securefile            = "ALWAYS"
+2849766-  remote_login_passwordfile= "EXCLUSIVE"
+2849767-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+2849768-  local_listener           = "-oraagent-dummy-"
+2849769-  session_cached_cursors   = 1000
+2849770-  job_queue_processes      = 1000
+2849771-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+2849772-  audit_trail              = "DB"
+2849773-  db_name                  = "saarthi"
+2849774-  open_cursors             = 1000
+2849775-  pga_aggregate_target     = 20G
+2849776-  sec_protocol_error_trace_action= "LOG"
+2849777-  sec_protocol_error_further_action= "(DROP,3)"
+2849778-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+2849779-2026-09-12T22:28:46.323903+05:30
+2849780-Cluster Communication is configured to use IPs from: GPnP
+2849781-IP: 169.254.30.128       Subnet: 169.254.30.0
+2849782-KSIPC Loopback IP addresses(OSD):
+2849783-127.0.0.1
+2849784-KSIPC Available Transports for cluster communication: UDP:TCP
+2849785-KSIPC: Client: KCL       Transport: UDP
+2849786-KSIPC: Client: DLM       Transport: UDP
+2849787-2026-09-12T22:28:46.645511+05:30
+2849788-KSXP: ksxpsg_ipclwtrans: 2 UDP
+2849789-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+2849790-IPC Vendor 1 proto 2
+2849791-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+--
+10418464-       Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+10418465-       TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+10418466-  Version 19.32.0.0.0
+10418467-  Time: 13-SEP-2026 22:07:20
+10418468-  Tracing not turned on.
+10418469-  Tns error struct:
+10418470-    ns main err code: 12599
+10418471-
+10418472-TNS-12599: TNS:cryptographic checksum mismatch
+10418473-    ns secondary err code: 12656
+10418474-    nt main err code: 0
+10418475-    nt secondary err code: 0
+10418476-    nt OS err code: 0
+10418477-2026-09-13T22:07:20.612050+05:30
+10418478-
+10418479-
+10418480-***********************************************************************
+10418481-
+10418482-NI cryptographic checksum mismatch error: 12599.
+10418483-
+10418484-  VERSION INFORMATION:
+10418485-       TNS for Linux: Version 19.0.0.0.0 - Production
+10418486-       Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+10418487-       TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+10418488-  Version 19.32.0.0.0
+10418489-  Time: 13-SEP-2026 22:07:20
+10418490-  Tracing not turned on.
+10418491-  Tns error struct:
+10418492-    ns main err code: 12599
+10418493-
+10418494-TNS-12599: TNS:cryptographic checksum mismatch
+10418495-    ns secondary err code: 12656
+10418496-    nt main err code: 0
+10418497-    nt secondary err code: 0
+10418498-    nt OS err code: 0
+10418499-2026-09-13T22:07:20.628705+05:30
+10418500-
+10418501-
+10418502-***********************************************************************
+10418503-
+10418504-NI cryptographic checksum mismatch error: 12599.
+10418505-
+10418506-  VERSION INFORMATION:
+10418507-       TNS for Linux: Version 19.0.0.0.0 - Production
+10418508-       Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+10418509-       TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+10418510-  Version 19.32.0.0.0
+10418511-  Time: 13-SEP-2026 22:07:20
+10418512-  Tracing not turned on.
+10418513-  Tns error struct:
+10418514-    ns main err code: 12599
+10418515-
+10418516-TNS-12599: TNS:cryptographic checksum mismatch
+10418517-    ns secondary err code: 12656
+10418518-    nt main err code: 0
+10418519-    nt secondary err code: 0
+10418520-    nt OS err code: 0
+10418521-2026-09-13T22:07:20.716701+05:30
+10418522-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_dw01_1539648.trc:
+10418523-ORA-27072: File I/O error
+10418524-Linux-x86_64 Error: 28: No space left on device
+10418525-Additional information: 4
+10418526-Additional information: 1640263
+10418527-Additional information: 4294967295
+10418528-2026-09-13T22:07:20.763570+05:30
+10418529-
+10418530-
+10418531-***********************************************************************
+10418532-
+10418533-NI cryptographic checksum mismatch error: 12599.
+10418534-
+10418535-  VERSION INFORMATION:
+10418536-       TNS for Linux: Version 19.0.0.0.0 - Production
+10418537-       Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+10418538-       TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+10418539-  Version 19.32.0.0.0
+10418540-  Time: 13-SEP-2026 22:07:20
+10418541-  Tracing not turned on.
+10418542-  Tns error struct:
+10418543-    ns main err code: 12599
+10418544-
+10418545-TNS-12599: TNS:cryptographic checksum mismatch
+10418546-    ns secondary err code: 12656
+10418547-    nt main err code: 0
+10418548-    nt secondary err code: 0
+10418549-    nt OS err code: 0
+10418550-2026-09-13T22:07:20.821059+05:30
+10418551-
+10418552-
+10418553-***********************************************************************
+10418554-
+10418555-NI cryptographic checksum mismatch error: 12599.
+10418556-
+10418557-  VERSION INFORMATION:
+10418558-       TNS for Linux: Version 19.0.0.0.0 - Production
+10418559-       Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+10418560-       TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+10418561-  Version 19.32.0.0.0
+10418562-  Time: 13-SEP-2026 22:07:20
+10418563-  Tracing no2026-09-15T09:52:49.175726+05:30
+10418564:Starting ORACLE instance (normal) (OS id: 28685)
+10418565-2026-09-15T09:52:49.338267+05:30
+10418566-************************************************************
+10418567-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+10418568-************************************************************
+10418569-2026-09-15T09:52:49.339765+05:30
+10418570-****************************************************
+10418571- Sys-V shared memory will be used for creating SGA
+10418572- ****************************************************
+10418573-2026-09-15T09:52:49.347267+05:30
+10418574-**********************************************************************
+10418575-2026-09-15T09:52:49.347830+05:30
+10418576-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+10418577-
+10418578-2026-09-15T09:52:49.348579+05:30
+10418579- Domain name: system.slice/oracle-ohasd.service
+10418580-2026-09-15T09:52:49.349040+05:30
+10418581- Per process system memlock (soft) limit = UNLIMITED
+10418582-2026-09-15T09:52:49.349567+05:30
+10418583- Expected per process system memlock (soft) limit to lock
+10418584- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+10418585-2026-09-15T09:52:49.350443+05:30
+10418586- Available system pagesizes:
+10418587-  4K, 2048K
+10418588-2026-09-15T09:52:49.351612+05:30
+10418589- Supported system pagesize(s):
+10418590-2026-09-15T09:52:49.352004+05:30
+10418591-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+10418592-2026-09-15T09:52:49.352647+05:30
+10418593-        4K       Configured              19         15728659        NONE
+10418594-2026-09-15T09:52:49.353719+05:30
+10418595-     2048K            30800           30721                0        NONE
+10418596-2026-09-15T09:52:49.354144+05:30
+10418597-**********************************************************************
+10418598-2026-09-15T09:52:55.547511+05:30
+10418599-LICENSE_MAX_USERS = 0
+10418600-SYS auditing is enabled
+10418601-2026-09-15T09:52:56.133248+05:30
+10418602-NOTE: Cluster configuration type = CLUSTER [4]
+10418603-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+10418604-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+10418605-Version 19.32.0.0.0.
+10418606-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+10418607-System name:   Linux
+10418608-Node name:     rfia-db1-dr
+10418609-Release:       5.14.0-687.20.1.el9_8.x86_64
+10418610-Version:       #1 SMP PREEMPT_DYNAMIC Sun Jun 28 21:16:58 EDT 2026
+10418611-Machine:       x86_64
+10418612-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+10418613-System parameters with non-default values:
+10418614-  processes                = 8000
+10418615-  sessions                 = 12064
+10418616-  sga_max_size             = 60G
+10418617-  large_pool_size          = 1G
+10418618-  pga_aggregate_limit      = 0
+10418619-  nls_language             = "AMERICAN"
+10418620-  nls_territory            = "AMERICA"
+10418621-  sga_target               = 60G
+10418622-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+10418623-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+10418624-  db_block_size            = 8192
+10418625-  compatible               = "19.0.0"
+10418626-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+10418627-  log_archive_format       = "%t_%s_%r.arc"
+10418628-  db_files                 = 500
+10418629-  cluster_database         = TRUE
+10418630-  db_create_file_dest      = "+DG_DATA"
+10418631-  db_recovery_file_dest    = "+DG_ARCH"
+10418632-  db_recovery_file_dest_size= 300G
+10418633-  thread                   = 1
+10418634-  adg_account_info_tracking= "GLOBAL"
+10418635-  undo_tablespace          = "UNDOTBS1"
+10418636-  undo_retention           = 17000
+10418637-  instance_number          = 1
+10418638-  db_securefile            = "ALWAYS"
+10418639-  remote_login_passwordfile= "EXCLUSIVE"
+10418640-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+10418641-  local_listener           = "-oraagent-dummy-"
+10418642-  session_cached_cursors   = 1000
+10418643-  job_queue_processes      = 1000
+10418644-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+10418645-  audit_trail              = "DB"
+10418646-  db_name                  = "saarthi"
+10418647-  open_cursors             = 1000
+10418648-  pga_aggregate_target     = 20G
+10418649-  sec_protocol_error_trace_action= "LOG"
+10418650-  sec_protocol_error_further_action= "(DROP,3)"
+10418651-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+10418652-2026-09-15T09:52:56.533228+05:30
+10418653-Cluster Communication is configured to use IPs from: GPnP
+10418654-IP: 169.254.30.128      Subnet: 169.254.30.0
+10418655-KSIPC Loopback IP addresses(OSD):
+10418656-127.0.0.1
+10418657-2026-09-15T09:52:56.561287+05:30
+10418658-KSIPC Available Transports for cluster communication: UDP:TCP
+10418659-KSIPC: Client: KCL      Transport: UDP
+10418660-KSIPC: Client: DLM      Transport: UDP
+10418661-KSXP: ksxpsg_ipclwtrans: 2 UDP
+10418662-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+10418663-IPC Vendor 1 proto 2
+10418664-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+--
+45193156-       TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+45193157-    nt secondary err code: 0
+45193158-  Version 19.32.0.0.0
+45193159-
+45193160-  Time: 19-SEP-2026 22:44:45
+45193161-    nt OS err code: 0
+45193162-  Tracing not turned on.
+45193163-TNS-12599: TNS:cryptographic checksum mismatch
+45193164-  Tns error struct:
+45193165-    ns secondary err code: 12656
+45193166-  Version 19.32.0.0.0
+45193167-    nt main err code: 0
+45193168-    ns main err code: 12599
+45193169-    nt secondary err code: 0
+45193170-
+45193171-TNS-12599: TNS:cryptographic checksum mismatch
+45193172-  Time: 19-SEP-2026 22:44:45
+45193173-  Tracing not turned on.
+45193174-    nt OS err code: 0
+45193175-  Tns error struct:
+45193176-    ns main err code: 12599
+45193177-
+45193178-    ns secondary err code: 12656
+45193179-    nt main err code: 0
+45193180-TNS-12599: TNS:cryptographic checksum mismatch
+45193181-    nt secondary err code: 0
+45193182-GEN0 (ospid: 30980): terminating the instance due to ORA error 15082
+45193183-    nt OS err code: 0
+45193184-    ns secondary err code: 12656
+45193185-    nt main err code: 0
+45193186-    nt secondary err code: 0
+45193187-    nt OS err code: 0
+45193188-2026-09-19T22:44:45.257925+05:30
+45193189-
+45193190-
+45193191-***********************************************************************
+45193192-
+45193193-Fatal NI connect error 12537, connecting to:
+45193194- (ADDRESS=(PROTOCOL=tcp)(HOST=10.177.194.80)(PORT=54256))
+45193195-
+45193196-  VERSION INFORMATION:
+45193197-       TNS for Linux: Version 19.0.0.0.0 - Production
+45193198-       Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+45193199-       TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+45193200-  Version 19.32.0.0.0
+45193201-  Time: 19-SEP-2026 22:44:45
+45193202-  Tracing not turned on.
+45193203-  Tns error struct:
+45193204-    ns main err code: 12537
+45193205-
+45193206-TNS-12537: TNS:connection closed
+45193207-    ns secondary err code: 12560
+45193208-    nt main err code: 507
+45193209-
+45193210-2026-09-19T22:44:45.325348+05:30
+45193211-opiodr aborting process unknown ospid (1696119) as a result of ORA-1092
+45193212-TNS-00507: Connection closed
+45193213-    nt secondary err code: 0
+45193214-    nt OS err code: 0
+45193215-2026-09-19T22:44:45.340056+05:30
+45193216-opiodr aborting process unknown ospid (1696126) as a result of ORA-609
+45193217-2026-09-19T22:44:45.346123+05:30
+45193218-ORA-1092 : opitsk aborting process
+45193219-2026-09-19T22:44:45.347748+05:30
+45193220-opiodr aborting process unknown ospid (1696132) as a result of ORA-1092
+45193221-2026-09-19T22:44:45.355515+05:30
+45193222-System state dump requested by (instance=1, osid=30980 (GEN0)), summary=[abnormal instance termination]. error - 'Instance is terminating.
+45193223-2026-09-19T22:44:45.373573+05:30
+45193224-ORA-1092 : opitsk aborting process
+45193225-2026-09-19T22:44:48.271349+05:30
+45193226-'
+45193227-2026-09-19T22:44:49.869393+05:30
+45193228-Process termination requested for pid 31188 [source = unknown], [info = 233284845] [request issued by pid: 31188, uid: 54321]
+45193229-2026-09-19T22:44:50.523560+05:30
+45193230-Process termination requested for pid 1631687 [source = unknown], [info = 233284845] [request issued by pid: 1631687, uid: 54325]
+45193231-2026-09-19T22:44:50.659295+05:30
+45193232-Process termination requested for pid 31364 [source = unknown], [info = 233284845] [request issued by pid: 31364, uid: 54321]
+45193233-2026-09-19T22:44:50.790528+05:30
+45193234-Process termination requested for pid 31168 [source = unknown], [info = 233284845] [request issued by pid: 31168, uid: 54321]
+45193235-2026-09-19T22:44:50.851827+05:30
+45193236-Process termination requested for pid 1631536 [source = unknown], [info = 233284845] [request issued by pid: 1631536, uid: 54325]
+45193237-2026-09-19T22:44:50.856919+05:30
+45193238-Process termination requested for pid 31053 [source = unknown], [info = 233284845] [request issued by pid: 31053, uid: 54321]
+45193239-2026-09-19T22:44:51.301058+05:30
+45193240-Process termination requested for pid 31125 [source = unknown], [info = 233284845] [request issued by pid: 31125, uid: 54321]
+45193241-2026-09-19T22:44:51.469411+05:30
+45193242-Process termination requested for pid 37484 [source = unknown], [info = 233284845] [request issued by pid: 37484, uid: 54321]
+45193243-2026-09-19T22:44:51.738837+05:30
+45193244-Process termination requested for pid 1630361 [source = unknown], [info = 233284845] [request issued by pid: 1630361, uid: 54325]
+45193245-2026-09-19T22:44:52.378188+05:30
+45193246-ORA-1092 : opitsk aborting process
+45193247-2026-09-19T22:44:52.451214+05:30
+45193248-System State dumped to trace file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_diag_31017.trc
+45193249-2026-09-19T22:44:52.764194+05:30
+45193250-Process termination requested for pid 31777 [source = unknown], [info = 233284845] [request issued by pid: 31777, uid: 54321]
+45193251-2026-09-19T22:44:52.854584+05:30
+45193252-Process termination requested for pid 31087 [source = unknown], [info = 233284845] [request issued by pid: 31087, uid: 54321]
+45193253-2026-09-19T22:44:55.265147+05:30
+45193254-Instance terminated by GEN0, pid = 30980
+45193255-2026-09-19T22:45:54.098771+05:30
+45193256:Starting ORACLE instance (normal) (OS id: 1699115)
+45193257-2026-09-19T22:45:54.279111+05:30
+45193258-************************************************************
+45193259-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+45193260-************************************************************
+45193261-2026-09-19T22:45:54.280730+05:30
+45193262-****************************************************
+45193263- Sys-V shared memory will be used for creating SGA
+45193264- ****************************************************
+45193265-2026-09-19T22:45:54.289988+05:30
+45193266-**********************************************************************
+45193267-2026-09-19T22:45:54.290502+05:30
+45193268-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+45193269-
+45193270-2026-09-19T22:45:54.291237+05:30
+45193271- Domain name: system.slice/oracle-ohasd.service
+45193272-2026-09-19T22:45:54.291597+05:30
+45193273- Per process system memlock (soft) limit = UNLIMITED
+45193274-2026-09-19T22:45:54.292054+05:30
+45193275- Expected per process system memlock (soft) limit to lock
+45193276- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+45193277-2026-09-19T22:45:54.292827+05:30
+45193278- Available system pagesizes:
+45193279-  4K, 2048K
+45193280-2026-09-19T22:45:54.293732+05:30
+45193281- Supported system pagesize(s):
+45193282-2026-09-19T22:45:54.294246+05:30
+45193283-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+45193284-2026-09-19T22:45:54.294595+05:30
+45193285-        4K       Configured              19         15728659        NONE
+45193286-2026-09-19T22:45:54.295495+05:30
+45193287-     2048K            30800           30721                0        NONE
+45193288-2026-09-19T22:45:54.295935+05:30
+45193289-**********************************************************************
+45193290-2026-09-19T22:46:00.681553+05:30
+45193291-LICENSE_MAX_USERS = 0
+45193292-SYS auditing is enabled
+45193293-2026-09-19T22:46:01.208440+05:30
+45193294-NOTE: Cluster configuration type = CLUSTER [4]
+45193295-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+45193296-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+45193297-Version 19.32.0.0.0.
+45193298-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+45193299-System name:   Linux
+45193300-Node name:     rfia-db1-dr
+45193301-Release:       5.14.0-687.20.1.el9_8.x86_64
+45193302-Version:       #1 SMP PREEMPT_DYNAMIC Sun Jun 28 21:16:58 EDT 2026
+45193303-Machine:       x86_64
+45193304-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+45193305-System parameters with non-default values:
+45193306-  processes                = 8000
+45193307-  sessions                 = 12064
+45193308-  sga_max_size             = 60G
+45193309-  large_pool_size          = 1G
+45193310-  pga_aggregate_limit      = 0
+45193311-  nls_language             = "AMERICAN"
+45193312-  nls_territory            = "AMERICA"
+45193313-  sga_target               = 60G
+45193314-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+45193315-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+45193316-  db_block_size            = 8192
+45193317-  compatible               = "19.0.0"
+45193318-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+45193319-  log_archive_format       = "%t_%s_%r.arc"
+45193320-  db_files                 = 500
+45193321-  cluster_database         = TRUE
+45193322-  db_create_file_dest      = "+DG_DATA"
+45193323-  db_recovery_file_dest    = "+DG_ARCH"
+45193324-  db_recovery_file_dest_size= 300G
+45193325-  thread                   = 1
+45193326-  adg_account_info_tracking= "GLOBAL"
+45193327-  undo_tablespace          = "UNDOTBS1"
+45193328-  undo_retention           = 17000
+45193329-  instance_number          = 1
+45193330-  db_securefile            = "ALWAYS"
+45193331-  remote_login_passwordfile= "EXCLUSIVE"
+45193332-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+45193333-  local_listener           = "-oraagent-dummy-"
+45193334-  session_cached_cursors   = 1000
+45193335-  job_queue_processes      = 1000
+45193336-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+45193337-  audit_trail              = "DB"
+45193338-  db_name                  = "saarthi"
+45193339-  open_cursors             = 1000
+45193340-  pga_aggregate_target     = 20G
+45193341-  sec_protocol_error_trace_action= "LOG"
+45193342-  sec_protocol_error_further_action= "(DROP,3)"
+45193343-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+45193344-2026-09-19T22:46:01.558865+05:30
+45193345-Cluster Communication is configured to use IPs from: GPnP
+45193346-IP: 169.254.30.128      Subnet: 169.254.30.0
+45193347-KSIPC Loopback IP addresses(OSD):
+45193348-127.0.0.1
+45193349-KSIPC Available Transports for cluster communication: UDP:TCP
+45193350-KSIPC: Client: KCL      Transport: UDP
+45193351-KSIPC: Client: DLM      Transport: UDP
+45193352-2026-09-19T22:46:01.866174+05:30
+45193353-KSXP: ksxpsg_ipclwtrans: 2 UDP
+45193354-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+45193355-IPC Vendor 1 proto 2
+45193356-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+--
+98876909-    nt main err code: 0
+98876910-    nt secondary err code: 0
+98876911-    nt OS err code: 0
+98876912-2026-09-26T22:28:22.690407+05:30
+98876913-
+98876914-
+98876915-***********************************************************************
+98876916-
+98876917-NI cryptographic checksum mismatch error: 12599.
+98876918-
+98876919-  VERSION INFORMATION:
+98876920-       TNS for Linux: Version 19.0.0.0.0 - Production
+98876921-       Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+98876922-       TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+98876923-  Version 19.32.0.0.0
+98876924-  Time: 26-SEP-2026 22:28:22
+98876925-  Tracing not turned on.
+98876926-  Tns error struct:
+98876927-    ns main err code: 12599
+98876928-
+98876929-TNS-12599: TNS:cryptographic checksum mismatch
+98876930-    ns secondary err code: 12656
+98876931-    nt main err code: 0
+98876932-    nt secondary err code: 0
+98876933-    nt OS err code: 0
+98876934-2026-09-26T22:28:22.898979+05:30
+98876935-NOTE: ASMB (index:0) (1699503) connected to ASM instance +ASM1, osid: 648608 (Flex mode; client id 0xc75bee85aecfa787)
+98876936-NOTE: ASMB (1699503) rebuilding ASM server state for all pending groups
+98876937-NOTE: ASMB (1699503) rebuilding ASM server state for group 2 (DG_DATA)
+98876938-ERROR: Detected cluster incarnation mismatch for group 2 (DG_DATA)
+98876939-WARNING: group 2 is being dismounted.
+98876940-WARNING: ASMB force dismounting group 2 (DG_DATA) due to failover
+98876941-2026-09-26T22:28:22.929283+05:30
+98876942-
+98876943-
+98876944-***********************************************************************
+98876945-
+98876946-NI cryptographic checksum mismatch error: 12599.
+98876947-
+98876948-  VERSION INFORMATION:
+98876949-       TNS for Linux: Version 19.0.0.0.0 - Production
+98876950-       Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+98876951-       TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+98876952-  Version 19.32.0.0.0
+98876953-  Time: 26-SEP-2026 22:28:22
+98876954-  Tracing not turned on.
+98876955-  Tns error struct:
+98876956-    ns main err code: 12599
+98876957-
+98876958-TNS-12599: TNS:cryptographic checksum mismatch
+98876959-    ns secondary err code: 12656
+98876960-    nt main err code: 0
+98876961-    nt secondary err code: 0
+98876962-    nt OS err code: 0
+98876963-2026-09-26T22:28:23.022499+05:30
+98876964-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_1699483.trc:
+98876965-ORA-00345: redo log write error block 712941 count 2
+98876966-ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+98876967-2026-09-26T22:28:23.022828+05:30
+98876968-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_1699476.trc:
+98876969-ORA-00345: redo log write error block 712937 count 2
+98876970-ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+98876971-2026-09-26T22:28:23.029093+05:30
+98876972-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_1699483.trc:
+98876973-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+98876974-ORA-15079: ASM file is closed
+98876975-SUCCESS: diskgroup DG_DATA was dismounted
+98876976-2026-09-26T22:28:23.133692+05:30
+98876977-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_1699483.trc:
+98876978-ORA-00204: error in reading (block 1, # blocks 1) of control file
+98876979-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+98876980-ORA-15079: ASM file is closed
+98876981-2026-09-26T22:28:23.138709+05:30
+98876982-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_1699476.trc:
+98876983-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+98876984-ORA-15078: ASM diskgroup was forcibly dismounted
+98876985-2026-09-26T22:28:23.170878+05:30
+98876986-
+98876987-DW02 terminating with fatal err=39081, pid=826, wid=3, job SYS.SYS_EXPORT_SCHEMA_15
+98876988-2026-09-26T22:28:23.226416+05:30
+98876989-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_1699476.trc:
+98876990-ORA-00204: error in reading (block 1, # blocks 1) of control file
+98876991-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+98876992-ORA-15078: ASM diskgroup was forcibly dismounted
+98876993-2026-09-26T22:28:23.289839+05:30
+98876994-System state dump requested by (instance=1, osid=1699323 (PMON)), summary=[abnormal instance termination]. error - 'Instance is terminating.
+98876995-'
+98876996-2026-09-26T22:28:23.299460+05:30
+98876997-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_imr0_1699549.trc:
+98876998-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+98876999-ORA-15078: ASM diskgroup was forcibly dismounted
+98877000-2026-09-26T22:28:23.307304+05:30
+98877001-PMON (ospid: 1699323): terminating the instance due to ORA error 12752
+98877002-2026-09-26T22:28:23.309181+05:30
+98877003-Cause - 'Instance is being terminated due to fatal process death (pid: 42, ospid: 1699483, LG01)'
+98877004-2026-09-26T22:28:23.471751+05:30
+98877005-System State dumped to trace file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_diag_1699389.trc
+98877006-2026-09-26T22:28:28.888955+05:30
+98877007-Instance terminated by PMON, pid = 1699323
+98877008-2026-09-26T22:28:48.363718+05:30
+98877009:Starting ORACLE instance (normal) (OS id: 650024)
+98877010-2026-09-26T22:28:48.612610+05:30
+98877011-************************************************************
+98877012-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+98877013-************************************************************
+98877014-2026-09-26T22:28:48.614343+05:30
+98877015-****************************************************
+98877016- Sys-V shared memory will be used for creating SGA
+98877017- ****************************************************
+98877018-2026-09-26T22:28:48.623538+05:30
+98877019-**********************************************************************
+98877020-2026-09-26T22:28:48.624373+05:30
+98877021-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+98877022-
+98877023-2026-09-26T22:28:48.625960+05:30
+98877024- Domain name: system.slice/oracle-ohasd.service
+98877025-2026-09-26T22:28:48.626865+05:30
+98877026- Per process system memlock (soft) limit = UNLIMITED
+98877027-2026-09-26T22:28:48.627542+05:30
+98877028- Expected per process system memlock (soft) limit to lock
+98877029- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+98877030-2026-09-26T22:28:48.629030+05:30
+98877031- Available system pagesizes:
+98877032-  4K, 2048K
+98877033-2026-09-26T22:28:48.630370+05:30
+98877034- Supported system pagesize(s):
+98877035-2026-09-26T22:28:48.630904+05:30
+98877036-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+98877037-2026-09-26T22:28:48.631465+05:30
+98877038-        4K       Configured              19         15728659        NONE
+98877039-2026-09-26T22:28:48.633471+05:30
+98877040-     2048K            30800           30721                0        NONE
+98877041-2026-09-26T22:28:48.634075+05:30
+98877042-**********************************************************************
+98877043-2026-09-26T22:28:54.779760+05:30
+98877044-LICENSE_MAX_USERS = 0
+98877045-SYS auditing is enabled
+98877046-2026-09-26T22:28:55.435450+05:30
+98877047-NOTE: Cluster configuration type = CLUSTER [4]
+98877048-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+98877049-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+98877050-Version 19.32.0.0.0.
+98877051-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+98877052-System name:   Linux
+98877053-Node name:     rfia-db1-dr
+98877054-Release:       5.14.0-687.20.1.el9_8.x86_64
+98877055-Version:       #1 SMP PREEMPT_DYNAMIC Sun Jun 28 21:16:58 EDT 2026
+98877056-Machine:       x86_64
+98877057-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+98877058-System parameters with non-default values:
+98877059-  processes                = 8000
+98877060-  sessions                 = 12064
+98877061-  sga_max_size             = 60G
+98877062-  large_pool_size          = 1G
+98877063-  pga_aggregate_limit      = 0
+98877064-  nls_language             = "AMERICAN"
+98877065-  nls_territory            = "AMERICA"
+98877066-  sga_target               = 60G
+98877067-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+98877068-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+98877069-  db_block_size            = 8192
+98877070-  compatible               = "19.0.0"
+98877071-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+98877072-  log_archive_format       = "%t_%s_%r.arc"
+98877073-  db_files                 = 500
+98877074-  cluster_database         = TRUE
+98877075-  db_create_file_dest      = "+DG_DATA"
+98877076-  db_recovery_file_dest    = "+DG_ARCH"
+98877077-  db_recovery_file_dest_size= 300G
+98877078-  thread                   = 1
+98877079-  adg_account_info_tracking= "GLOBAL"
+98877080-  undo_tablespace          = "UNDOTBS1"
+98877081-  undo_retention           = 17000
+98877082-  instance_number          = 1
+98877083-  db_securefile            = "ALWAYS"
+98877084-  remote_login_passwordfile= "EXCLUSIVE"
+98877085-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+98877086-  local_listener           = "-oraagent-dummy-"
+98877087-  session_cached_cursors   = 1000
+98877088-  job_queue_processes      = 1000
+98877089-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+98877090-  audit_trail              = "DB"
+98877091-  db_name                  = "saarthi"
+98877092-  open_cursors             = 1000
+98877093-  pga_aggregate_target     = 20G
+98877094-  sec_protocol_error_trace_action= "LOG"
+98877095-  sec_protocol_error_further_action= "(DROP,3)"
+98877096-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+98877097-2026-09-26T22:28:55.893472+05:30
+98877098-Cluster Communication is configured to use IPs from: GPnP
+98877099-IP: 169.254.30.128      Subnet: 169.254.30.0
+98877100-KSIPC Loopback IP addresses(OSD):
+98877101-127.0.0.1
+98877102-KSIPC Available Transports for cluster communication: UDP:TCP
+98877103-KSIPC: Client: KCL      Transport: UDP
+98877104-KSIPC: Client: DLM      Transport: UDP
+98877105-KSXP: ksxpsg_ipclwtrans: 2 UDP
+98877106-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+98877107-IPC Vendor 1 proto 2
+98877108-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+98877109-============================================================
+--
+114140511-
+114140512-***********************************************************************
+114140513-
+114140514-NI cryptographic checksum mismatch error: 12599.
+114140515-
+114140516-  VERSION INFORMATION:
+114140517-      TNS for Linux: Version 19.0.0.0.0 - Production
+114140518-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+114140519-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+114140520-  Version 19.32.0.0.0
+114140521-  Time: 28-SEP-2026 22:23:26
+114140522-  Tracing not turned on.
+114140523-  Tns error struct:
+114140524-    ns main err code: 12599
+114140525-
+114140526-TNS-12599: TNS:cryptographic checksum mismatch
+114140527-    ns secondary err code: 12656
+114140528-    nt main err code: 0
+114140529-    nt secondary err code: 0
+114140530-    nt OS err code: 0
+114140531-2026-09-28T22:23:26.231717+05:30
+114140532-
+114140533-
+114140534-***********************************************************************
+114140535-
+114140536-NI cryptographic checksum mismatch error: 12599.
+114140537-
+114140538-  VERSION INFORMATION:
+114140539-      TNS for Linux: Version 19.0.0.0.0 - Production
+114140540-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+114140541-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+114140542-  Version 19.32.0.0.0
+114140543-  Time: 28-SEP-2026 22:23:26
+114140544-  Tracing not turned on.
+114140545-  Tns error struct:
+114140546-    ns main err code: 12599
+114140547-
+114140548-TNS-12599: TNS:cryptographic checksum mismatch
+114140549-    ns secondary err code: 12656
+114140550-    nt main err code: 0
+114140551-    nt secondary err code: 0
+114140552-    nt OS err code: 0
+114140553-2026-09-28T22:23:26.354075+05:30
+114140554-
+114140555-
+114140556-***********************************************************************
+114140557-
+114140558-NI cryptographic checksum mismatch error: 12599.
+114140559-
+114140560-  VERSION INFORMATION:
+114140561-      TNS for Linux: Version 19.0.0.0.0 - Production
+114140562-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+114140563-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+114140564-  Version 19.32.0.0.0
+114140565-  Time: 28-SEP-2026 22:23:26
+114140566-  Tracing not turned on.
+114140567-  Tns error struct:
+114140568-    ns main err code: 12599
+114140569-
+114140570-TNS-12599: TNS:cryptographic checksum mismatch
+114140571-    ns secondary err code: 12656
+114140572-    nt main err code: 0
+114140573-    nt secondary err code: 0
+114140574-    nt OS err code: 0
+114140575-2026-09-28T22:23:26.406707+05:30
+114140576-
+114140577-
+114140578-***********************************************************************
+114140579-
+114140580-NI cryptographic checksum mismatch error: 12599.
+114140581-
+114140582-  VERSION INFORMATION:
+114140583-      TNS for Linux: Version 19.0.0.0.0 - Production
+114140584-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+114140585-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+114140586-  Version 19.32.0.0.0
+114140587-  Time: 28-SEP-2026 22:23:26
+114140588-  Tracing not turned on.
+114140589-  Tns error struct:
+114140590-    ns main err code: 12599
+114140591-
+114140592-TNS-12599: TNS:cryptographic checksum mismatch
+114140593-    ns secondary err code: 12656
+114140594-    nt main err code: 0
+114140595-    nt secondary err code: 0
+114140596-    nt OS err code: 0
+114140597-LMHB (ospid: 650931): terminating the instance due to ORA error 29770
+114140598-2026-09-28T22:23:26.441823+05:30
+114140599-Cause - 'ERROR: Some process(s) is not making progress.
+114140600-LMHB (ospid: 650931) is terminating the instance.
+114140601-Please check LMHB trace file for more details.
+114140602-Please also check CPU load, I/O load and other system properties for anomalous behavior
+114140603-'
+114140604-2026-09-28T22:23:26.581647+05:30
+114140605-Process termination requested for pid 650976 [source = unknown], [info = 233284845] [request issued by pid: 650976, uid: 54321]
+114140606-2026-09-28T22:23:26.595583+05:30
+114140607-Dumping diagnostic data in directory=[cdmp_20260928222326], requested by (instance=1, osid=650931 (LMHB)), summary=[abnormal instance termination].
+114140608-2026-09-28T22:23:30.171692+05:30
+114140609-Instance terminated by LMHB, pid = 650931
+114140610-2026-09-28T22:24:52.748367+05:30
+114140611:Starting ORACLE instance (normal) (OS id: 471723)
+114140612-2026-09-28T22:24:52.931420+05:30
+114140613-************************************************************
+114140614-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+114140615-************************************************************
+114140616-2026-09-28T22:24:52.932796+05:30
+114140617-****************************************************
+114140618- Sys-V shared memory will be used for creating SGA
+114140619- ****************************************************
+114140620-2026-09-28T22:24:52.942263+05:30
+114140621-**********************************************************************
+114140622-2026-09-28T22:24:52.942667+05:30
+114140623-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+114140624-
+114140625-2026-09-28T22:24:52.943354+05:30
+114140626- Domain name: system.slice/oracle-ohasd.service
+114140627-2026-09-28T22:24:52.943745+05:30
+114140628- Per process system memlock (soft) limit = UNLIMITED
+114140629-2026-09-28T22:24:52.944107+05:30
+114140630- Expected per process system memlock (soft) limit to lock
+114140631- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+114140632-2026-09-28T22:24:52.945138+05:30
+114140633- Available system pagesizes:
+114140634-  4K, 2048K
+114140635-2026-09-28T22:24:52.946195+05:30
+114140636- Supported system pagesize(s):
+114140637-2026-09-28T22:24:52.946660+05:30
+114140638-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+114140639-2026-09-28T22:24:52.947128+05:30
+114140640-        4K       Configured              19         15728659        NONE
+114140641-2026-09-28T22:24:52.948092+05:30
+114140642-     2048K            30800           30721                0        NONE
+114140643-2026-09-28T22:24:52.948423+05:30
+114140644-**********************************************************************
+114140645-2026-09-28T22:24:58.566281+05:30
+114140646-LICENSE_MAX_USERS = 0
+114140647-SYS auditing is enabled
+114140648-2026-09-28T22:24:59.133246+05:30
+114140649-NOTE: Cluster configuration type = CLUSTER [4]
+114140650-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+114140651-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+114140652-Version 19.32.0.0.0.
+114140653-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+114140654-System name:  Linux
+114140655-Node name:    rfia-db1-dr
+114140656-Release:      5.14.0-687.20.1.el9_8.x86_64
+114140657-Version:      #1 SMP PREEMPT_DYNAMIC Sun Jun 28 21:16:58 EDT 2026
+114140658-Machine:      x86_64
+114140659-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+114140660-System parameters with non-default values:
+114140661-  processes                = 8000
+114140662-  sessions                 = 12064
+114140663-  sga_max_size             = 60G
+114140664-  large_pool_size          = 1G
+114140665-  pga_aggregate_limit      = 0
+114140666-  nls_language             = "AMERICAN"
+114140667-  nls_territory            = "AMERICA"
+114140668-  sga_target               = 60G
+114140669-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+114140670-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+114140671-  db_block_size            = 8192
+114140672-  compatible               = "19.0.0"
+114140673-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+114140674-  log_archive_format       = "%t_%s_%r.arc"
+114140675-  db_files                 = 500
+114140676-  cluster_database         = TRUE
+114140677-  db_create_file_dest      = "+DG_DATA"
+114140678-  db_recovery_file_dest    = "+DG_ARCH"
+114140679-  db_recovery_file_dest_size= 300G
+114140680-  thread                   = 1
+114140681-  adg_account_info_tracking= "GLOBAL"
+114140682-  undo_tablespace          = "UNDOTBS1"
+114140683-  undo_retention           = 17000
+114140684-  instance_number          = 1
+114140685-  db_securefile            = "ALWAYS"
+114140686-  remote_login_passwordfile= "EXCLUSIVE"
+114140687-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+114140688-  local_listener           = "-oraagent-dummy-"
+114140689-  session_cached_cursors   = 1000
+114140690-  job_queue_processes      = 1000
+114140691-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+114140692-  audit_trail              = "DB"
+114140693-  db_name                  = "saarthi"
+114140694-  open_cursors             = 1000
+114140695-  pga_aggregate_target     = 20G
+114140696-  sec_protocol_error_trace_action= "LOG"
+114140697-  sec_protocol_error_further_action= "(DROP,3)"
+114140698-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+114140699-2026-09-28T22:24:59.506493+05:30
+114140700-Cluster Communication is configured to use IPs from: GPnP
+114140701-IP: 169.254.30.128     Subnet: 169.254.30.0
+114140702-KSIPC Loopback IP addresses(OSD):
+114140703-127.0.0.1
+114140704-KSIPC Available Transports for cluster communication: UDP:TCP
+114140705-KSIPC: Client: KCL     Transport: UDP
+114140706-KSIPC: Client: DLM     Transport: UDP
+114140707-2026-09-28T22:24:59.842335+05:30
+114140708-KSXP: ksxpsg_ipclwtrans: 2 UDP
+114140709-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+114140710-IPC Vendor 1 proto 2
+114140711-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+--
+134812095-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+134812096-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+134812097-  Version 19.32.0.0.0
+134812098-  Time: 01-OCT-2026 13:26:40
+134812099-  Tracing not turned on.
+134812100-  Tns error struct:
+134812101-    ns main err code: 12599
+134812102-
+134812103-TNS-12599: TNS:cryptographic checksum mismatch
+134812104-    ns secondary err code: 12656
+134812105-    nt main err code: 0
+134812106-    nt secondary err code: 0
+134812107-    nt OS err code: 0
+134812108-2026-10-01T13:26:41.131208+05:30
+134812109-
+134812110-
+134812111-***********************************************************************
+134812112-
+134812113-NI cryptographic checksum mismatch error: 12599.
+134812114-
+134812115-  VERSION INFORMATION:
+134812116-      TNS for Linux: Version 19.0.0.0.0 - Production
+134812117-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+134812118-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+134812119-  Version 19.32.0.0.0
+134812120-  Time: 01-OCT-2026 13:26:41
+134812121-  Tracing not turned on.
+134812122-  Tns error struct:
+134812123-    ns main err code: 12599
+134812124-
+134812125-TNS-12599: TNS:cryptographic checksum mismatch
+134812126-    ns secondary err code: 12656
+134812127-    nt main err code: 0
+134812128-    nt secondary err code: 0
+134812129-    nt OS err code: 0
+134812130-2026-10-01T13:26:41.339197+05:30
+134812131-
+134812132-
+134812133-***********************************************************************
+134812134-
+134812135-NI cryptographic checksum mismatch error: 12599.
+134812136-
+134812137-  VERSION INFORMATION:
+134812138-      TNS for Linux: Version 19.0.0.0.0 - Production
+134812139-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+134812140-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+134812141-  Version 19.32.0.0.0
+134812142-  Time: 01-OCT-2026 13:26:41
+134812143-  Tracing not turned on.
+134812144-  Tns error struct:
+134812145-    ns main err code: 12599
+134812146-
+134812147-TNS-12599: TNS:cryptographic checksum mismatch
+134812148-    ns secondary err code: 12656
+134812149-    nt main err code: 0
+134812150-    nt secondary err code: 0
+134812151-    nt OS err code: 0
+134812152-2026-10-01T13:26:41.550029+05:30
+134812153-
+134812154-
+134812155-***********************************************************************
+134812156-
+134812157-NI cryptographic checksum mismatch error: 12599.
+134812158-
+134812159-  VERSION INFORMATION:
+134812160-      TNS for Linux: Version 19.0.0.0.0 - Production
+134812161-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+134812162-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+134812163-  Version 19.32.0.0.0
+134812164-  Time: 01-OCT-2026 13:26:41
+134812165-  Tracing not turned on.
+134812166-  Tns error struct:
+134812167-    ns main err code: 12599
+134812168-
+134812169-TNS-12599: TNS:cryptographic checksum mismatch
+134812170-    ns secondary err code: 12656
+134812171-    nt main err code: 0
+134812172-    nt secondary err code: 0
+134812173-    nt OS err code: 0
+134812174-2026-10-01T13:26:41.704224+05:30
+134812175-Shutting down ORACLE instance (abort) (OS id: 473015)
+134812176-2026-10-01T13:26:41.707982+05:30
+134812177-Shutdown is initiated by oraagent.bin@rfia-db1-dr (TNS V1-V3).
+134812178-License high water mark = 650
+134812179-USER (ospid: 473015): terminating the instance
+134812180-2026-10-01T13:26:41.752475+05:30
+134812181-opiodr aborting process unknown ospid (2712117) as a result of ORA-1092
+134812182-2026-10-01T13:26:42.457958+05:30
+134812183-opiodr aborting process unknown ospid (2712119) as a result of ORA-1092
+134812184-2026-10-01T13:26:42.750649+05:30
+134812185-opiodr aborting process unknown ospid (473141) as a result of ORA-1092
+134812186-2026-10-01T13:26:42.751396+05:30
+134812187-ORA-1092 : opitsk aborting process
+134812188-2026-10-01T13:26:43.162836+05:30
+134812189-ORA-1092 : opitsk aborting process
+134812190-2026-10-01T13:26:52.482812+05:30
+134812191-Instance terminated by USER, pid = 473015
+134812192-2026-10-01T13:27:02.887162+05:30
+134812193-Instance shutdown complete (OS id: 473015)
+134812194-2026-10-01T13:35:54.028881+05:30
+134812195:Starting ORACLE instance (normal) (OS id: 16588)
+134812196-2026-10-01T13:35:54.272532+05:30
+134812197-************************************************************
+134812198-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+134812199-************************************************************
+134812200-2026-10-01T13:35:54.272773+05:30
+134812201-****************************************************
+134812202- Sys-V shared memory will be used for creating SGA
+134812203- ****************************************************
+134812204-2026-10-01T13:35:54.275443+05:30
+134812205-**********************************************************************
+134812206-2026-10-01T13:35:54.275502+05:30
+134812207-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+134812208-
+134812209-2026-10-01T13:35:54.275605+05:30
+134812210- Domain name: system.slice/oracle-ohasd.service
+134812211-2026-10-01T13:35:54.275663+05:30
+134812212- Per process system memlock (soft) limit = UNLIMITED
+134812213-2026-10-01T13:35:54.275735+05:30
+134812214- Expected per process system memlock (soft) limit to lock
+134812215- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+134812216-2026-10-01T13:35:54.275862+05:30
+134812217- Available system pagesizes:
+134812218-  4K, 2048K
+134812219-2026-10-01T13:35:54.275976+05:30
+134812220- Supported system pagesize(s):
+134812221-2026-10-01T13:35:54.276031+05:30
+134812222-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+134812223-2026-10-01T13:35:54.276087+05:30
+134812224-        4K       Configured              19         15728659        NONE
+134812225-2026-10-01T13:35:54.276341+05:30
+134812226-     2048K            30800           30721                0        NONE
+134812227-2026-10-01T13:35:54.276395+05:30
+134812228-**********************************************************************
+134812229-2026-10-01T13:36:02.400485+05:30
+134812230-LICENSE_MAX_USERS = 0
+134812231-SYS auditing is enabled
+134812232-2026-10-01T13:36:02.983575+05:30
+134812233-NOTE: Cluster configuration type = CLUSTER [4]
+134812234-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+134812235-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+134812236-Version 19.32.0.0.0.
+134812237-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+134812238-System name:  Linux
+134812239-Node name:    rfia-db1-dr
+134812240-Release:      5.14.0-687.44.1.el9_8.x86_64
+134812241-Version:      #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+134812242-Machine:      x86_64
+134812243-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+134812244-System parameters with non-default values:
+134812245-  processes                = 8000
+134812246-  sessions                 = 12064
+134812247-  sga_max_size             = 60G
+134812248-  large_pool_size          = 1G
+134812249-  pga_aggregate_limit      = 0
+134812250-  nls_language             = "AMERICAN"
+134812251-  nls_territory            = "AMERICA"
+134812252-  sga_target               = 60G
+134812253-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+134812254-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+134812255-  db_block_size            = 8192
+134812256-  compatible               = "19.0.0"
+134812257-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+134812258-  log_archive_format       = "%t_%s_%r.arc"
+134812259-  db_files                 = 500
+134812260-  cluster_database         = TRUE
+134812261-  db_create_file_dest      = "+DG_DATA"
+134812262-  db_recovery_file_dest    = "+DG_ARCH"
+134812263-  db_recovery_file_dest_size= 300G
+134812264-  thread                   = 1
+134812265-  adg_account_info_tracking= "GLOBAL"
+134812266-  undo_tablespace          = "UNDOTBS1"
+134812267-  undo_retention           = 17000
+134812268-  instance_number          = 1
+134812269-  db_securefile            = "ALWAYS"
+134812270-  remote_login_passwordfile= "EXCLUSIVE"
+134812271-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+134812272-  local_listener           = "-oraagent-dummy-"
+134812273-  session_cached_cursors   = 1000
+134812274-  job_queue_processes      = 1000
+134812275-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+134812276-  audit_trail              = "DB"
+134812277-  db_name                  = "saarthi"
+134812278-  open_cursors             = 1000
+134812279-  pga_aggregate_target     = 20G
+134812280-  sec_protocol_error_trace_action= "LOG"
+134812281-  sec_protocol_error_further_action= "(DROP,3)"
+134812282-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+134812283-2026-10-01T13:36:03.305402+05:30
+134812284-Cluster Communication is configured to use IPs from: GPnP
+134812285-IP: 169.254.29.65      Subnet: 169.254.29.0
+134812286-KSIPC Loopback IP addresses(OSD):
+134812287-127.0.0.1
+134812288-KSIPC Available Transports for cluster communication: UDP:TCP
+134812289-KSIPC: Client: KCL     Transport: UDP
+134812290-KSIPC: Client: DLM     Transport: UDP
+134812291-2026-10-01T13:36:03.857646+05:30
+134812292-KSXP: ksxpsg_ipclwtrans: 2 UDP
+134812293-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+134812294-IPC Vendor 1 proto 2
+134812295-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+--
+217396962-ERROR: Detected cluster incarnation mismatch for group 2 (DG_DATA)
+217396963-2026-10-10T22:29:01.799851+05:30
+217396964-WARNING: group 2 dismounted: failed to write virtual extent 6293 of file 265
+217396965-2026-10-10T22:29:01.806044+05:30
+217396966-WARNING: group 2 is being dismounted.
+217396967-WARNING: ASMB force dismounting group 2 (DG_DATA) due to failover
+217396968-2026-10-10T22:29:01.897025+05:30
+217396969-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_21281.trc:
+217396970-ORA-00345: redo log write error block 397004 count 120
+217396971-ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+217396972-ORA-00345: redo log write error block 397124 count 138
+217396973-ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+217396974-2026-10-10T22:29:01.897038+05:30
+217396975-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_21293.trc:
+217396976-ORA-00345: redo log write error block 397262 count 20
+217396977-ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+217396978-ORA-00345: redo log write error block 397282 count 5
+217396979-ORA-00312: online log 16 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_16.275.1230036755'
+217396980-2026-10-10T22:29:01.933707+05:30
+217396981-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_21293.trc:
+217396982-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+217396983-ORA-15079: ASM file is closed
+217396984-SUCCESS: diskgroup DG_DATA was dismounted
+217396985-2026-10-10T22:29:02.273681+05:30
+217396986-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_21293.trc:
+217396987-ORA-00204: error in reading (block 1, # blocks 1) of control file
+217396988-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+217396989-ORA-15079: ASM file is closed
+217396990-2026-10-10T22:29:02.290298+05:30
+217396991-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_21281.trc:
+217396992-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+217396993-ORA-15078: ASM diskgroup was forcibly dismounted
+217396994-2026-10-10T22:29:02.325468+05:30
+217396995-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_imr0_21944.trc:
+217396996-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+217396997-ORA-15078: ASM diskgroup was forcibly dismounted
+217396998-2026-10-10T22:29:02.607510+05:30
+217396999-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_21281.trc:
+217397000-ORA-00204: error in reading (block 1, # blocks 1) of control file
+217397001-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+217397002-ORA-15078: ASM diskgroup was forcibly dismounted
+217397003-2026-10-10T22:29:02.749315+05:30
+217397004-
+217397005-DW03 terminating with fatal err=39081, pid=864, wid=4, job SYS.SYS_EXPORT_SCHEMA_17
+217397006-2026-10-10T22:29:05.015963+05:30
+217397007-
+217397008-
+217397009-***********************************************************************
+217397010-2026-10-10T22:29:05.015964+05:30
+217397011-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_ckpt_21270.trc:
+217397012-ORA-00206: error in writing (block 3, # blocks 1) of control file
+217397013-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+217397014-ORA-15078: ASM diskgroup was forcibly dismounted
+217397015-ORA-15078: ASM diskgroup was forcibly dismounted
+217397016-
+217397017-NI cryptographic checksum mismatch error: 12599.
+217397018-2026-10-10T22:29:05.021988+05:30
+217397019-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_ckpt_21270.trc:
+217397020-ORA-00221: error on write to control file
+217397021-ORA-00206: error in writing (block 3, # blocks 1) of control file
+217397022-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+217397023-ORA-15078: ASM diskgroup was forcibly dismounted
+217397024-ORA-15078: ASM diskgroup was forcibly dismounted
+217397025-
+217397026-  VERSION INFORMATION:
+217397027-      TNS for Linux: Version 19.0.0.0.0 - Production
+217397028-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+217397029-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+217397030-  Version 19.32.0.0.0
+217397031-  Time: 10-OCT-2026 22:29:05
+217397032-  Tracing not turned on.
+217397033-  Tns error struct:
+217397034-    ns main err code: 12599
+217397035-
+217397036-TNS-12599: TNS:cryptographic checksum mismatch
+217397037-    ns secondary err code: 12656
+217397038-    nt main err code: 0
+217397039-    nt secondary err code: 0
+217397040-    nt OS err code: 0
+217397041-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_ckpt_21270.trc  (incident=2759994):
+217397042-ORA-221 [] [] [] [] [] [] [] [] [] [] [] []
+217397043-Incident details in: /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/incident/incdir_2759994/saarthi1_ckpt_21270_i2759994.trc
+217397044-2026-10-10T22:29:05.662493+05:30
+217397045-PMON (ospid: 19897): terminating the instance due to ORA error 12752
+217397046-2026-10-10T22:29:05.665805+05:30
+217397047-Cause - 'Instance is being terminated due to fatal process death (pid: 40, ospid: 21281, LG00)'
+217397048-2026-10-10T22:29:07.462894+05:30
+217397049-System state dump requested by (instance=1, osid=19897 (PMON)), summary=[abnormal instance termination]. error - 'Instance is terminating.
+217397050-'
+217397051-2026-10-10T22:29:12.291516+05:30
+217397052-Process termination requested for pid 24720 [source = unknown], [info = 233284845] [request issued by pid: 24720, uid: 54321]
+217397053-2026-10-10T22:29:12.401715+05:30
+217397054-Process termination requested for pid 23342 [source = unknown], [info = 233284845] [request issued by pid: 23342, uid: 54321]
+217397055-2026-10-10T22:29:13.791871+05:30
+217397056-Process termination requested for pid 24316 [source = unknown], [info = 233284845] [request issued by pid: 24316, uid: 54321]
+217397057-2026-10-10T22:29:14.315042+05:30
+217397058-System State dumped to trace file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_diag_21043.trc
+217397059-2026-10-10T22:29:21.972093+05:30
+217397060-Instance terminated by PMON, pid = 19897
+217397061-2026-10-10T22:29:36.626473+05:30
+217397062:Starting ORACLE instance (normal) (OS id: 3969679)
+217397063-2026-10-10T22:29:36.873835+05:30
+217397064-************************************************************
+217397065-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+217397066-************************************************************
+217397067-2026-10-10T22:29:36.875151+05:30
+217397068-****************************************************
+217397069- Sys-V shared memory will be used for creating SGA
+217397070- ****************************************************
+217397071-2026-10-10T22:29:36.881785+05:30
+217397072-**********************************************************************
+217397073-2026-10-10T22:29:36.882097+05:30
+217397074-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+217397075-
+217397076-2026-10-10T22:29:36.882567+05:30
+217397077- Domain name: system.slice/oracle-ohasd.service
+217397078-2026-10-10T22:29:36.882999+05:30
+217397079- Per process system memlock (soft) limit = UNLIMITED
+217397080-2026-10-10T22:29:36.883507+05:30
+217397081- Expected per process system memlock (soft) limit to lock
+217397082- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+217397083-2026-10-10T22:29:36.884164+05:30
+217397084- Available system pagesizes:
+217397085-  4K, 2048K
+217397086-2026-10-10T22:29:36.884710+05:30
+217397087- Supported system pagesize(s):
+217397088-2026-10-10T22:29:36.885019+05:30
+217397089-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+217397090-2026-10-10T22:29:36.885293+05:30
+217397091-        4K       Configured              19         15728659        NONE
+217397092-2026-10-10T22:29:36.885987+05:30
+217397093-     2048K            30800           30721                0        NONE
+217397094-2026-10-10T22:29:36.886282+05:30
+217397095-**********************************************************************
+217397096-2026-10-10T22:29:43.457828+05:30
+217397097-LICENSE_MAX_USERS = 0
+217397098-SYS auditing is enabled
+217397099-2026-10-10T22:29:44.012634+05:30
+217397100-NOTE: Cluster configuration type = CLUSTER [4]
+217397101-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+217397102-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+217397103-Version 19.32.0.0.0.
+217397104-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+217397105-System name:  Linux
+217397106-Node name:    rfia-db1-dr
+217397107-Release:      5.14.0-687.44.1.el9_8.x86_64
+217397108-Version:      #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+217397109-Machine:      x86_64
+217397110-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+217397111-System parameters with non-default values:
+217397112-  processes                = 8000
+217397113-  sessions                 = 12064
+217397114-  sga_max_size             = 60G
+217397115-  large_pool_size          = 1G
+217397116-  pga_aggregate_limit      = 0
+217397117-  nls_language             = "AMERICAN"
+217397118-  nls_territory            = "AMERICA"
+217397119-  sga_target               = 60G
+217397120-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+217397121-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+217397122-  db_block_size            = 8192
+217397123-  compatible               = "19.0.0"
+217397124-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+217397125-  log_archive_format       = "%t_%s_%r.arc"
+217397126-  db_files                 = 500
+217397127-  cluster_database         = TRUE
+217397128-  db_create_file_dest      = "+DG_DATA"
+217397129-  db_recovery_file_dest    = "+DG_ARCH"
+217397130-  db_recovery_file_dest_size= 300G
+217397131-  thread                   = 1
+217397132-  adg_account_info_tracking= "GLOBAL"
+217397133-  undo_tablespace          = "UNDOTBS1"
+217397134-  undo_retention           = 17000
+217397135-  instance_number          = 1
+217397136-  db_securefile            = "ALWAYS"
+217397137-  remote_login_passwordfile= "EXCLUSIVE"
+217397138-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+217397139-  local_listener           = "-oraagent-dummy-"
+217397140-  session_cached_cursors   = 1000
+217397141-  job_queue_processes      = 1000
+217397142-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+217397143-  audit_trail              = "DB"
+217397144-  db_name                  = "saarthi"
+217397145-  open_cursors             = 1000
+217397146-  pga_aggregate_target     = 20G
+217397147-  sec_protocol_error_trace_action= "LOG"
+217397148-  sec_protocol_error_further_action= "(DROP,3)"
+217397149-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+217397150-2026-10-10T22:29:44.456790+05:30
+217397151-Cluster Communication is configured to use IPs from: GPnP
+217397152-IP: 169.254.29.65      Subnet: 169.254.29.0
+217397153-KSIPC Loopback IP addresses(OSD):
+217397154-127.0.0.1
+217397155-KSIPC Available Transports for cluster communication: UDP:TCP
+217397156-KSIPC: Client: KCL     Transport: UDP
+217397157-KSIPC: Client: DLM     Transport: UDP
+217397158-KSXP: ksxpsg_ipclwtrans: 2 UDP
+217397159-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+217397160-IPC Vendor 1 proto 2
+217397161-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+217397162-============================================================
+--
+226660179-
+226660180-
+226660181-***********************************************************************
+226660182-
+226660183-NI cryptographic checksum mismatch error: 12599.
+226660184-
+226660185-  VERSION INFORMATION:
+226660186-      TNS for Linux: Version 19.0.0.0.0 - Production
+226660187-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+226660188-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+226660189-  Version 19.32.0.0.0
+226660190-  Time: 12-OCT-2026 10:43:34
+226660191-  Tracing not turned on.
+226660192-  Tns error struct:
+226660193-    ns main err code: 12599
+226660194-
+226660195-TNS-12599: TNS:cryptographic checksum mismatch
+226660196-    ns secondary err code: 12656
+226660197-    nt main err code: 0
+226660198-    nt secondary err code: 0
+226660199-    nt OS err code: 0
+226660200-2026-10-12T10:43:35.179681+05:30
+226660201-
+226660202-
+226660203-***********************************************************************
+226660204-
+226660205-NI cryptographic checksum mismatch error: 12599.
+226660206-
+226660207-  VERSION INFORMATION:
+226660208-      TNS for Linux: Version 19.0.0.0.0 - Production
+226660209-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+226660210-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+226660211-  Version 19.32.0.0.0
+226660212-  Time: 12-OCT-2026 10:43:35
+226660213-  Tracing not turned on.
+226660214-  Tns error struct:
+226660215-    ns main err code: 12599
+226660216-
+226660217-TNS-12599: TNS:cryptographic checksum mismatch
+226660218-    ns secondary err code: 12656
+226660219-    nt main err code: 0
+226660220-    nt secondary err code: 0
+226660221-    nt OS err code: 0
+226660222-2026-10-12T10:43:35.200320+05:30
+226660223-
+226660224-
+226660225-***********************************************************************
+226660226-
+226660227-NI cryptographic checksum mismatch error: 12599.
+226660228-
+226660229-  VERSION INFORMATION:
+226660230-      TNS for Linux: Version 19.0.0.0.0 - Production
+226660231-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+226660232-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+226660233-  Version 19.32.0.0.0
+226660234-  Time: 12-OCT-2026 10:43:35
+226660235-  Tracing not turned on.
+226660236-  Tns error struct:
+226660237-    ns main err code: 12599
+226660238-
+226660239-TNS-12599: TNS:cryptographic checksum mismatch
+226660240-    ns secondary err code: 12656
+226660241-    nt main err code: 0
+226660242-    nt secondary err code: 0
+226660243-    nt OS err code: 0
+226660244-2026-10-12T10:43:35.401025+05:30
+226660245-Shutting down ORACLE instance (abort) (OS id: 3972571)
+226660246-2026-10-12T10:43:35.403640+05:30
+226660247-Shutdown is initiated by oraagent.bin@rfia-db1-dr (TNS V1-V3).
+226660248-License high water mark = 690
+226660249-USER (ospid: 3972571): terminating the instance
+226660250-2026-10-12T10:43:36.765287+05:30
+226660251-opiodr aborting process unknown ospid (3981618) as a result of ORA-1092
+226660252-2026-10-12T10:43:39.181852+05:30
+226660253-opiodr aborting process unknown ospid (3978337) as a result of ORA-1092
+226660254-2026-10-12T10:43:40.699302+05:30
+226660255-opiodr aborting process unknown ospid (3978017) as a result of ORA-1092
+226660256-2026-10-12T10:43:40.893506+05:30
+226660257-opiodr aborting process unknown ospid (3978026) as a result of ORA-1092
+226660258-2026-10-12T10:43:41.104779+05:30
+226660259-opiodr aborting process unknown ospid (3978028) as a result of ORA-1092
+226660260-2026-10-12T10:43:41.403199+05:30
+226660261-ORA-1092 : opitsk aborting process
+226660262-2026-10-12T10:43:41.460514+05:30
+226660263-ORA-1092 : opitsk aborting process
+226660264-2026-10-12T10:43:41.510689+05:30
+226660265-opiodr aborting process unknown ospid (3978177) as a result of ORA-1092
+226660266-2026-10-12T10:43:41.579057+05:30
+226660267-opiodr aborting process unknown ospid (3978426) as a result of ORA-1092
+226660268-2026-10-12T10:43:44.007979+05:30
+226660269-opiodr aborting process unknown ospid (3978237) as a result of ORA-1092
+226660270-2026-10-12T10:43:44.182881+05:30
+226660271-ORA-1092 : opitsk aborting process
+226660272-2026-10-12T10:43:53.222136+05:30
+226660273-Termination issued to instance processes. Waiting for the processes to exit, wait time 5 sec
+226660274-2026-10-12T10:43:57.313399+05:30
+226660275-Instance terminated by USER, pid = 3972571
+226660276-2026-10-12T10:44:05.887993+05:30
+226660277-Instance shutdown complete (OS id: 3972571)
+226660278-2026-10-12T10:45:55.219579+05:30
+226660279:Starting ORACLE instance (normal) (OS id: 3333016)
+226660280-2026-10-12T10:45:55.367076+05:30
+226660281-************************************************************
+226660282-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+226660283-************************************************************
+226660284-2026-10-12T10:45:55.368012+05:30
+226660285-****************************************************
+226660286- Sys-V shared memory will be used for creating SGA
+226660287- ****************************************************
+226660288-2026-10-12T10:45:55.374100+05:30
+226660289-**********************************************************************
+226660290-2026-10-12T10:45:55.374443+05:30
+226660291-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+226660292-
+226660293-2026-10-12T10:45:55.375018+05:30
+226660294- Domain name: system.slice/oracle-ohasd.service
+226660295-2026-10-12T10:45:55.375338+05:30
+226660296- Per process system memlock (soft) limit = UNLIMITED
+226660297-2026-10-12T10:45:55.375627+05:30
+226660298- Expected per process system memlock (soft) limit to lock
+226660299- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+226660300-2026-10-12T10:45:55.376217+05:30
+226660301- Available system pagesizes:
+226660302-  4K, 2048K
+226660303-2026-10-12T10:45:55.376819+05:30
+226660304- Supported system pagesize(s):
+226660305-2026-10-12T10:45:55.377109+05:30
+226660306-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+226660307-2026-10-12T10:45:55.377602+05:30
+226660308-        4K       Configured              19         15728659        NONE
+226660309-2026-10-12T10:45:55.378499+05:30
+226660310-     2048K            30800           30721                0        NONE
+226660311-2026-10-12T10:45:55.378856+05:30
+226660312-**********************************************************************
+226660313-2026-10-12T10:46:01.973903+05:30
+226660314-LICENSE_MAX_USERS = 0
+226660315-SYS auditing is enabled
+226660316-2026-10-12T10:46:02.526397+05:30
+226660317-NOTE: Cluster configuration type = CLUSTER [4]
+226660318-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+226660319-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+226660320-Version 19.32.0.0.0.
+226660321-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+226660322-System name:  Linux
+226660323-Node name:    rfia-db1-dr
+226660324-Release:      5.14.0-687.44.1.el9_8.x86_64
+226660325-Version:      #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+226660326-Machine:      x86_64
+226660327-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+226660328-System parameters with non-default values:
+226660329-  processes                = 8000
+226660330-  sessions                 = 12064
+226660331-  sga_max_size             = 60G
+226660332-  large_pool_size          = 1G
+226660333-  pga_aggregate_limit      = 0
+226660334-  nls_language             = "AMERICAN"
+226660335-  nls_territory            = "AMERICA"
+226660336-  sga_target               = 60G
+226660337-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+226660338-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+226660339-  db_block_size            = 8192
+226660340-  compatible               = "19.0.0"
+226660341-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+226660342-  log_archive_format       = "%t_%s_%r.arc"
+226660343-  db_files                 = 500
+226660344-  cluster_database         = TRUE
+226660345-  db_create_file_dest      = "+DG_DATA"
+226660346-  db_recovery_file_dest    = "+DG_ARCH"
+226660347-  db_recovery_file_dest_size= 300G
+226660348-  thread                   = 1
+226660349-  adg_account_info_tracking= "GLOBAL"
+226660350-  undo_tablespace          = "UNDOTBS1"
+226660351-  undo_retention           = 17000
+226660352-  instance_number          = 1
+226660353-  db_securefile            = "ALWAYS"
+226660354-  remote_login_passwordfile= "EXCLUSIVE"
+226660355-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+226660356-  local_listener           = "-oraagent-dummy-"
+226660357-  session_cached_cursors   = 1000
+226660358-  job_queue_processes      = 1000
+226660359-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+226660360-  audit_trail              = "DB"
+226660361-  db_name                  = "saarthi"
+226660362-  open_cursors             = 1000
+226660363-  pga_aggregate_target     = 20G
+226660364-  sec_protocol_error_trace_action= "LOG"
+226660365-  sec_protocol_error_further_action= "(DROP,3)"
+226660366-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+226660367-2026-10-12T10:46:02.866121+05:30
+226660368-Cluster Communication is configured to use IPs from: GPnP
+226660369-IP: 169.254.29.65      Subnet: 169.254.29.0
+226660370-KSIPC Loopback IP addresses(OSD):
+226660371-127.0.0.1
+226660372-KSIPC Available Transports for cluster communication: UDP:TCP
+226660373-KSIPC: Client: KCL     Transport: UDP
+226660374-KSIPC: Client: DLM     Transport: UDP
+226660375-2026-10-12T10:46:03.223581+05:30
+226660376-KSXP: ksxpsg_ipclwtrans: 2 UDP
+226660377-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+226660378-IPC Vendor 1 proto 2
+226660379-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+--
+277120785-
+277120786-NI cryptographic checksum mismatch error: 12599.
+277120787-
+277120788-  VERSION INFORMATION:
+277120789-      TNS for Linux: Version 19.0.0.0.0 - Production
+277120790-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+277120791-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+277120792-  Version 19.32.0.0.0
+277120793-  Time: 17-OCT-2026 22:24:53
+277120794-  Tracing not turned on.
+277120795-  Tns error struct:
+277120796-    ns main err code: 12599
+277120797-
+277120798-TNS-12599: TNS:cryptographic checksum mismatch
+277120799-    ns secondary err code: 12656
+277120800-    nt main err code: 0
+277120801-    nt secondary err code: 0
+277120802-    nt OS err code: 0
+277120803-2026-10-17T22:24:53.885012+05:30
+277120804-
+277120805-
+277120806-***********************************************************************
+277120807-
+277120808-NI cryptographic checksum mismatch error: 12599.
+277120809-
+277120810-  VERSION INFORMATION:
+277120811-      TNS for Linux: Version 19.0.0.0.0 - Production
+277120812-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+277120813-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+277120814-  Version 19.32.0.0.0
+277120815-  Time: 17-OCT-2026 22:24:53
+277120816-  Tracing not turned on.
+277120817-  Tns error struct:
+277120818-    ns main err code: 12599
+277120819-
+277120820-TNS-12599: TNS:cryptographic checksum mismatch
+277120821-    ns secondary err code: 12656
+277120822-    nt main err code: 0
+277120823-    nt secondary err code: 0
+277120824-    nt OS err code: 0
+277120825-2026-10-17T22:24:53.914872+05:30
+277120826-
+277120827-
+277120828-***********************************************************************
+277120829-
+277120830-NI cryptographic checksum mismatch error: 12599.
+277120831-
+277120832-  VERSION INFORMATION:
+277120833-      TNS for Linux: Version 19.0.0.0.0 - Production
+277120834-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+277120835-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+277120836-  Version 19.32.0.0.0
+277120837-  Time: 17-OCT-2026 22:24:53
+277120838-  Tracing not turned on.
+277120839-  Tns error struct:
+277120840-    ns main err code: 12599
+277120841-
+277120842-TNS-12599: TNS:cryptographic checksum mismatch
+277120843-    ns secondary err code: 12656
+277120844-    nt main err code: 0
+277120845-    nt secondary err code: 0
+277120846-    nt OS err code: 0
+277120847-2026-10-17T22:24:53.936516+05:30
+277120848-
+277120849-
+277120850-***********************************************************************
+277120851-
+277120852-NI cryptographic checksum mismatch error: 12599.
+277120853-
+277120854-  VERSION INFORMATION:
+277120855-      TNS for Linux: Version 19.0.0.0.0 - Production
+277120856-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+277120857-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+277120858-  Version 19.32.0.0.0
+277120859-  Time: 17-OCT-2026 22:24:53
+277120860-  Tracing not turned on.
+277120861-  Tns error struct:
+277120862-    ns main err code: 12599
+277120863-
+277120864-TNS-12599: TNS:cryptographic checksum mismatch
+277120865-    ns secondary err code: 12656
+277120866-    nt main err code: 0
+277120867-    nt secondary err code: 0
+277120868-    nt OS err code: 0
+277120869-LMHB (ospid: 3333584): terminating the instance due to ORA error 29770
+277120870-2026-10-17T22:24:54.019868+05:30
+277120871-Cause - 'ERROR: Some process(s) is not making progress.
+277120872-LMHB (ospid: 3333584) is terminating the instance.
+277120873-Please check LMHB trace file for more details.
+277120874-Please also check CPU load, I/O load and other system properties for anomalous behavior
+277120875-'
+277120876-2026-10-17T22:24:54.055238+05:30
+277120877-opiodr aborting process unknown ospid (2502317) as a result of ORA-1092
+277120878-2026-10-17T22:24:54.405283+05:30
+277120879-Dumping diagnostic data in directory=[cdmp_20261017222454], requested by (instance=1, osid=3333584 (LMHB)), summary=[abnormal instance termination].
+277120880-2026-10-17T22:24:57.311480+05:30
+277120881-Process termination requested for pid 3333628 [source = unknown], [info = 233284845] [request issued by pid: 3333628, uid: 54321]
+277120882-2026-10-17T22:25:00.970916+05:30
+277120883-Instance terminated by LMHB, pid = 3333584
+277120884-2026-10-17T22:25:28.796568+05:30
+277120885:Starting ORACLE instance (normal) (OS id: 2504599)
+277120886-2026-10-17T22:25:28.986774+05:30
+277120887-************************************************************
+277120888-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+277120889-************************************************************
+277120890-2026-10-17T22:25:28.988382+05:30
+277120891-****************************************************
+277120892- Sys-V shared memory will be used for creating SGA
+277120893- ****************************************************
+277120894-2026-10-17T22:25:28.994889+05:30
+277120895-**********************************************************************
+277120896-2026-10-17T22:25:28.995363+05:30
+277120897-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+277120898-
+277120899-2026-10-17T22:25:28.995943+05:30
+277120900- Domain name: system.slice/oracle-ohasd.service
+277120901-2026-10-17T22:25:28.996275+05:30
+277120902- Per process system memlock (soft) limit = UNLIMITED
+277120903-2026-10-17T22:25:28.996623+05:30
+277120904- Expected per process system memlock (soft) limit to lock
+277120905- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+277120906-2026-10-17T22:25:28.997353+05:30
+277120907- Available system pagesizes:
+277120908-  4K, 2048K
+277120909-2026-10-17T22:25:28.998047+05:30
+277120910- Supported system pagesize(s):
+277120911-2026-10-17T22:25:28.998422+05:30
+277120912-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+277120913-2026-10-17T22:25:28.998748+05:30
+277120914-        4K       Configured              19         15728659        NONE
+277120915-2026-10-17T22:25:28.999491+05:30
+277120916-     2048K            30800           30721                0        NONE
+277120917-2026-10-17T22:25:28.999857+05:30
+277120918-**********************************************************************
+277120919-2026-10-17T22:25:34.907590+05:30
+277120920-LICENSE_MAX_USERS = 0
+277120921-SYS auditing is enabled
+277120922-2026-10-17T22:25:35.449689+05:30
+277120923-NOTE: Cluster configuration type = CLUSTER [4]
+277120924-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+277120925-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+277120926-Version 19.32.0.0.0.
+277120927-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+277120928-System name:  Linux
+277120929-Node name:    rfia-db1-dr
+277120930-Release:      5.14.0-687.44.1.el9_8.x86_64
+277120931-Version:      #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+277120932-Machine:      x86_64
+277120933-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+277120934-System parameters with non-default values:
+277120935-  processes                = 8000
+277120936-  sessions                 = 12064
+277120937-  sga_max_size             = 60G
+277120938-  large_pool_size          = 1G
+277120939-  pga_aggregate_limit      = 0
+277120940-  nls_language             = "AMERICAN"
+277120941-  nls_territory            = "AMERICA"
+277120942-  sga_target               = 60G
+277120943-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+277120944-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+277120945-  db_block_size            = 8192
+277120946-  compatible               = "19.0.0"
+277120947-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+277120948-  log_archive_format       = "%t_%s_%r.arc"
+277120949-  db_files                 = 500
+277120950-  cluster_database         = TRUE
+277120951-  db_create_file_dest      = "+DG_DATA"
+277120952-  db_recovery_file_dest    = "+DG_ARCH"
+277120953-  db_recovery_file_dest_size= 300G
+277120954-  thread                   = 1
+277120955-  adg_account_info_tracking= "GLOBAL"
+277120956-  undo_tablespace          = "UNDOTBS1"
+277120957-  undo_retention           = 17000
+277120958-  instance_number          = 1
+277120959-  db_securefile            = "ALWAYS"
+277120960-  remote_login_passwordfile= "EXCLUSIVE"
+277120961-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+277120962-  local_listener           = "-oraagent-dummy-"
+277120963-  session_cached_cursors   = 1000
+277120964-  job_queue_processes      = 1000
+277120965-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+277120966-  audit_trail              = "DB"
+277120967-  db_name                  = "saarthi"
+277120968-  open_cursors             = 1000
+277120969-  pga_aggregate_target     = 20G
+277120970-  sec_protocol_error_trace_action= "LOG"
+277120971-  sec_protocol_error_further_action= "(DROP,3)"
+277120972-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+277120973-2026-10-17T22:25:36.013059+05:30
+277120974-Cluster Communication is configured to use IPs from: GPnP
+277120975-IP: 169.254.29.65      Subnet: 169.254.29.0
+277120976-KSIPC Loopback IP addresses(OSD):
+277120977-127.0.0.1
+277120978-KSIPC Available Transports for cluster communication: UDP:TCP
+277120979-KSIPC: Client: KCL     Transport: UDP
+277120980-KSIPC: Client: DLM     Transport: UDP
+277120981-KSXP: ksxpsg_ipclwtrans: 2 UDP
+277120982-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+277120983-IPC Vendor 1 proto 2
+277120984-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+277120985-============================================================
+--
+295440039-  Tns error struct:
+295440040-    ns main err code: 12599
+295440041-
+295440042-TNS-12599: TNS:cryptographic checksum mismatch
+295440043-    ns secondary err code: 12656
+295440044-    nt main err code: 0
+295440045-    nt secondary err code: 0
+295440046-    nt OS err code: 0
+295440047-2026-10-19T22:12:22.861913+05:30
+295440048-
+295440049-
+295440050-***********************************************************************
+295440051-
+295440052-NI cryptographic checksum mismatch error: 12599.
+295440053-
+295440054-  VERSION INFORMATION:
+295440055-      TNS for Linux: Version 19.0.0.0.0 - Production
+295440056-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+295440057-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+295440058-  Version 19.32.0.0.0
+295440059-  Time: 19-OCT-2026 22:12:22
+295440060-  Tracing not turned on.
+295440061-  Tns error struct:
+295440062-    ns main err code: 12599
+295440063-
+295440064-TNS-12599: TNS:cryptographic checksum mismatch
+295440065-    ns secondary err code: 12656
+295440066-    nt main err code: 0
+295440067-    nt secondary err code: 0
+295440068-    nt OS err code: 0
+295440069-2026-10-19T22:12:22.938850+05:30
+295440070-NOTE: ASMB (index:0) (2505504) connected to ASM instance +ASM1, osid: 2584264 (Flex mode; client id 0xc75bee85aef5de3d)
+295440071-NOTE: ASMB (2505504) rebuilding ASM server state for all pending groups
+295440072-NOTE: ASMB (2505504) rebuilding ASM server state for group 2 (DG_DATA)
+295440073-ERROR: Detected cluster incarnation mismatch for group 2 (DG_DATA)
+295440074-WARNING: group 2 is being dismounted.
+295440075-2026-10-19T22:12:22.948533+05:30
+295440076-WARNING: ASMB force dismounting group 2 (DG_DATA) due to failover
+295440077-2026-10-19T22:12:22.949940+05:30
+295440078-WARNING: group 2 dismounted: failed to write virtual extent 7015 of file 265
+295440079-SUCCESS: diskgroup DG_DATA was dismounted
+295440080-2026-10-19T22:12:22.994363+05:30
+295440081-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_2505477.trc:
+295440082-ORA-00345: redo log write error block 213073 count 82
+295440083-ORA-00312: online log 12 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_12.271.1230036669'
+295440084-2026-10-19T22:12:22.997131+05:30
+295440085-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_2505483.trc:
+295440086-ORA-00345: redo log write error block 213157 count 2
+295440087-ORA-00312: online log 12 thread 1: '+DG_DATA/SAARTHI/ONLINELOG/group_12.271.1230036669'
+295440088-2026-10-19T22:12:23.001929+05:30
+295440089-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_2505477.trc:
+295440090-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+295440091-ORA-15078: ASM diskgroup was forcibly dismounted
+295440092-2026-10-19T22:12:23.116351+05:30
+295440093-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg00_2505477.trc:
+295440094-ORA-00204: error in reading (block 1, # blocks 1) of control file
+295440095-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+295440096-ORA-15078: ASM diskgroup was forcibly dismounted
+295440097-2026-10-19T22:12:23.120231+05:30
+295440098-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_2505483.trc:
+295440099-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+295440100-ORA-15078: ASM diskgroup was forcibly dismounted
+295440101-2026-10-19T22:12:23.204826+05:30
+295440102-
+295440103-DW02 terminating with fatal err=6512, pid=855, wid=3, job SYS.SYS_EXPORT_SCHEMA_19
+295440104-2026-10-19T22:12:23.213784+05:30
+295440105-Errors in file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_lg01_2505483.trc:
+295440106-ORA-00204: error in reading (block 1, # blocks 1) of control file
+295440107-ORA-00202: control file: '+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861'
+295440108-ORA-15078: ASM diskgroup was forcibly dismounted
+295440109-2026-10-19T22:12:23.268878+05:30
+295440110-PMON (ospid: 2505318): terminating the instance due to ORA error 12752
+295440111-2026-10-19T22:12:23.270675+05:30
+295440112-Cause - 'Instance is being terminated due to fatal process death (pid: 40, ospid: 2505477, LG00)'
+295440113-2026-10-19T22:12:25.698136+05:30
+295440114-opiodr aborting process unknown ospid (2510025) as a result of ORA-1092
+295440115-2026-10-19T22:12:25.699308+05:30
+295440116-opiodr aborting process unknown ospid (2509921) as a result of ORA-1092
+295440117-2026-10-19T22:12:25.700061+05:30
+295440118-opiodr aborting process unknown ospid (2509977) as a result of ORA-1092
+295440119-2026-10-19T22:12:25.700133+05:30
+295440120-opiodr aborting process unknown ospid (2510027) as a result of ORA-1092
+295440121-2026-10-19T22:12:25.723415+05:30
+295440122-opiodr aborting process unknown ospid (2510011) as a result of ORA-1092
+295440123-2026-10-19T22:12:26.416283+05:30
+295440124-opiodr aborting process unknown ospid (2509951) as a result of ORA-1092
+295440125-2026-10-19T22:12:26.941712+05:30
+295440126-opiodr aborting process unknown ospid (2509905) as a result of ORA-1092
+295440127-2026-10-19T22:12:30.138815+05:30
+295440128-System state dump requested by (instance=1, osid=2505318 (PMON)), summary=[abnormal instance termination]. error - 'Instance is terminating.
+295440129-2026-10-19T22:12:30.159438+05:30
+295440130-Process termination requested for pid 2509951 [source = unknown], [info = 233284845] [request issued by pid: 2509951, uid: 54325]
+295440131-'
+295440132-2026-10-19T22:12:31.005069+05:30
+295440133-System State dumped to trace file /oracle19c/app/oracle_base/diag/rdbms/saarthi/saarthi1/trace/saarthi1_diag_2505387.trc
+295440134-2026-10-19T22:12:31.163750+05:30
+295440135-Process termination requested for pid 2506045 [source = unknown], [info = 233284845] [request issued by pid: 2506045, uid: 54321]
+295440136-2026-10-19T22:12:39.197506+05:30
+295440137-Instance terminated by PMON, pid = 2505318
+295440138-2026-10-19T22:13:01.614674+05:30
+295440139:Starting ORACLE instance (normal) (OS id: 2585395)
+295440140-2026-10-19T22:13:01.805516+05:30
+295440141-************************************************************
+295440142-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+295440143-************************************************************
+295440144-2026-10-19T22:13:01.807782+05:30
+295440145-****************************************************
+295440146- Sys-V shared memory will be used for creating SGA
+295440147- ****************************************************
+295440148-2026-10-19T22:13:01.815844+05:30
+295440149-**********************************************************************
+295440150-2026-10-19T22:13:01.816235+05:30
+295440151-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+295440152-
+295440153-2026-10-19T22:13:01.817006+05:30
+295440154- Domain name: system.slice/oracle-ohasd.service
+295440155-2026-10-19T22:13:01.817601+05:30
+295440156- Per process system memlock (soft) limit = UNLIMITED
+295440157-2026-10-19T22:13:01.818117+05:30
+295440158- Expected per process system memlock (soft) limit to lock
+295440159- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+295440160-2026-10-19T22:13:01.818907+05:30
+295440161- Available system pagesizes:
+295440162-  4K, 2048K
+295440163-2026-10-19T22:13:01.819904+05:30
+295440164- Supported system pagesize(s):
+295440165-2026-10-19T22:13:01.820307+05:30
+295440166-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+295440167-2026-10-19T22:13:01.820783+05:30
+295440168-        4K       Configured              19         15728659        NONE
+295440169-2026-10-19T22:13:01.821903+05:30
+295440170-     2048K            30800           30721                0        NONE
+295440171-2026-10-19T22:13:01.822290+05:30
+295440172-**********************************************************************
+295440173-2026-10-19T22:13:07.899774+05:30
+295440174-LICENSE_MAX_USERS = 0
+295440175-SYS auditing is enabled
+295440176-2026-10-19T22:13:08.325746+05:30
+295440177-NOTE: Cluster configuration type = CLUSTER [4]
+295440178-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+295440179-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+295440180-Version 19.32.0.0.0.
+295440181-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+295440182-System name:  Linux
+295440183-Node name:    rfia-db1-dr
+295440184-Release:      5.14.0-687.44.1.el9_8.x86_64
+295440185-Version:      #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+295440186-Machine:      x86_64
+295440187-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+295440188-System parameters with non-default values:
+295440189-  processes                = 8000
+295440190-  sessions                 = 12064
+295440191-  sga_max_size             = 60G
+295440192-  large_pool_size          = 1G
+295440193-  pga_aggregate_limit      = 0
+295440194-  nls_language             = "AMERICAN"
+295440195-  nls_territory            = "AMERICA"
+295440196-  sga_target               = 60G
+295440197-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+295440198-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+295440199-  db_block_size            = 8192
+295440200-  compatible               = "19.0.0"
+295440201-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+295440202-  log_archive_format       = "%t_%s_%r.arc"
+295440203-  db_files                 = 500
+295440204-  cluster_database         = TRUE
+295440205-  db_create_file_dest      = "+DG_DATA"
+295440206-  db_recovery_file_dest    = "+DG_ARCH"
+295440207-  db_recovery_file_dest_size= 300G
+295440208-  thread                   = 1
+295440209-  adg_account_info_tracking= "GLOBAL"
+295440210-  undo_tablespace          = "UNDOTBS1"
+295440211-  undo_retention           = 17000
+295440212-  instance_number          = 1
+295440213-  db_securefile            = "ALWAYS"
+295440214-  remote_login_passwordfile= "EXCLUSIVE"
+295440215-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+295440216-  local_listener           = "-oraagent-dummy-"
+295440217-  session_cached_cursors   = 1000
+295440218-  job_queue_processes      = 1000
+295440219-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+295440220-  audit_trail              = "DB"
+295440221-  db_name                  = "saarthi"
+295440222-  open_cursors             = 1000
+295440223-  pga_aggregate_target     = 20G
+295440224-  sec_protocol_error_trace_action= "LOG"
+295440225-  sec_protocol_error_further_action= "(DROP,3)"
+295440226-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+295440227-2026-10-19T22:13:08.627133+05:30
+295440228-Cluster Communication is configured to use IPs from: GPnP
+295440229-IP: 169.254.29.65      Subnet: 169.254.29.0
+295440230-KSIPC Loopback IP addresses(OSD):
+295440231-127.0.0.1
+295440232-KSIPC Available Transports for cluster communication: UDP:TCP
+295440233-KSIPC: Client: KCL     Transport: UDP
+295440234-KSIPC: Client: DLM     Transport: UDP
+295440235-2026-10-19T22:13:08.974377+05:30
+295440236-KSXP: ksxpsg_ipclwtrans: 2 UDP
+295440237-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+295440238-IPC Vendor 1 proto 2
+295440239-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+--
+358576097-  VERSION INFORMATION:
+358576098-      TNS for Linux: Version 19.0.0.0.0 - Production
+358576099-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+358576100-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+358576101-  Version 19.32.0.0.0
+358576102-  Time: 26-OCT-2026 18:25:39
+358576103-  Tracing not turned on.
+358576104-  Tns error struct:
+358576105-    ns main err code: 12599
+358576106-
+358576107-TNS-12599: TNS:cryptographic checksum mismatch
+358576108-    ns secondary err code: 12656
+358576109-    nt main err code: 0
+358576110-    nt secondary err code: 0
+358576111-    nt OS err code: 0
+358576112-2026-10-26T18:25:40.002485+05:30
+358576113-
+358576114-
+358576115-***********************************************************************
+358576116-
+358576117-NI cryptographic checksum mismatch error: 12599.
+358576118-
+358576119-  VERSION INFORMATION:
+358576120-      TNS for Linux: Version 19.0.0.0.0 - Production
+358576121-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+358576122-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+358576123-  Version 19.32.0.0.0
+358576124-  Time: 26-OCT-2026 18:25:40
+358576125-  Tracing not turned on.
+358576126-  Tns error struct:
+358576127-    ns main err code: 12599
+358576128-
+358576129-TNS-12599: TNS:cryptographic checksum mismatch
+358576130-    ns secondary err code: 12656
+358576131-    nt main err code: 0
+358576132-    nt secondary err code: 0
+358576133-    nt OS err code: 0
+358576134-2026-10-26T18:25:40.093023+05:30
+358576135-
+358576136-
+358576137-***********************************************************************
+358576138-
+358576139-NI cryptographic checksum mismatch error: 12599.
+358576140-
+358576141-  VERSION INFORMATION:
+358576142-      TNS for Linux: Version 19.0.0.0.0 - Production
+358576143-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+358576144-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+358576145-  Version 19.32.0.0.0
+358576146-  Time: 26-OCT-2026 18:25:40
+358576147-  Tracing not turned on.
+358576148-  Tns error struct:
+358576149-    ns main err code: 12599
+358576150-
+358576151-TNS-12599: TNS:cryptographic checksum mismatch
+358576152-    ns secondary err code: 12656
+358576153-    nt main err code: 0
+358576154-    nt secondary err code: 0
+358576155-    nt OS err code: 0
+358576156-2026-10-26T18:25:40.208209+05:30
+358576157-
+358576158-
+358576159-***********************************************************************
+358576160-
+358576161-NI cryptographic checksum mismatch error: 12599.
+358576162-
+358576163-  VERSION INFORMATION:
+358576164-      TNS for Linux: Version 19.0.0.0.0 - Production
+358576165-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+358576166-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+358576167-  Version 19.32.0.0.0
+358576168-  Time: 26-OCT-2026 18:25:40
+358576169-  Tracing not turned on.
+358576170-  Tns error struct:
+358576171-    ns main err code: 12599
+358576172-
+358576173-TNS-12599: TNS:cryptographic checksum mismatch
+358576174-    ns secondary err code: 12656
+358576175-    nt main err code: 0
+358576176-    nt secondary err code: 0
+358576177-    nt OS err code: 0
+358576178-2026-10-26T18:25:40.835132+05:30
+358576179-Shutting down ORACLE instance (abort) (OS id: 2586435)
+358576180-2026-10-26T18:25:40.838219+05:30
+358576181-Shutdown is initiated by oraagent.bin@rfia-db1-dr (TNS V1-V3).
+358576182-License high water mark = 690
+358576183-USER (ospid: 2586435): terminating the instance
+358576184-2026-10-26T18:25:40.871832+05:30
+358576185-opiodr aborting process unknown ospid (1057206) as a result of ORA-1092
+358576186-2026-10-26T18:25:40.875957+05:30
+358576187-ORA-1092 : opitsk aborting process
+358576188-2026-10-26T18:25:41.379845+05:30
+358576189-opiodr aborting process unknown ospid (921487) as a result of ORA-1092
+358576190-2026-10-26T18:25:42.595700+05:30
+358576191-Process termination requested for pid 2586367 [source = unknown], [info = 233284845] [request issued by pid: 2586367, uid: 54321]
+358576192-2026-10-26T18:25:45.190824+05:30
+358576193-Instance terminated by USER, pid = 2586435
+358576194-2026-10-26T18:26:02.248359+05:30
+358576195-Instance shutdown complete (OS id: 2586435)
+358576196-2026-10-26T18:36:18.342353+05:30
+358576197:Starting ORACLE instance (normal) (OS id: 19584)
+358576198-2026-10-26T18:36:18.478044+05:30
+358576199-************************************************************
+358576200-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+358576201-************************************************************
+358576202-2026-10-26T18:36:18.479227+05:30
+358576203-****************************************************
+358576204- Sys-V shared memory will be used for creating SGA
+358576205- ****************************************************
+358576206-2026-10-26T18:36:18.485431+05:30
+358576207-**********************************************************************
+358576208-2026-10-26T18:36:18.485790+05:30
+358576209-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+358576210-
+358576211-2026-10-26T18:36:18.486498+05:30
+358576212- Domain name: system.slice/oracle-ohasd.service
+358576213-2026-10-26T18:36:18.487003+05:30
+358576214- Per process system memlock (soft) limit = UNLIMITED
+358576215-2026-10-26T18:36:18.487407+05:30
+358576216- Expected per process system memlock (soft) limit to lock
+358576217- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+358576218-2026-10-26T18:36:18.488516+05:30
+358576219- Available system pagesizes:
+358576220-  4K, 2048K
+358576221-2026-10-26T18:36:18.489349+05:30
+358576222- Supported system pagesize(s):
+358576223-2026-10-26T18:36:18.489614+05:30
+358576224-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+358576225-2026-10-26T18:36:18.489961+05:30
+358576226-        4K       Configured              19         15728659        NONE
+358576227-2026-10-26T18:36:18.490772+05:30
+358576228-     2048K            30800           30721                0        NONE
+358576229-2026-10-26T18:36:18.491100+05:30
+358576230-**********************************************************************
+358576231-2026-10-26T18:36:24.470063+05:30
+358576232-LICENSE_MAX_USERS = 0
+358576233-SYS auditing is enabled
+358576234-2026-10-26T18:36:24.884126+05:30
+358576235-NOTE: Cluster configuration type = CLUSTER [4]
+358576236-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+358576237-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+358576238-Version 19.32.0.0.0.
+358576239-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+358576240-System name:  Linux
+358576241-Node name:    rfia-db1-dr
+358576242-Release:      5.14.0-687.44.1.el9_8.x86_64
+358576243-Version:      #1 SMP PREEMPT_DYNAMIC Mon Aug 31 23:56:47 EDT 2026
+358576244-Machine:      x86_64
+358576245-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+358576246-System parameters with non-default values:
+358576247-  processes                = 8000
+358576248-  sessions                 = 12064
+358576249-  sga_max_size             = 60G
+358576250-  large_pool_size          = 1G
+358576251-  pga_aggregate_limit      = 0
+358576252-  nls_language             = "AMERICAN"
+358576253-  nls_territory            = "AMERICA"
+358576254-  sga_target               = 60G
+358576255-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+358576256-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+358576257-  db_block_size            = 8192
+358576258-  compatible               = "19.0.0"
+358576259-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+358576260-  log_archive_format       = "%t_%s_%r.arc"
+358576261-  db_files                 = 500
+358576262-  cluster_database         = TRUE
+358576263-  db_create_file_dest      = "+DG_DATA"
+358576264-  db_recovery_file_dest    = "+DG_ARCH"
+358576265-  db_recovery_file_dest_size= 300G
+358576266-  thread                   = 1
+358576267-  adg_account_info_tracking= "GLOBAL"
+358576268-  undo_tablespace          = "UNDOTBS1"
+358576269-  undo_retention           = 17000
+358576270-  instance_number          = 1
+358576271-  db_securefile            = "ALWAYS"
+358576272-  remote_login_passwordfile= "EXCLUSIVE"
+358576273-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+358576274-  local_listener           = "-oraagent-dummy-"
+358576275-  session_cached_cursors   = 1000
+358576276-  job_queue_processes      = 1000
+358576277-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+358576278-  audit_trail              = "DB"
+358576279-  db_name                  = "saarthi"
+358576280-  open_cursors             = 1000
+358576281-  pga_aggregate_target     = 20G
+358576282-  sec_protocol_error_trace_action= "LOG"
+358576283-  sec_protocol_error_further_action= "(DROP,3)"
+358576284-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+358576285-2026-10-26T18:36:25.141461+05:30
+358576286-Cluster Communication is configured to use IPs from: GPnP
+358576287-IP: 169.254.29.65      Subnet: 169.254.29.0
+358576288-KSIPC Loopback IP addresses(OSD):
+358576289-127.0.0.1
+358576290-KSIPC Available Transports for cluster communication: UDP:TCP
+358576291-KSIPC: Client: KCL     Transport: UDP
+358576292-KSIPC: Client: DLM     Transport: UDP
+358576293-2026-10-26T18:36:25.544044+05:30
+358576294-KSXP: ksxpsg_ipclwtrans: 2 UDP
+358576295-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+358576296-IPC Vendor 1 proto 2
+358576297-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+--
+367983618-
+367983619-  Version 19.32.0.0.0
+367983620-TNS-12599: TNS:cryptographic checksum mismatch
+367983621-    ns secondary err code: 12656
+367983622-  Time: 27-OCT-2026 16:46:20
+367983623-    nt main err code: 0
+367983624-    nt secondary err code: 0
+367983625-  Tracing not turned on.
+367983626-    nt OS err code: 0
+367983627-  Tns error struct:
+367983628-    ns main err code: 12599
+367983629-
+367983630-TNS-12599: TNS:cryptographic checksum mismatch
+367983631-    ns secondary err code: 12656
+367983632-    nt main err code: 0
+367983633-    nt secondary err code: 0
+367983634-    nt OS err code: 0
+367983635-2026-10-27T16:46:20.767860+05:30
+367983636-
+367983637-
+367983638-***********************************************************************
+367983639-
+367983640-NI cryptographic checksum mismatch error: 12599.
+367983641-
+367983642-  VERSION INFORMATION:
+367983643-      TNS for Linux: Version 19.0.0.0.0 - Production
+367983644-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+367983645-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+367983646-  Version 19.32.0.0.0
+367983647-  Time: 27-OCT-2026 16:46:20
+367983648-  Tracing not turned on.
+367983649-  Tns error struct:
+367983650-    ns main err code: 12599
+367983651-
+367983652-TNS-12599: TNS:cryptographic checksum mismatch
+367983653-    ns secondary err code: 12656
+367983654-    nt main err code: 0
+367983655-    nt secondary err code: 0
+367983656-    nt OS err code: 0
+367983657-2026-10-27T16:46:20.951173+05:30
+367983658-
+367983659-
+367983660-***********************************************************************
+367983661-
+367983662-NI cryptographic checksum mismatch error: 12599.
+367983663-
+367983664-  VERSION INFORMATION:
+367983665-      TNS for Linux: Version 19.0.0.0.0 - Production
+367983666-      Oracle Bequeath NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+367983667-      TCP/IP NT Protocol Adapter for Linux: Version 19.0.0.0.0 - Production
+367983668-  Version 19.32.0.0.0
+367983669-  Time: 27-OCT-2026 16:46:20
+367983670-  Tracing not turned on.
+367983671-  Tns error struct:
+367983672-    ns main err code: 12599
+367983673-
+367983674-TNS-12599: TNS:cryptographic checksum mismatch
+367983675-    ns secondary err code: 12656
+367983676-    nt main err code: 0
+367983677-    nt secondary err code: 0
+367983678-    nt OS err code: 0
+367983679-2026-10-27T16:46:21.068069+05:30
+367983680-Shutting down ORACLE instance (abort) (OS id: 21879)
+367983681-2026-10-27T16:46:21.069895+05:30
+367983682-Shutdown is initiated by oraagent.bin@rfia-db1-dr (TNS V1-V3).
+367983683-License high water mark = 651
+367983684-USER (ospid: 21879): terminating the instance
+367983685-2026-10-27T16:46:21.251499+05:30
+367983686-opiodr aborting process unknown ospid (3460856) as a result of ORA-1092
+367983687-2026-10-27T16:46:21.453979+05:30
+367983688-ORA-1092 : opitsk aborting process
+367983689-2026-10-27T16:46:21.457125+05:30
+367983690-opiodr aborting process unknown ospid (21967) as a result of ORA-1092
+367983691-2026-10-27T16:46:21.472962+05:30
+367983692-opiodr aborting process unknown ospid (3460827) as a result of ORA-1092
+367983693-2026-10-27T16:46:21.607725+05:30
+367983694-ORA-1092 : opitsk aborting process
+367983695-2026-10-27T16:46:21.707470+05:30
+367983696-opiodr aborting process unknown ospid (3460834) as a result of ORA-1092
+367983697-2026-10-27T16:46:21.946567+05:30
+367983698-ORA-1092 : opitsk aborting process
+367983699-2026-10-27T16:46:22.162898+05:30
+367983700-ORA-1092 : opitsk aborting process
+367983701-2026-10-27T16:46:22.727570+05:30
+367983702-opiodr aborting process unknown ospid (24519) as a result of ORA-1092
+367983703-2026-10-27T16:46:22.832652+05:30
+367983704-ORA-1092 : opitsk aborting process
+367983705-2026-10-27T16:46:34.006861+05:30
+367983706-Termination issued to instance processes. Waiting for the processes to exit, wait time 5 sec
+367983707-2026-10-27T16:46:39.489900+05:30
+367983708-Termination issued to instance processes. Waiting for the processes to exit, wait time 0 sec
+367983709-2026-10-27T16:46:40.981055+05:30
+367983710-Instance termination failed to kill one or more processes
+367983711-2026-10-27T16:46:45.056097+05:30
+367983712-Termination issued to instance processes. Waiting for the processes to exit, wait time 5 sec
+367983713-2026-10-27T16:46:47.075966+05:30
+367983714-Instance terminated by USER, pid = 21879
+367983715-2026-10-27T16:46:55.107084+05:30
+367983716-Instance shutdown complete (OS id: 21879)
+367983717-2026-10-27T16:49:44.362220+05:30
+367983718:Starting ORACLE instance (normal) (OS id: 19145)
+367983719-2026-10-27T16:49:44.517047+05:30
+367983720-************************************************************
+367983721-Instance SGA_TARGET = 61440 MB and SGA_MAX_SIZE = 61440 MB
+367983722-************************************************************
+367983723-2026-10-27T16:49:44.519375+05:30
+367983724-****************************************************
+367983725- Sys-V shared memory will be used for creating SGA
+367983726- ****************************************************
+367983727-2026-10-27T16:49:44.526620+05:30
+367983728-**********************************************************************
+367983729-2026-10-27T16:49:44.527138+05:30
+367983730-Dump of system resources acquired for SHARED GLOBAL AREA (SGA)
+367983731-
+367983732-2026-10-27T16:49:44.527689+05:30
+367983733- Domain name: system.slice/oracle-ohasd.service
+367983734-2026-10-27T16:49:44.528019+05:30
+367983735- Per process system memlock (soft) limit = UNLIMITED
+367983736-2026-10-27T16:49:44.528436+05:30
+367983737- Expected per process system memlock (soft) limit to lock
+367983738- instance MAX SHARED GLOBAL AREA (SGA) into memory: 60G
+367983739-2026-10-27T16:49:44.529333+05:30
+367983740- Available system pagesizes:
+367983741-  4K, 2048K
+367983742-2026-10-27T16:49:44.529944+05:30
+367983743- Supported system pagesize(s):
+367983744-2026-10-27T16:49:44.530323+05:30
+367983745-  PAGESIZE  AVAILABLE_PAGES  EXPECTED_PAGES  ALLOCATED_PAGES  ERROR(s)
+367983746-2026-10-27T16:49:44.530654+05:30
+367983747-        4K       Configured              19         15728659        NONE
+367983748-2026-10-27T16:49:44.531438+05:30
+367983749-     2048K            30800           30721                0        NONE
+367983750-2026-10-27T16:49:44.531722+05:30
+367983751-**********************************************************************
+367983752-2026-10-27T16:49:51.367281+05:30
+367983753-LICENSE_MAX_USERS = 0
+367983754-SYS auditing is enabled
+367983755-2026-10-27T16:49:51.824439+05:30
+367983756-NOTE: Cluster configuration type = CLUSTER [4]
+367983757-Automatic NUMA balancing enabled in OS (kernel.numa_balancing=1)
+367983758-Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+367983759-Version 19.32.0.0.0.
+367983760-ORACLE_HOME:    /oracle19c/app/19c/oracle_home
+367983761-System name:  Linux
+367983762-Node name:    rfia-db1-dr
+367983763-Release:      5.14.0-687.54.1.el9_8.x86_64
+367983764-Version:      #1 SMP PREEMPT_DYNAMIC Tue Sep 29 21:16:19 EDT 2026
+367983765-Machine:      x86_64
+367983766-Using parameter settings in server-side spfile +DG_DATA/SAARTHI/PARAMETERFILE/spfile.266.1228829337
+367983767-System parameters with non-default values:
+367983768-  processes                = 8000
+367983769-  sessions                 = 12064
+367983770-  sga_max_size             = 60G
+367983771-  large_pool_size          = 1G
+367983772-  pga_aggregate_limit      = 0
+367983773-  nls_language             = "AMERICAN"
+367983774-  nls_territory            = "AMERICA"
+367983775-  sga_target               = 60G
+367983776-  control_files            = "+DG_DATA/SAARTHI/CONTROLFILE/current.261.1228828861"
+367983777-  control_files            = "+DG_ARCH/SAARTHI/CONTROLFILE/current.256.1228828861"
+367983778-  db_block_size            = 8192
+367983779-  compatible               = "19.0.0"
+367983780-  log_archive_dest_1       = "LOCATION=+DG_ARCH"
+367983781-  log_archive_format       = "%t_%s_%r.arc"
+367983782-  db_files                 = 500
+367983783-  cluster_database         = TRUE
+367983784-  db_create_file_dest      = "+DG_DATA"
+367983785-  db_recovery_file_dest    = "+DG_ARCH"
+367983786-  db_recovery_file_dest_size= 300G
+367983787-  thread                   = 1
+367983788-  adg_account_info_tracking= "GLOBAL"
+367983789-  undo_tablespace          = "UNDOTBS1"
+367983790-  undo_retention           = 17000
+367983791-  instance_number          = 1
+367983792-  db_securefile            = "ALWAYS"
+367983793-  remote_login_passwordfile= "EXCLUSIVE"
+367983794-  dispatchers              = "(PROTOCOL=TCP) (SERVICE=saarthiXDB)"
+367983795-  local_listener           = "-oraagent-dummy-"
+367983796-  session_cached_cursors   = 1000
+367983797-  job_queue_processes      = 1000
+367983798-  audit_file_dest          = "/oracle19c/app/oracle_base/admin/saarthi/adump"
+367983799-  audit_trail              = "DB"
+367983800-  db_name                  = "saarthi"
+367983801-  open_cursors             = 1000
+367983802-  pga_aggregate_target     = 20G
+367983803-  sec_protocol_error_trace_action= "LOG"
+367983804-  sec_protocol_error_further_action= "(DROP,3)"
+367983805-  diagnostic_dest          = "/oracle19c/app/oracle_base"
+367983806-2026-10-27T16:49:52.142284+05:30
+367983807-Cluster Communication is configured to use IPs from: GPnP
+367983808-IP: 169.254.27.167     Subnet: 169.254.27.0
+367983809-KSIPC Loopback IP addresses(OSD):
+367983810-127.0.0.1
+367983811-KSIPC Available Transports for cluster communication: UDP:TCP
+367983812-KSIPC: Client: KCL     Transport: UDP
+367983813-KSIPC: Client: DLM     Transport: UDP
+367983814-2026-10-27T16:49:52.652496+05:30
+367983815-KSXP: ksxpsg_ipclwtrans: 2 UDP
+367983816-cluster interconnect IPC version: [IPCLW over UDP(mode 3) ]
+367983817-IPC Vendor 1 proto 2
+367983818-Oracle instance running with ODM: Oracle Direct NFS ODM Library Version 6.0
+[root@rfia-db1-dr ~]#
