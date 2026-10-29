@@ -1,1088 +1,591 @@
-PR Parameters:
-==============
+[root@rfia-db1-dr ~]#
+[root@rfia-db1-dr ~]# date
+Thu Oct 29 03:31:47 PM IST 2026
+[root@rfia-db1-dr ~]# free -h
+               total        used        free      shared  buff/cache   available
+Mem:           185Gi       149Gi        20Gi        62Gi        79Gi        36Gi
+Swap:           15Gi        40Mi        15Gi
+[root@rfia-db1-dr ~]# cat /proc/meminfo | head -20
+MemTotal:       194432896 kB
+MemFree:        21431164 kB
+MemAvailable:   38100092 kB
+Buffers:           19936 kB
+Cached:         82618384 kB
+SwapCached:        10820 kB
+Active:         82393788 kB
+Inactive:       17442664 kB
+Active(anon):   80443276 kB
+Inactive(anon):  2232284 kB
+Active(file):    1950512 kB
+Inactive(file): 15210380 kB
+Unevictable:      643912 kB
+Mlocked:          643912 kB
+SwapTotal:      16777212 kB
+SwapFree:       16735740 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:               764 kB
+Writeback:             0 kB
+[root@rfia-db1-dr ~]#
+[root@rfia-db1-dr ~]# vmstat 1 5
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 2  0  41472 21448752  19936 83682704    0    0   205    32    5    5  2  3 94  0  0
+ 3  0  41472 21442644  19936 83682816    0    0    85   321 19457 23526  2  3 95  0  0
+ 1  0  41472 21454944  19936 83682984    0    0     5   325 28360 36879  3  6 91  0  0
+ 2  0  41472 21466836  19936 83683240    0    0    21    63 32795 41186  3  7 89  0  0
+ 7  0  41472 21466648  19936 83683568    0    0    85   840 36615 44160  4  8 87  0  0
+[root@rfia-db1-dr ~]#
+[root@rfia-db1-dr ~]# ps -eo pid,user,rss,vsz,comm --sort=-rss | head -20
+    PID USER       RSS    VSZ COMMAND
+  34449 oracle   35466624 64688776 oracle_34449_sa
+  35148 oracle   35240220 64688760 oracle_35148_sa
+  20451 oracle   30054828 63671140 ora_p007_saarth
+  20448 oracle   27409560 63671132 ora_p006_saarth
+  20446 oracle   27255756 63671136 ora_p005_saarth
+  20444 oracle   25870600 63671136 ora_p004_saarth
+  34628 oracle   5927304 64721528 oracle_34628_sa
+  19774 oracle   4681460 63662224 ora_mman_saarth
+  36792 oracle   3564468 64672388 oracle_36792_sa
+  34847 oracle   3547404 64705144 oracle_34847_sa
+  34877 oracle   3373236 64705140 oracle_34877_sa
+  34043 oracle   2785412 64705224 oracle_34043_sa
+  34348 oracle   2627656 64688752 oracle_34348_sa
+  34322 oracle   2572656 64672376 oracle_34322_sa
+  34867 oracle   2553728 64705212 oracle_34867_sa
+  34831 oracle   2529960 64688760 oracle_34831_sa
+  36992 oracle   2517428 64950960 oracle_36992_sa
+  34822 oracle   2450724 64688756 oracle_34822_sa
+  34646 oracle   2317220 64705224 oracle_34646_sa
+[root@rfia-db1-dr ~]#
+[root@rfia-db1-dr ~]# ps -eo user,rss --no-headers | awk '{a[$1]+=$2} END {for (u in a) printf "%-10s %8.1f MB\n", u, a[u]/1024}' | sort -k2 -rn
+oracle     346158.1 MB
+grid         5610.8 MB
+root         5004.4 MB
+splunk        251.4 MB
+admin          33.6 MB
+polkitd        23.3 MB
+dbus            8.3 MB
+rpc             6.1 MB
+rtkit           3.5 MB
+libstor+        1.9 MB
+[root@rfia-db1-dr ~]#
+[root@rfia-db1-dr ~]# ipcs -m | head -30
 
-SQL> show parameter;
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status
+0xfa0044df 0          root       660        2398248    1
+0xfa0044e0 1          root       660        2398248    1
+0x1d06dad4 2          grid       600        73728      42
+0x00000000 3          oracle     600        37359616   1666
+0x00000000 4          oracle     600        64290291712 833
+0x00000000 5          oracle     600        96858112   833
+0x9148f854 6          oracle     600        77824      833
 
-NAME                                 TYPE        VALUE
------------------------------------- ----------- ------------------------------
-DBFIPS_140                           boolean     FALSE
-_always_anti_join                    string      CHOOSE
-_always_semi_join                    string      CHOOSE
-_b_tree_bitmap_plans                 boolean     TRUE
-_bloom_serial_filter                 string      ON
-_complex_view_merging                boolean     TRUE
-_compression_compatibility           string      19.0.0
-_diag_adr_trace_dest                 string      /u01/app1/oracle/diag/rdbms/ho
-                                                 adr/hoadr1/trace
-_ds_xt_split_count                   integer     1
-_eliminate_common_subexpr            boolean     TRUE
-_enable_space_preallocation          integer     0
-_enable_spacebg                      boolean     FALSE
-_exadata_feature_on                  boolean     TRUE
-_fast_full_scan_enabled              boolean     TRUE
-_gc_policy_time                      integer     0
-_gc_undo_affinity                    boolean     FALSE
-_generalized_pruning_enabled         boolean     TRUE
-_gs_anti_semi_join_allowed           boolean     TRUE
-_hang_resolution_scope               string      OFF
-_high_priority_processes             string      VKTM|LGWR|LMS*|LM*|LCK*|CKPT|D
-                                                 BRM|RMS0|CR*|RS0*|RS1*|RS2*|LM
-                                                 *|LCK0|CKPT|DBRM|RMS0|LGWR|CR*
-                                                 |RS0*|RS1*|RS2*|LM*|LCK0|CKPT|
-                                                 DBRM|VKRM|RMS0|LGWR|CR*|RS0*|R
-                                                 S1*|RS2*
-_improved_outerjoin_card             boolean     TRUE
-_improved_row_length_enabled         boolean     TRUE
-_index_join_enabled                  boolean     TRUE
-_ipddb_enable                        boolean     TRUE
-_key_vector_create_pushdown_threshol integer     20000
-d
-_ksb_restart_policy_times            string      0, 60, 120, 240
-_left_nested_loops_random            boolean     TRUE
-_mv_access_compute_fresh_data        string      ON
-_new_initial_join_orders             boolean     TRUE
-_new_sort_cost_estimate              boolean     TRUE
-_nlj_batching_enabled                integer     1
-_optim_enhance_nnull_detection       boolean     TRUE
-_optim_peek_user_binds               boolean     TRUE
-_optimizer_adaptive_cursor_sharing   boolean     FALSE
-_optimizer_ads_use_partial_results   boolean     TRUE
-_optimizer_better_inlist_costing     string      ALL
-_optimizer_cbqt_or_expansion         string      ON
-_optimizer_cluster_by_rowid_control  integer     129
-_optimizer_control_shard_qry_process integer     65528
-ing
-_optimizer_cost_based_transformation string      LINEAR
-_optimizer_cost_model                string      CHOOSE
-_optimizer_extended_cursor_sharing   string      UDO
-_optimizer_extended_cursor_sharing_r string      SIMPLE
-el
-_optimizer_extended_stats_usage_cont integer     192
-rol
-_optimizer_join_order_control        integer     3
-_optimizer_max_permutations          integer     2000
-_optimizer_mode_force                boolean     TRUE
-_optimizer_native_full_outer_join    string      FORCE
-_optimizer_or_expansion              string      DEPTH
-_optimizer_proc_rate_level           string      BASIC
-_optimizer_system_stats_usage        boolean     TRUE
-_optimizer_try_st_before_jppd        boolean     TRUE
-_optimizer_use_cbqt_star_transformat boolean     TRUE
-ion
-_or_expand_nvl_predicate             boolean     TRUE
-_ordered_nested_loop                 boolean     TRUE
-_parallel_broadcast_enabled          boolean     TRUE
-_parallel_statement_queuing          boolean     TRUE
-_pivot_implementation_method         string      CHOOSE
-_pred_move_around                    boolean     TRUE
-_push_join_predicate                 boolean     TRUE
-_push_join_union_view                boolean     TRUE
-_push_join_union_view2               boolean     TRUE
-_px_dist_agg_partial_rollup_pushdown string      ADAPTIVE
-_px_groupby_pushdown                 string      FORCE
-_px_partial_rollup_pushdown          string      ADAPTIVE
-_px_shared_hash_join                 boolean     FALSE
-_px_wif_dfo_declumping               string      CHOOSE
-_sql_model_unfold_forloops           string      RUN_TIME
-_subquery_pruning_mv_enabled         boolean     FALSE
-_table_scan_cost_plus_one            boolean     TRUE
-_union_rewrite_for_gs                string      YES_GSET_MVS
-_unnest_subquery                     boolean     TRUE
-_use_adaptive_log_file_sync          string      FALSE
-_use_column_stats_for_function       boolean     TRUE
-_use_single_log_writer               string      TRUE
-_xt_sampling_scan_granules           string      ON
-active_instance_count                integer
-adg_account_info_tracking            string      LOCAL
-adg_redirect_dml                     boolean     FALSE
-allow_global_dblinks                 boolean     FALSE
-allow_group_access_to_sga            boolean     FALSE
-allow_rowid_column_type              boolean     FALSE
-approx_for_aggregation               boolean     FALSE
-approx_for_count_distinct            boolean     FALSE
-approx_for_percentile                string      none
-aq_tm_processes                      integer     1
-archive_lag_target                   integer     0
-asm_diskstring                       string
-asm_preferred_read_failure_groups    string
-audit_file_dest                      string      /u01/app1/oracle/product/19.3.
-                                                 0.0/dbhome_1/rdbms/audit
-audit_sys_operations                 boolean     TRUE
-audit_syslog_level                   string
-audit_trail                          string      OS
-autotask_max_active_pdbs             integer     2
-awr_pdb_autoflush_enabled            boolean     FALSE
-awr_pdb_max_parallel_slaves          integer     10
-awr_snapshot_time_offset             integer     0
-background_core_dump                 string      partial
-background_dump_dest                 string      /u01/app1/oracle/product/19.3.
-                                                 0.0/dbhome_1/rdbms/log
-backup_tape_io_slaves                boolean     FALSE
-bitmap_merge_area_size               integer     1048576
-blank_trimming                       boolean     FALSE
-blockchain_table_max_no_drop         integer
-buffer_pool_keep                     string
-buffer_pool_recycle                  string
-cdb_cluster                          boolean     FALSE
-cdb_cluster_name                     string
-cell_offload_compaction              string      ADAPTIVE
-cell_offload_decryption              boolean     TRUE
-cell_offload_parameters              string
-cell_offload_plan_display            string      AUTO
-cell_offload_processing              boolean     TRUE
-cell_offloadgroup_name               string
-circuits                             integer
-client_result_cache_lag              big integer 3000
-client_result_cache_size             big integer 0
-client_statistics_level              string      TYPICAL
-clonedb                              boolean     FALSE
-clonedb_dir                          string
-cluster_database                     boolean     TRUE
-cluster_database_instances           integer     4
-cluster_interconnects                string
-commit_logging                       string
-commit_point_strength                integer     1
-commit_wait                          string
-commit_write                         string
-common_user_prefix                   string      C##
-compatible                           string      19.0.0
-connection_brokers                   string      ((TYPE=DEDICATED)(BROKERS=1)),
-                                                  ((TYPE=EMON)(BROKERS=1))
-container_data                       string      ALL
-containers_parallel_degree           integer     65535
-control_file_record_keep_time        integer     7
-control_files                        string      +DG_DATA/HOADR/CONTROLFILE/cur
-                                                 rent.256.1125508931
-control_management_pack_access       string      DIAGNOSTIC+TUNING
-core_dump_dest                       string      /u01/app1/oracle/diag/rdbms/ho
-                                                 adr/hoa1/cdump
-cpu_count                            integer     40
-cpu_min_count                        string      32
-create_bitmap_area_size              integer     8388608
-create_stored_outlines               string
-cursor_bind_capture_destination      string      memory+disk
-cursor_invalidation                  string      IMMEDIATE
-cursor_sharing                       string      EXACT
-cursor_space_for_time                boolean     FALSE
-data_guard_max_io_time               integer     240
-data_guard_max_longio_time           integer     240
-data_guard_sync_latency              integer     0
-data_transfer_cache_size             big integer 0
-db_16k_cache_size                    big integer 0
-db_2k_cache_size                     big integer 0
-db_32k_cache_size                    big integer 0
-db_4k_cache_size                     big integer 0
-db_8k_cache_size                     big integer 0
-db_big_table_cache_percent_target    string      0
-db_block_buffers                     integer     0
-db_block_checking                    string      FALSE
-db_block_checksum                    string      TYPICAL
-db_block_size                        integer     8192
-db_cache_advice                      string      ON
-db_cache_size                        big integer 50G
-db_create_file_dest                  string      +DG_DATA
-db_create_online_log_dest_1          string
-db_create_online_log_dest_2          string
-db_create_online_log_dest_3          string
-db_create_online_log_dest_4          string
-db_create_online_log_dest_5          string
-db_domain                            string
-db_file_multiblock_read_count        integer     128
-db_file_name_convert                 string
-db_files                             integer     500
-db_flash_cache_file                  string
-db_flash_cache_size                  big integer 0
-db_flashback_retention_target        integer     1440
-db_index_compression_inheritance     string      NONE
-db_keep_cache_size                   big integer 0
-db_lost_write_protect                string      AUTO
-db_name                              string      hoa
-db_performance_profile               string
-db_recovery_file_dest                string      +DG_ARCH
-db_recovery_file_dest_size           big integer 10G
-db_recycle_cache_size                big integer 0
-db_securefile                        string      ALWAYS
-db_ultra_safe                        string      OFF
-db_unique_name                       string      hoadr
-db_unrecoverable_scn_tracking        boolean     TRUE
-db_writer_processes                  integer     5
-dbwr_io_slaves                       integer     0
-ddl_lock_timeout                     integer     0
-default_sharing                      string      metadata
-deferred_segment_creation            boolean     TRUE
-dg_broker_config_file1               string      /u01/app1/oracle/product/19.3.
-                                                 0.0/dbhome_1/dbs/dr1hoadr.dat
-dg_broker_config_file2               string      /u01/app1/oracle/product/19.3.
-                                                 0.0/dbhome_1/dbs/dr2hoadr.dat
-dg_broker_start                      boolean     FALSE
-diagnostic_dest                      string      /u01/app1/oracle
-directory_prefixes_allowed           string
-disable_pdb_feature                  big integer 0
-disk_asynch_io                       boolean     TRUE
-dispatchers                          string
-distributed_lock_timeout             integer     60
-dml_locks                            integer     21648
-dnfs_batch_size                      integer     4096
-drcp_dedicated_opt                   string      YES
-dst_upgrade_insert_conv              boolean     TRUE
-enable_automatic_maintenance_pdb     boolean     TRUE
-enable_ddl_logging                   boolean     FALSE
-enable_dnfs_dispatcher               boolean     FALSE
-enable_goldengate_replication        boolean     FALSE
-enable_imc_with_mira                 boolean     FALSE
-enable_pluggable_database            boolean     FALSE
-enabled_PDBs_on_standby              string      *
-encrypt_new_tablespaces              string      CLOUD_ONLY
-event                                string
-external_keystore_credential_locatio string
-n
-fal_client                           string      HOA
-fal_server                           string      HOADR
-fast_start_io_target                 integer     0
-fast_start_mttr_target               integer     300
-fast_start_parallel_rollback         string      LOW
-file_mapping                         boolean     FALSE
-fileio_network_adapters              string
-filesystemio_options                 string      none
-fixed_date                           string
-forward_listener                     string
-gcs_server_processes                 integer     3
-global_names                         boolean     FALSE
-global_txn_processes                 integer     1
-hash_area_size                       integer     131072
-heartbeat_batch_size                 integer     5
-heat_map                             string      OFF
-hi_shared_memory_address             integer     0
-hs_autoregister                      boolean     TRUE
-http_proxy                           string
-identity_provider_config             string
-identity_provider_type               string      NONE
-ifile                                file
-ignore_session_set_param_errors      string
-inmemory_adg_enabled                 boolean     TRUE
-inmemory_automatic_level             string      OFF
-inmemory_clause_default              string
-inmemory_expressions_usage           string      ENABLE
-inmemory_force                       string      DEFAULT
-inmemory_max_populate_servers        integer     0
-inmemory_optimized_arithmetic        string      DISABLE
-inmemory_prefer_xmem_memcompress     string
-inmemory_prefer_xmem_priority        string
-inmemory_query                       string      ENABLE
-inmemory_size                        big integer 0
-inmemory_trickle_repopulate_servers_ integer     1
-percent
-inmemory_virtual_columns             string      MANUAL
-inmemory_xmem_size                   big integer 0
-instance_abort_delay_time            integer     0
-instance_groups                      string
-instance_mode                        string      READ-WRITE
-instance_name                        string      hoadr1
-instance_number                      integer     1
-instance_type                        string      RDBMS
-instant_restore                      boolean     FALSE
-java_jit_enabled                     boolean     TRUE
-java_max_sessionspace_size           integer     0
-java_pool_size                       big integer 1G
-java_restrict                        string      none
-java_soft_sessionspace_limit         integer     0
-job_queue_processes                  integer     800
-large_pool_size                      big integer 1G
-ldap_directory_access                string      NONE
-ldap_directory_sysauth               string      no
-license_max_sessions                 integer     0
-license_max_users                    integer     0
-license_sessions_warning             integer     0
-listener_networks                    string
-lob_signature_enable                 boolean     FALSE
-local_listener                       string       (ADDRESS=(PROTOCOL=TCP)(HOST=
-                                                 10.191.213.84)(PORT=1531))
-lock_name_space                      string
-lock_sga                             boolean     FALSE
-log_archive_config                   string      DG_CONFIG=(HOA,HOADR)
-log_archive_dest                     string
-log_archive_dest_1                   string
-log_archive_dest_10                  string
-log_archive_dest_11                  string
-log_archive_dest_12                  string
-log_archive_dest_13                  string
-log_archive_dest_14                  string
-log_archive_dest_15                  string
-log_archive_dest_16                  string
-log_archive_dest_17                  string
-log_archive_dest_18                  string
-log_archive_dest_19                  string
-log_archive_dest_2                   string      LOCATION=+DG_ARCH
-log_archive_dest_20                  string
-log_archive_dest_21                  string
-log_archive_dest_22                  string
-log_archive_dest_23                  string
-log_archive_dest_24                  string
-log_archive_dest_25                  string
-log_archive_dest_26                  string
-log_archive_dest_27                  string
-log_archive_dest_28                  string
-log_archive_dest_29                  string
-log_archive_dest_3                   string      service=hoa db_unique_name=hoa
-log_archive_dest_30                  string
-log_archive_dest_31                  string
-log_archive_dest_4                   string
-log_archive_dest_5                   string
-log_archive_dest_6                   string
-log_archive_dest_7                   string
-log_archive_dest_8                   string
-log_archive_dest_9                   string
-log_archive_dest_state_1             string      enable
-log_archive_dest_state_10            string      enable
-log_archive_dest_state_11            string      enable
-log_archive_dest_state_12            string      enable
-log_archive_dest_state_13            string      enable
-log_archive_dest_state_14            string      enable
-log_archive_dest_state_15            string      enable
-log_archive_dest_state_16            string      enable
-log_archive_dest_state_17            string      enable
-log_archive_dest_state_18            string      enable
-log_archive_dest_state_19            string      enable
-log_archive_dest_state_2             string      enable
-log_archive_dest_state_20            string      enable
-log_archive_dest_state_21            string      enable
-log_archive_dest_state_22            string      enable
-log_archive_dest_state_23            string      enable
-log_archive_dest_state_24            string      enable
-log_archive_dest_state_25            string      enable
-log_archive_dest_state_26            string      enable
-log_archive_dest_state_27            string      enable
-log_archive_dest_state_28            string      enable
-log_archive_dest_state_29            string      enable
-log_archive_dest_state_3             string      ENABLE
-log_archive_dest_state_30            string      enable
-log_archive_dest_state_31            string      enable
-log_archive_dest_state_4             string      enable
-log_archive_dest_state_5             string      enable
-log_archive_dest_state_6             string      enable
-log_archive_dest_state_7             string      enable
-log_archive_dest_state_8             string      enable
-log_archive_dest_state_9             string      enable
-log_archive_duplex_dest              string
-log_archive_format                   string      %t_%s_%r.dbf
-log_archive_max_processes            integer     4
-log_archive_min_succeed_dest         integer     1
-log_archive_start                    boolean     FALSE
-log_archive_trace                    integer     0
-log_buffer                           big integer 11320K
-log_checkpoint_interval              integer     0
-log_checkpoint_timeout               integer     1800
-log_checkpoints_to_alert             boolean     FALSE
-log_file_name_convert                string
-long_module_action                   boolean     TRUE
-main_workload_type                   string      OLTP
-max_auth_servers                     integer     25
-max_datapump_jobs_per_pdb            string      100
-max_datapump_parallel_per_job        string      50
-max_dispatchers                      integer
-max_dump_file_size                   string      unlimited
-max_idle_blocker_time                integer     0
-max_idle_time                        integer     0
-max_iops                             integer     0
-max_mbps                             integer     0
-max_pdbs                             integer     254
-max_shared_servers                   integer
-max_string_size                      string      STANDARD
-memoptimize_pool_size                big integer 0
-memory_max_target                    big integer 0
-memory_target                        big integer 0
-mfa_duo_api_host                     string
-mfa_oma_iam_domain_url               string
-mfa_sender_email_displayname         string
-mfa_sender_email_id                  string
-mfa_smtp_host                        string
-mfa_smtp_port                        integer     587
-min_auth_servers                     integer     1
-multishard_query_data_consistency    string      strong
-multishard_query_partial_results     string      not allowed
-nls_calendar                         string
-nls_comp                             string      BINARY
-nls_currency                         string
-nls_date_format                      string
-nls_date_language                    string
-nls_dual_currency                    string
-nls_iso_currency                     string
-nls_language                         string      AMERICAN
-nls_length_semantics                 string      BYTE
-nls_nchar_conv_excp                  string      FALSE
-nls_numeric_characters               string
-nls_sort                             string
-nls_territory                        string      AMERICA
-nls_time_format                      string
-nls_time_tz_format                   string
-nls_timestamp_format                 string
-nls_timestamp_tz_format              string
-noncdb_compatible                    boolean     FALSE
-object_cache_max_size_percent        integer     10
-object_cache_optimal_size            integer     10240000
-ofs_threads                          integer     4
-ogg_online_ddl                       boolean     FALSE
-olap_page_pool_size                  big integer 0
-one_step_plugin_for_pdb_with_tde     boolean     FALSE
-open_cursors                         integer     3000
-open_links                           integer     4
-open_links_per_instance              integer     4
-optimizer_adaptive_plans             boolean     FALSE
-optimizer_adaptive_reporting_only    boolean     FALSE
-optimizer_adaptive_statistics        boolean     FALSE
-optimizer_capture_sql_plan_baselines boolean     FALSE
-optimizer_capture_sql_quarantine     boolean     TRUE
-optimizer_dynamic_sampling           integer     2
-optimizer_features_enable            string      19.1.0
-optimizer_ignore_hints               boolean     FALSE
-optimizer_ignore_parallel_hints      boolean     FALSE
-optimizer_index_caching              integer     0
-optimizer_index_cost_adj             integer     100
-optimizer_inmemory_aware             boolean     TRUE
-optimizer_mode                       string      ALL_ROWS
-optimizer_real_time_statistics       boolean     FALSE
-optimizer_secure_view_merging        boolean     TRUE
-optimizer_session_type               string      NORMAL
-optimizer_use_invisible_indexes      boolean     FALSE
-optimizer_use_pending_statistics     boolean     FALSE
-optimizer_use_sql_plan_baselines     boolean     TRUE
-optimizer_use_sql_quarantine         boolean     TRUE
-os_authent_prefix                    string      ops$
-os_roles                             boolean     FALSE
-outbound_dblink_protocols            string      ALL
-parallel_adaptive_multi_user         boolean     FALSE
-parallel_degree_limit                string      8
-parallel_degree_policy               string      MANUAL
-parallel_execution_message_size      integer     16384
-parallel_force_local                 boolean     FALSE
-parallel_instance_group              string
-parallel_max_servers                 integer     64
-parallel_min_degree                  string      1
-parallel_min_percent                 integer     0
-parallel_min_servers                 integer     0
-parallel_min_time_threshold          string      AUTO
-parallel_servers_target              integer     64
-parallel_threads_per_cpu             integer     1
-pdb_file_name_convert                string
-pdb_lockdown                         string
-pdb_os_credential                    string
-pdb_template                         string
-permit_92_wrap_format                boolean     TRUE
-pga_aggregate_limit                  big integer 0
-pga_aggregate_target                 big integer 3200M
-pki_cert_auth_method                 string      default
-plscope_settings                     string      IDENTIFIERS:NONE
-plsql_ccflags                        string
-plsql_code_type                      string      INTERPRETED
-plsql_debug                          boolean     FALSE
-plsql_optimize_level                 integer     2
-plsql_v2_compatibility               boolean     FALSE
-plsql_warnings                       string      DISABLE:ALL
-pre_page_sga                         boolean     TRUE
-private_temp_table_prefix            string      ORA$PTT_
-processes                            integer     3240
-processor_group_name                 string
-query_rewrite_enabled                string      TRUE
-query_rewrite_integrity              string      enforced
-rdbms_server_dn                      string
-read_only_open_delayed               boolean     FALSE
-recovery_parallelism                 integer     0
-recyclebin                           string      on
-redo_transport_user                  string
-remote_dependencies_mode             string      TIMESTAMP
-remote_listener                      string       iap-scan-dr:1531
-remote_login_passwordfile            string      EXCLUSIVE
-remote_os_authent                    boolean     FALSE
-remote_os_roles                      boolean     FALSE
-remote_recovery_file_dest            string
-replication_dependency_tracking      boolean     TRUE
-resource_limit                       boolean     TRUE
-resource_manage_goldengate           boolean     FALSE
-resource_manager_cpu_allocation      integer     0
-resource_manager_plan                string      FORCE:
-result_cache_max_result              integer     5
-result_cache_max_size                big integer 0
-result_cache_mode                    string      MANUAL
-result_cache_remote_expiration       integer     0
-resumable_timeout                    integer     0
-rollback_segments                    string
-scheduler_follow_pdbtz               boolean     FALSE
-sec_case_sensitive_logon             boolean     TRUE
-sec_max_failed_login_attempts        integer     3
-sec_protocol_error_further_action    string      (DROP,3)
-sec_protocol_error_trace_action      string      LOG
-sec_return_server_release_banner     boolean     FALSE
-serial_reuse                         string      disable
-service_names                        string      hoadr
-session_cached_cursors               integer     7500
-session_exit_on_package_state_error  boolean     FALSE
-session_max_open_files               integer     10
-sessions                             integer     4920
-sga_max_size                         big integer 90G
-sga_min_size                         big integer 0
-sga_target                           big integer 90G
-shadow_core_dump                     string      partial
-shared_memory_address                integer     0
-shared_pool_reserved_size            big integer 768M
-shared_pool_size                     big integer 15G
-shared_server_sessions               integer
-shared_servers                       integer     0
-shrd_dupl_table_refresh_rate         integer     60
-skip_unusable_indexes                boolean     TRUE
-smtp_out_server                      string
-sort_area_retained_size              integer     0
-sort_area_size                       integer     65536
-spatial_vector_acceleration          boolean     FALSE
-spfile                               string      +DG_DATA/HOADR/PARAMETERFILE/s
-                                                 pfile.280.1126626373
-sql92_security                       boolean     TRUE
-sql_trace                            boolean     FALSE
-sqltune_category                     string      DEFAULT
-ssl_wallet                           string
-standby_db_preserve_states           string      NONE
-standby_file_management              string      AUTO
-standby_pdb_source_file_dblink       string
-standby_pdb_source_file_directory    string
-star_transformation_enabled          string      FALSE
-statistics_level                     string      TYPICAL
-streams_pool_size                    big integer 1G
-tablespace_encryption                string      MANUAL_ENABLE
-tape_asynch_io                       boolean     TRUE
-target_pdbs                          integer     0
-tde_configuration                    string      KEYSTORE_CONFIGURATION=FILE
-temp_undo_enabled                    boolean     FALSE
-thread                               integer     1
-threaded_execution                   boolean     FALSE
-timed_os_statistics                  integer     0
-timed_statistics                     boolean     TRUE
-trace_enabled                        boolean     TRUE
-tracefile_identifier                 string
-transactions                         integer     5412
-transactions_per_rollback_segment    integer     5
-undo_management                      string      AUTO
-undo_retention                       integer     10800
-undo_tablespace                      string      UNDOTBS5
-unified_audit_common_systemlog       string
-unified_audit_sga_queue_size         integer     1048576
-unified_audit_systemlog              string
-uniform_log_timestamp_format         boolean     TRUE
-use_dedicated_broker                 boolean     FALSE
-use_large_pages                      string      TRUE
-user_dump_dest                       string      /u01/app1/oracle/product/19.3.
-                                                 0.0/dbhome_1/rdbms/log
-wallet_root                          string      /u01/app1/oracle/admin/hoadr/w
-                                                 allet
-workarea_size_policy                 string      AUTO
-xml_db_events                        string      enable
-xml_handling_of_invalid_chars        string      raise_error
+[root@rfia-db1-dr ~]#
+[root@rfia-db1-dr ~]# su - oracle
+Last login: Thu Oct 29 15:31:16 IST 2026
+[oracle@rfia-db1-dr ~]$ . oraenv
+ORACLE_SID = [saarthi1] ?
+The Oracle base has been set to /oracle19c/app/oracle_base
+[oracle@rfia-db1-dr ~]$ sqlplus / as sysdba
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Thu Oct 29 15:32:48 2026
+Version 19.32.0.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0
+
+SQL> SELECT component, current_size/1024/1024/1024 AS size_gb
+FROM v$sga_dynamic_components
+WHERE current_size > 0
+ORDER BY current_size DESC;  2    3    4
+
+COMPONENT                                                           SIZE_GB
+---------------------------------------------------------------- ----------
+DEFAULT buffer cache                                                  48.75
+shared pool                                                           8.875
+large pool                                                                1
+java pool                                                              .875
+streams pool                                                            .25
+Shared IO Pool                                                         .125
+
+6 rows selected.
+
+SQL> SELECT name, value/1024/1024/1024 AS size_gb FROM v$sga WHERE name = 'Total System Global Area';
+
+no rows selected
+
+SQL> SELECT name, value/1024/1024/1024 AS size_gb FROM v$pgastat WHERE name IN ('total PGA allocated','maximum PGA allocated','aggregate PGA target parameter','aggregate PGA auto target');
+
+NAME                                                                SIZE_GB
+---------------------------------------------------------------- ----------
+aggregate PGA target parameter                                           20
+aggregate PGA auto target                                        13.8020897
+total PGA allocated                                              6.09475994
+maximum PGA allocated                                            7.58660698
+
 SQL>
+SQL> SELECT s.sid, s.serial#, s.username, s.program,
+       p.pga_alloc_mem/1024/1024 AS pga_mb,
+       p.pga_used_mem/1024/1024 AS pga_used_mb
+FROM v$process p
+JOIN v$session s ON p.addr = s.paddr
+ORDER BY p.pga_alloc_mem DESC
+FETCH FIRST 15 ROWS ONLY;  2    3    4    5    6    7
+
+       SID    SERIAL#
+---------- ----------
+USERNAME
+--------------------------------------------------------------------------------
+PROGRAM                                              PGA_MB PGA_USED_MB
+------------------------------------------------ ---------- -----------
+      7542      44414
+
+oracle@rfia-db1-dr (MMON)                        120.101804  13.6803713
+
+     11330      50075
+IAP_SAARTHI
+Server                                           98.1841555  92.0740709
+
+       SID    SERIAL#
+---------- ----------
+USERNAME
+--------------------------------------------------------------------------------
+PROGRAM                                              PGA_MB PGA_USED_MB
+------------------------------------------------ ---------- -----------
+
+      7918      19397
+
+oracle@rfia-db1-dr (DIA0)                        92.7570467  85.1004457
+
+      3793       1722
+IAP_SAARTHI
+
+       SID    SERIAL#
+---------- ----------
+USERNAME
+--------------------------------------------------------------------------------
+PROGRAM                                              PGA_MB PGA_USED_MB
+------------------------------------------------ ---------- -----------
+Server                                           91.3716555  85.7652407
+
+      5299      61436
+IAP_SAARTHI
+Server                                           86.4966555  82.0510454
+
+        19      41450
+
+       SID    SERIAL#
+---------- ----------
+USERNAME
+--------------------------------------------------------------------------------
+PROGRAM                                              PGA_MB PGA_USED_MB
+------------------------------------------------ ---------- -----------
+IAP_SAARTHI
+Server                                           84.9504213  79.6847506
+
+      7938      13293
+IAP_SAARTHI
+Server                                           81.8716555  75.6497164
 
 
+       SID    SERIAL#
+---------- ----------
+USERNAME
+--------------------------------------------------------------------------------
+PROGRAM                                              PGA_MB PGA_USED_MB
+------------------------------------------------ ---------- -----------
+       774       1173
+IAP_SAARTHI
+Server                                           80.3716555  73.2843981
 
-DR Parameters:
-================
+      2659      25855
+IAP_SAARTHI
+Server                                           76.4341555  71.5139666
 
-SQL> show parameter;
+       SID    SERIAL#
+---------- ----------
+USERNAME
+--------------------------------------------------------------------------------
+PROGRAM                                              PGA_MB PGA_USED_MB
+------------------------------------------------ ---------- -----------
 
-NAME                                 TYPE        VALUE
------------------------------------- ----------- ------------------------------
-DBFIPS_140                           boolean     FALSE
-_exadata_feature_on                  boolean     TRUE
-_gc_policy_time                      integer     0
-_gc_undo_affinity                    boolean     FALSE
-_high_priority_processes             string      VKTM|LGWR|LMS*|LM*|LCK*|CKPT|D
-                                                 BRM|RMS0|CR*|RS0*|RS1*|RS2*|LM
-                                                 *|LCK0|CKPT|DBRM|RMS0|LGWR|CR*
-                                                 |RS0*|RS1*|RS2*|LM*|LCK0|CKPT|
-                                                 DBRM|VKRM|RMS0|LGWR|CR*|RS0*|R
-                                                 S1*|RS2*
-_ipddb_enable                        boolean     TRUE
-_optimizer_adaptive_cursor_sharing   boolean     FALSE
-_use_adaptive_log_file_sync          string      FALSE
-active_instance_count                integer
-adg_account_info_tracking            string      LOCAL
-adg_redirect_dml                     boolean     FALSE
-allow_global_dblinks                 boolean     FALSE
-allow_group_access_to_sga            boolean     FALSE
-allow_rowid_column_type              boolean     FALSE
-approx_for_aggregation               boolean     FALSE
-approx_for_count_distinct            boolean     FALSE
-approx_for_percentile                string      none
-aq_tm_processes                      integer     1
-archive_lag_target                   integer     0
-asm_diskstring                       string
-asm_preferred_read_failure_groups    string
-audit_file_dest                      string      /u01/app1/oracle/admin/hoa/adu
-                                                 mp
-audit_sys_operations                 boolean     TRUE
-audit_syslog_level                   string
-audit_trail                          string      OS
-autotask_max_active_pdbs             integer     2
-awr_pdb_autoflush_enabled            boolean     FALSE
-awr_pdb_max_parallel_slaves          integer     10
-awr_snapshot_time_offset             integer     0
-background_core_dump                 string      partial
-background_dump_dest                 string      /u01/app1/oracle/product/19.3.
-                                                 0.0/dbhome_1/rdbms/log
-backup_tape_io_slaves                boolean     FALSE
-bitmap_merge_area_size               integer     1048576
-blank_trimming                       boolean     FALSE
-blockchain_table_max_no_drop         integer
-buffer_pool_keep                     string
-buffer_pool_recycle                  string
-cdb_cluster                          boolean     FALSE
-cdb_cluster_name                     string
-cell_offload_compaction              string      ADAPTIVE
-cell_offload_decryption              boolean     TRUE
-cell_offload_parameters              string
-cell_offload_plan_display            string      AUTO
-cell_offload_processing              boolean     TRUE
-cell_offloadgroup_name               string
-circuits                             integer
-client_result_cache_lag              big integer 3000
-client_result_cache_size             big integer 0
-client_statistics_level              string      TYPICAL
-clonedb                              boolean     FALSE
-clonedb_dir                          string
-cluster_database                     boolean     TRUE
-cluster_database_instances           integer     4
-cluster_interconnects                string
-commit_logging                       string
-commit_point_strength                integer     1
-commit_wait                          string
-commit_write                         string
-common_user_prefix                   string      C##
-compatible                           string      19.0.0
-connection_brokers                   string      ((TYPE=DEDICATED)(BROKERS=1)),
-                                                  ((TYPE=EMON)(BROKERS=1))
-container_data                       string      ALL
-containers_parallel_degree           integer     65535
-control_file_record_keep_time        integer     7
-control_files                        string      +DG_DATA/HOA/CONTROLFILE/curre
-                                                 nt.261.1113945641
-control_management_pack_access       string      DIAGNOSTIC+TUNING
-core_dump_dest                       string      /u01/app1/oracle/diag/rdbms/ho
-                                                 a/hoa1/cdump
-cpu_count                            integer     42
-cpu_min_count                        string      42
-create_bitmap_area_size              integer     8388608
-create_stored_outlines               string
-cursor_bind_capture_destination      string      memory+disk
-cursor_invalidation                  string      IMMEDIATE
-cursor_sharing                       string      EXACT
-cursor_space_for_time                boolean     FALSE
-data_guard_max_io_time               integer     240
-data_guard_max_longio_time           integer     240
-data_guard_sync_latency              integer     0
-data_transfer_cache_size             big integer 0
-db_16k_cache_size                    big integer 0
-db_2k_cache_size                     big integer 0
-db_32k_cache_size                    big integer 0
-db_4k_cache_size                     big integer 0
-db_8k_cache_size                     big integer 0
-db_big_table_cache_percent_target    string      0
-db_block_buffers                     integer     0
-db_block_checking                    string      FALSE
-db_block_checksum                    string      TYPICAL
-db_block_size                        integer     8192
-db_cache_advice                      string      ON
-db_cache_size                        big integer 50G
-db_create_file_dest                  string      +DG_DATA
-db_create_online_log_dest_1          string
-db_create_online_log_dest_2          string
-db_create_online_log_dest_3          string
-db_create_online_log_dest_4          string
-db_create_online_log_dest_5          string
-db_domain                            string
-db_file_multiblock_read_count        integer     128
-db_file_name_convert                 string
-db_files                             integer     500
-db_flash_cache_file                  string
-db_flash_cache_size                  big integer 0
-db_flashback_retention_target        integer     1440
-db_index_compression_inheritance     string      NONE
-db_keep_cache_size                   big integer 0
-db_lost_write_protect                string      AUTO
-db_name                              string      hoa
-db_performance_profile               string
-db_recovery_file_dest                string      +DG_ARCH
-db_recovery_file_dest_size           big integer 300G
-db_recycle_cache_size                big integer 0
-db_securefile                        string      ALWAYS
-db_ultra_safe                        string      OFF
-db_unique_name                       string      hoa
-db_unrecoverable_scn_tracking        boolean     TRUE
-db_writer_processes                  integer     5
-dbwr_io_slaves                       integer     0
-ddl_lock_timeout                     integer     0
-default_sharing                      string      metadata
-deferred_segment_creation            boolean     TRUE
-dg_broker_config_file1               string      /u01/app1/oracle/product/19.3.
-                                                 0.0/dbhome_1/dbs/dr1hoa.dat
-dg_broker_config_file2               string      /u01/app1/oracle/product/19.3.
-                                                 0.0/dbhome_1/dbs/dr2hoa.dat
-dg_broker_start                      boolean     FALSE
-diagnostic_dest                      string      /u01/app1/oracle
-directory_prefixes_allowed           string
-disable_pdb_feature                  big integer 0
-disk_asynch_io                       boolean     TRUE
-dispatchers                          string      (PROTOCOL=TCP) (SERVICE=hoaXDB
-                                                 )
-distributed_lock_timeout             integer     60
-dml_locks                            integer     21648
-dnfs_batch_size                      integer     4096
-drcp_dedicated_opt                   string      YES
-dst_upgrade_insert_conv              boolean     TRUE
-enable_automatic_maintenance_pdb     boolean     TRUE
-enable_ddl_logging                   boolean     FALSE
-enable_dnfs_dispatcher               boolean     FALSE
-enable_goldengate_replication        boolean     FALSE
-enable_imc_with_mira                 boolean     FALSE
-enable_pluggable_database            boolean     FALSE
-enabled_PDBs_on_standby              string      *
-encrypt_new_tablespaces              string      CLOUD_ONLY
-event                                string
-external_keystore_credential_locatio string
-n
-fal_client                           string      HOADR
-fal_server                           string      HOA
-fast_start_io_target                 integer     0
-fast_start_mttr_target               integer     0
-fast_start_parallel_rollback         string      LOW
-file_mapping                         boolean     FALSE
-fileio_network_adapters              string
-filesystemio_options                 string      none
-fixed_date                           string
-forward_listener                     string
-gcs_server_processes                 integer     3
-global_names                         boolean     FALSE
-global_txn_processes                 integer     1
-hash_area_size                       integer     131072
-heartbeat_batch_size                 integer     5
-heat_map                             string      OFF
-hi_shared_memory_address             integer     0
-hs_autoregister                      boolean     TRUE
-http_proxy                           string
-identity_provider_config             string
-identity_provider_type               string      NONE
-ifile                                file
-ignore_session_set_param_errors      string
-inmemory_adg_enabled                 boolean     TRUE
-inmemory_automatic_level             string      OFF
-inmemory_clause_default              string
-inmemory_expressions_usage           string      ENABLE
-inmemory_force                       string      DEFAULT
-inmemory_max_populate_servers        integer     0
-inmemory_optimized_arithmetic        string      DISABLE
-inmemory_prefer_xmem_memcompress     string
-inmemory_prefer_xmem_priority        string
-inmemory_query                       string      ENABLE
-inmemory_size                        big integer 0
-inmemory_trickle_repopulate_servers_ integer     1
-percent
-inmemory_virtual_columns             string      MANUAL
-inmemory_xmem_size                   big integer 0
-instance_abort_delay_time            integer     0
-instance_groups                      string
-instance_mode                        string      READ-WRITE
-instance_name                        string      hoa1
-instance_number                      integer     1
-instance_type                        string      RDBMS
-instant_restore                      boolean     FALSE
-java_jit_enabled                     boolean     TRUE
-java_max_sessionspace_size           integer     0
-java_pool_size                       big integer 1G
-java_restrict                        string      none
-java_soft_sessionspace_limit         integer     0
-job_queue_processes                  integer     4000
-large_pool_size                      big integer 1G
-ldap_directory_access                string      NONE
-ldap_directory_sysauth               string      no
-license_max_sessions                 integer     0
-license_max_users                    integer     0
-license_sessions_warning             integer     0
-listener_networks                    string
-lob_signature_enable                 boolean     FALSE
-local_listener                       string       (ADDRESS=(PROTOCOL=TCP)(HOST=
-                                                 10.176.51.248)(PORT=1531))
-lock_name_space                      string
-lock_sga                             boolean     FALSE
-log_archive_config                   string      DG_CONFIG=(HOA,HOADR)
-log_archive_dest                     string
-log_archive_dest_1                   string
-log_archive_dest_10                  string
-log_archive_dest_11                  string
-log_archive_dest_12                  string
-log_archive_dest_13                  string
-log_archive_dest_14                  string
-log_archive_dest_15                  string
-log_archive_dest_16                  string
-log_archive_dest_17                  string
-log_archive_dest_18                  string
-log_archive_dest_19                  string
-log_archive_dest_2                   string      LOCATION=+DG_ARCH
-log_archive_dest_20                  string
-log_archive_dest_21                  string
-log_archive_dest_22                  string
-log_archive_dest_23                  string
-log_archive_dest_24                  string
-log_archive_dest_25                  string
-log_archive_dest_26                  string
-log_archive_dest_27                  string
-log_archive_dest_28                  string
-log_archive_dest_29                  string
-log_archive_dest_3                   string      SERVICE=HOADR NOAFFIRM ASYNC V
-                                                 ALID_FOR=(ONLINE_LOGFILES,PRIM
-                                                 ARY_ROLE) DB_UNIQUE_NAME=HOADR
-log_archive_dest_30                  string
-log_archive_dest_31                  string
-log_archive_dest_4                   string
-log_archive_dest_5                   string
-log_archive_dest_6                   string
-log_archive_dest_7                   string
-log_archive_dest_8                   string
-log_archive_dest_9                   string
-log_archive_dest_state_1             string      enable
-log_archive_dest_state_10            string      enable
-log_archive_dest_state_11            string      enable
-log_archive_dest_state_12            string      enable
-log_archive_dest_state_13            string      enable
-log_archive_dest_state_14            string      enable
-log_archive_dest_state_15            string      enable
-log_archive_dest_state_16            string      enable
-log_archive_dest_state_17            string      enable
-log_archive_dest_state_18            string      enable
-log_archive_dest_state_19            string      enable
-log_archive_dest_state_2             string      enable
-log_archive_dest_state_20            string      enable
-log_archive_dest_state_21            string      enable
-log_archive_dest_state_22            string      enable
-log_archive_dest_state_23            string      enable
-log_archive_dest_state_24            string      enable
-log_archive_dest_state_25            string      enable
-log_archive_dest_state_26            string      enable
-log_archive_dest_state_27            string      enable
-log_archive_dest_state_28            string      enable
-log_archive_dest_state_29            string      enable
-log_archive_dest_state_3             string      DEFER
-log_archive_dest_state_30            string      enable
-log_archive_dest_state_31            string      enable
-log_archive_dest_state_4             string      enable
-log_archive_dest_state_5             string      enable
-log_archive_dest_state_6             string      enable
-log_archive_dest_state_7             string      enable
-log_archive_dest_state_8             string      enable
-log_archive_dest_state_9             string      enable
-log_archive_duplex_dest              string
-log_archive_format                   string      %t_%s_%r.arc
-log_archive_max_processes            integer     4
-log_archive_min_succeed_dest         integer     1
-log_archive_start                    boolean     FALSE
-log_archive_trace                    integer     0
-log_buffer                           big integer 218728K
-log_checkpoint_interval              integer     0
-log_checkpoint_timeout               integer     1800
-log_checkpoints_to_alert             boolean     FALSE
-log_file_name_convert                string
-long_module_action                   boolean     TRUE
-main_workload_type                   string      OLTP
-max_auth_servers                     integer     25
-max_datapump_jobs_per_pdb            string      100
-max_datapump_parallel_per_job        string      50
-max_dispatchers                      integer
-max_dump_file_size                   string      unlimited
-max_idle_blocker_time                integer     0
-max_idle_time                        integer     0
-max_iops                             integer     0
-max_mbps                             integer     0
-max_pdbs                             integer     4098
-max_shared_servers                   integer
-max_string_size                      string      STANDARD
-memoptimize_pool_size                big integer 0
-memory_max_target                    big integer 0
-memory_target                        big integer 0
-mfa_duo_api_host                     string
-mfa_oma_iam_domain_url               string
-mfa_sender_email_displayname         string
-mfa_sender_email_id                  string
-mfa_smtp_host                        string
-mfa_smtp_port                        integer     587
-min_auth_servers                     integer     1
-multishard_query_data_consistency    string      strong
-multishard_query_partial_results     string      not allowed
-nls_calendar                         string
-nls_comp                             string      BINARY
-nls_currency                         string
-nls_date_format                      string
-nls_date_language                    string
-nls_dual_currency                    string
-nls_iso_currency                     string
-nls_language                         string      AMERICAN
-nls_length_semantics                 string      BYTE
-nls_nchar_conv_excp                  string      FALSE
-nls_numeric_characters               string
-nls_sort                             string
-nls_territory                        string      AMERICA
-nls_time_format                      string
-nls_time_tz_format                   string
-nls_timestamp_format                 string
-nls_timestamp_tz_format              string
-noncdb_compatible                    boolean     FALSE
-object_cache_max_size_percent        integer     10
-object_cache_optimal_size            integer     10240000
-ofs_threads                          integer     4
-ogg_online_ddl                       boolean     FALSE
-olap_page_pool_size                  big integer 0
-one_step_plugin_for_pdb_with_tde     boolean     FALSE
-open_cursors                         integer     3000
-open_links                           integer     4
-open_links_per_instance              integer     4
-optimizer_adaptive_plans             boolean     FALSE
-optimizer_adaptive_reporting_only    boolean     FALSE
-optimizer_adaptive_statistics        boolean     FALSE
-optimizer_capture_sql_plan_baselines boolean     FALSE
-optimizer_capture_sql_quarantine     boolean     TRUE
-optimizer_dynamic_sampling           integer     2
-optimizer_features_enable            string      19.1.0
-optimizer_ignore_hints               boolean     FALSE
-optimizer_ignore_parallel_hints      boolean     FALSE
-optimizer_index_caching              integer     0
-optimizer_index_cost_adj             integer     100
-optimizer_inmemory_aware             boolean     TRUE
-optimizer_mode                       string      ALL_ROWS
-optimizer_real_time_statistics       boolean     FALSE
-optimizer_secure_view_merging        boolean     TRUE
-optimizer_session_type               string      NORMAL
-optimizer_use_invisible_indexes      boolean     FALSE
-optimizer_use_pending_statistics     boolean     FALSE
-optimizer_use_sql_plan_baselines     boolean     TRUE
-optimizer_use_sql_quarantine         boolean     TRUE
-os_authent_prefix                    string      ops$
-os_roles                             boolean     FALSE
-outbound_dblink_protocols            string      ALL
-parallel_adaptive_multi_user         boolean     FALSE
-parallel_degree_limit                string      8
-parallel_degree_policy               string      MANUAL
-parallel_execution_message_size      integer     16384
-parallel_force_local                 boolean     FALSE
-parallel_instance_group              string
-parallel_max_servers                 integer     64
-parallel_min_degree                  string      1
-parallel_min_percent                 integer     0
-parallel_min_servers                 integer     0
-parallel_min_time_threshold          string      AUTO
-parallel_servers_target              integer     64
-parallel_threads_per_cpu             integer     1
-pdb_file_name_convert                string
-pdb_lockdown                         string
-pdb_os_credential                    string
-pdb_template                         string
-permit_92_wrap_format                boolean     TRUE
-pga_aggregate_limit                  big integer 0
-pga_aggregate_target                 big integer 3200M
-pki_cert_auth_method                 string      default
-plscope_settings                     string      IDENTIFIERS:NONE
-plsql_ccflags                        string
-plsql_code_type                      string      INTERPRETED
-plsql_debug                          boolean     FALSE
-plsql_optimize_level                 integer     2
-plsql_v2_compatibility               boolean     FALSE
-plsql_warnings                       string      DISABLE:ALL
-pre_page_sga                         boolean     TRUE
-private_temp_table_prefix            string      ORA$PTT_
-processes                            integer     3240
-processor_group_name                 string
-query_rewrite_enabled                string      TRUE
-query_rewrite_integrity              string      enforced
-rdbms_server_dn                      string
-read_only_open_delayed               boolean     FALSE
-recovery_parallelism                 integer     0
-recyclebin                           string      on
-redo_transport_user                  string
-remote_dependencies_mode             string      TIMESTAMP
-remote_listener                      string      iap-scan-prod:1531
-remote_login_passwordfile            string      EXCLUSIVE
-remote_os_authent                    boolean     FALSE
-remote_os_roles                      boolean     FALSE
-remote_recovery_file_dest            string
-replication_dependency_tracking      boolean     TRUE
-resource_limit                       boolean     TRUE
-resource_manage_goldengate           boolean     FALSE
-resource_manager_cpu_allocation      integer     0
-resource_manager_plan                string      FORCE:
-result_cache_max_result              integer     5
-result_cache_max_size                big integer 157312K
-result_cache_mode                    string      MANUAL
-result_cache_remote_expiration       integer     0
-resumable_timeout                    integer     0
-rollback_segments                    string
-scheduler_follow_pdbtz               boolean     FALSE
-sec_case_sensitive_logon             boolean     TRUE
-sec_max_failed_login_attempts        integer     3
-sec_protocol_error_further_action    string      (DROP,3)
-sec_protocol_error_trace_action      string      LOG
-sec_return_server_release_banner     boolean     FALSE
-serial_reuse                         string      disable
-service_names                        string      hoa
-session_cached_cursors               integer     7500
-session_exit_on_package_state_error  boolean     FALSE
-session_max_open_files               integer     10
-sessions                             integer     4956
-sga_max_size                         big integer 90G
-sga_min_size                         big integer 0
-sga_target                           big integer 90G
-shadow_core_dump                     string      partial
-shared_memory_address                integer     0
-shared_pool_reserved_size            big integer 768M
-shared_pool_size                     big integer 15G
-shared_server_sessions               integer
-shared_servers                       integer     1
-shrd_dupl_table_refresh_rate         integer     60
-skip_unusable_indexes                boolean     TRUE
-smtp_out_server                      string
-sort_area_retained_size              integer     0
-sort_area_size                       integer     65536
-spatial_vector_acceleration          boolean     FALSE
-spfile                               string      +DG_DATA/HOA/PARAMETERFILE/spf
-                                                 ile.268.1113946489
-sql92_security                       boolean     TRUE
-sql_trace                            boolean     FALSE
-sqltune_category                     string      DEFAULT
-ssl_wallet                           string
-standby_db_preserve_states           string      NONE
-standby_file_management              string      AUTO
-standby_pdb_source_file_dblink       string
-standby_pdb_source_file_directory    string
-star_transformation_enabled          string      FALSE
-statistics_level                     string      TYPICAL
-streams_pool_size                    big integer 0
-tablespace_encryption                string      MANUAL_ENABLE
-tape_asynch_io                       boolean     TRUE
-target_pdbs                          integer     0
-tde_configuration                    string      KEYSTORE_CONFIGURATION=FILE
-temp_undo_enabled                    boolean     FALSE
-thread                               integer     1
-threaded_execution                   boolean     FALSE
-timed_os_statistics                  integer     0
-timed_statistics                     boolean     TRUE
-trace_enabled                        boolean     TRUE
-tracefile_identifier                 string
-transactions                         integer     5412
-transactions_per_rollback_segment    integer     5
-undo_management                      string      AUTO
-undo_retention                       integer     900
-undo_tablespace                      string      UNDOTBS5
-unified_audit_common_systemlog       string
-unified_audit_sga_queue_size         integer     1048576
-unified_audit_systemlog              string
-uniform_log_timestamp_format         boolean     TRUE
-use_dedicated_broker                 boolean     FALSE
-use_large_pages                      string      TRUE
-user_dump_dest                       string      /u01/app1/oracle/product/19.3.
-                                                 0.0/dbhome_1/rdbms/log
-wallet_root                          string      /u01/app1/oracle/admin/hoadr/w
-                                                 allet
-workarea_size_policy                 string      AUTO
-xml_db_events                        string      enable
-xml_handling_of_invalid_chars        string      raise_error
+      9447      53024
+IAP_SAARTHI
+Server                                           75.9341555  71.7142916
+
+      9822       8840
+IAP_SAARTHI
+
+       SID    SERIAL#
+---------- ----------
+USERNAME
+--------------------------------------------------------------------------------
+PROGRAM                                              PGA_MB PGA_USED_MB
+------------------------------------------------ ---------- -----------
+Server                                           69.2466555  63.7145662
+
+      8691      52203
+IAP_SAARTHI
+Server                                           68.1841555  64.3775148
+
+       396      19660
+
+       SID    SERIAL#
+---------- ----------
+USERNAME
+--------------------------------------------------------------------------------
+PROGRAM                                              PGA_MB PGA_USED_MB
+------------------------------------------------ ---------- -----------
+IAP_SAARTHI
+Server                                           67.0591555  59.8971987
+
+       773      49374
+IAP_SAARTHI
+Server                                           63.9966555  58.6527605
+
+
+       SID    SERIAL#
+---------- ----------
+USERNAME
+--------------------------------------------------------------------------------
+PROGRAM                                              PGA_MB PGA_USED_MB
+------------------------------------------------ ---------- -----------
+      3794      32940
+IAP_SAARTHI
+Server                                           63.3716555  58.8470583
+
+
+15 rows selected.
+
 SQL>
+SQL> SELECT operation_type, policy,
+       SUM(actual_pga_mem)/1024/1024/1024 AS actual_pga_gb,
+       SUM(temp_space_allocated)/1024/1024/1024 AS temp_spill_gb,
+       COUNT(*) AS num_executions
+FROM v$sql_workarea
+GROUP BY operation_type, policy
+ORDER BY actual_pga_mem DESC;
+  2    3    4    5    6    7  ORDER BY actual_pga_mem DESC
+         *
+ERROR at line 7:
+ORA-00904: "ACTUAL_PGA_MEM": invalid identifier
+
+
+SQL>
+SQL> SELECT COUNT(*) FROM v$session WHERE type = 'USER';
+
+  COUNT(*)
+----------
+       638
+
+SQL> exit
+exDisconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0
+[oracle@rfia-db1-dr ~]$ exit
+logout
+[root@rfia-db1-dr ~]# . oraenv
+ORACLE_SID = [+ASM1] ? +ASM1
+The Oracle base remains unchanged with value /grid19c/app/grid_base
+[root@rfia-db1-dr ~]# crsctl stat res -t
+--------------------------------------------------------------------------------
+Name           Target  State        Server                   State details
+--------------------------------------------------------------------------------
+Local Resources
+--------------------------------------------------------------------------------
+ora.LISTENER.lsnr
+               ONLINE  ONLINE       rfia-db1-dr              STABLE
+ora.chad
+               ONLINE  ONLINE       rfia-db1-dr              STABLE
+ora.net1.network
+               ONLINE  ONLINE       rfia-db1-dr              STABLE
+ora.ons
+               ONLINE  ONLINE       rfia-db1-dr              STABLE
+--------------------------------------------------------------------------------
+Cluster Resources
+--------------------------------------------------------------------------------
+ora.ASMNET1LSNR_ASM.lsnr(ora.asmgroup)
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+      2        ONLINE  OFFLINE                               STABLE
+ora.DG_ARCH.dg(ora.asmgroup)
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+      2        ONLINE  OFFLINE                               STABLE
+ora.DG_DATA.dg(ora.asmgroup)
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+      2        ONLINE  OFFLINE                               STABLE
+ora.DG_OCR.dg(ora.asmgroup)
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+      2        ONLINE  OFFLINE                               STABLE
+ora.LISTENER_SCAN1.lsnr
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+ora.LISTENER_SCAN2.lsnr
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+ora.LISTENER_SCAN3.lsnr
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+ora.asm(ora.asmgroup)
+      1        ONLINE  ONLINE       rfia-db1-dr              Started,STABLE
+      2        ONLINE  OFFLINE                               STABLE
+ora.asmnet1.asmnetwork(ora.asmgroup)
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+      2        ONLINE  OFFLINE                               STABLE
+ora.cvu
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+ora.rfia-db1-dr.vip
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+ora.rfia-db2-dr.vip
+      1        ONLINE  INTERMEDIATE rfia-db1-dr              FAILED OVER,STABLE
+ora.saarthi.db
+      1        ONLINE  ONLINE       rfia-db1-dr              Open,HOME=/oracle19c
+                                                             /app/19c/oracle_home
+                                                             ,STABLE
+ora.scan1.vip
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+ora.scan2.vip
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+ora.scan3.vip
+      1        ONLINE  ONLINE       rfia-db1-dr              STABLE
+--------------------------------------------------------------------------------
+[root@rfia-db1-dr ~]#
+[root@rfia-db1-dr ~]# sqlplus / as sysasm
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Thu Oct 29 15:33:46 2026
+Version 19.32.0.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+ERROR:
+ORA-01017: invalid username/password; logon denied
+
+
+Enter user-name:
+ERROR:
+ORA-01017: invalid username/password; logon denied
+
+
+Enter user-name: ^C
+[root@rfia-db1-dr ~]# su - grid
+Last login: Thu Oct 29 15:31:15 IST 2026
+[grid@rfia-db1-dr ~]$ . oraenv
+ORACLE_SID = [grid] ? +ASM1
+The Oracle base remains unchanged with value /grid19c/app/grid_base
+[grid@rfia-db1-dr ~]$ sqlplus / as sysasm
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Thu Oct 29 15:33:58 2026
+Version 19.32.0.0.0
+
+Copyright (c) 1982, 2026, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0
+
+SQL> SELECT name, value/1024/1024/1024 AS size_gb FROM v$sga WHERE name = 'Total System Global Area';
+
+no rows selected
+
+SQL> exit
+Disconnected from Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.32.0.0.0
+[grid@rfia-db1-dr ~]$ asmcmd
+ASMCMD> lsdg
+State    Type    Rebal  Sector  Logical_Sector  Block       AU  Total_MB  Free_MB  Req_mir_free_MB  Usable_file_MB  Offline_disks  Voting_files  Name
+MOUNTED  EXTERN  N         512             512   4096  1048576    614398   601465                0          601465              0             N  DG_ARCH/
+MOUNTED  EXTERN  N         512             512   4096  1048576    614398   279043                0          279043              0             N  DG_DATA/
+MOUNTED  HIGH    N         512             512   4096  4194304    102380   101140            40952           20062              0             Y  DG_OCR/
+ASMCMD>
+ASMCMD> exit
+[grid@rfia-db1-dr ~]$
+
+
+DB health checkup:
+====================
+
+SQL> @db_check_12062025.sql
+======== MOUNT POINT SIZE========
+SP2-0042: unknown command "df -hT" - rest of line ignored.
+======== DB Info ========
+
+NAME      DB_UNIQUE_NAME                 OPEN_MODE            DATABASE_ROLE
+--------- ------------------------------ -------------------- ----------------
+SAARTHI   saarthi                        READ WRITE           PRIMARY
+
+
+INSTANCE_NAME    HOST_NAME                                                        STATUS       STARTUP_T
+---------------- ---------------------------------------------------------------- ------------ ---------
+saarthi1         rfia-db1-dr                                                      OPEN         27-OCT-26
+
+======== EVENTS ========
+--> Top 25 Wait Events
+
+   INST_ID EVENT                                                 E_COUNT
+---------- -------------------------------------------------- ----------
+         1 VKTM Logical Idle Wait                                      1
+         1 AQPC idle                                                   1
+         1 Streams AQ: qmn slave idle wait                             1
+         1 ASM cluster membership changes                              1
+         1 VKRM Idle                                                   1
+         1 ASM background timer                                        1
+         1 Data Guard: Gap Manager                                     1
+         1 SQL*Net message to client                                   1
+         1 Streams AQ: waiting for time management or cleanup          1
+            tasks
+
+         1 Data Guard: Timer                                           1
+         1 pman timer                                                  1
+         1 PING                                                        1
+         1 OFS idle                                                    1
+         1 lreg timer                                                  1
+         1 SCM slave idle                                              1
+         1 REPL Capture/Apply: RAC AQ qmn coordinator                  1
+         1 smon timer                                                  1
+         1 heartbeat redo informer                                     1
+         1 Streams AQ: qmn coordinator idle wait                       1
+         1 GCR sleep                                                   2
+         1 ges remote message                                          2
+         1 LGWR worker group idle                                      2
+         1 DIAG idle wait                                              2
+         1 LMS CR slave timer                                          3
+         1 wait for unread message on broadcast channel                3
+         1 gcs yield cpu                                               3
+         1 gcs remote message                                          3
+         1 watchdog main loop                                          5
+         1 class slave wait                                            6
+         1 pmon timer                                                  7
+         1 rdbms ipc message                                          31
+         1 Space Manager: slave idle wait                             52
+
+32 rows selected.
+
+
+   INST_ID        SID USERNAME             EVENT                                         MACHINE      STATE      SQL_ID        SQL                                       MINS
+---------- ---------- -------------------- --------------------------------------------- ------------ ---------- ------------- ----------------------------------- ----------
+         1       3043 SYS                  SQL*Net message to client                     rfia-db1-dr  WAITED SHO 7d1ddps54s9gg select /*+ rule */ distinct s.i              0
+
+======== Sessions / Processes ========
+
+Inst# Instance   Max_Sess   Curr_Sess  Sess_% Max_Proc   Curr_Proc  Proc_%
+----- ---------- ---------- --------- ------- ---------- --------- -------
+    1 saarthi1   12064            778    6.45 8000             846   10.58
+
+======== ASM Space usage ========
+
+Diskgroup_Name                   Total_GB    Used_GB    Free_GB   Used_Pct
+------------------------------ ---------- ---------- ---------- ----------
+DG_ARCH                               600      12.63     587.37        2.1
+DG_DATA                               600      327.5      272.5      54.58
+DG_OCR                              99.98       1.21      98.77       1.21
+
+=======SYNC STATUS=================================================================================================================================================================================================
+"*************************** archive log gap **********************"
+
+   THREAD#    DEST_ID DEST_NAME                      DESTINATION          STATUS    ERROR
+---------- ---------- ------------------------------ -------------------- --------- ----------------------------------------
+         1          1 LOG_ARCHIVE_DEST_1             +DG_ARCH             VALID
+
+
+
+no rows selected
+
+=======LONG RUNNING QUERIES=================================================================================================================================================================================================
+
+no rows selected
+
+=======DEADOCKS=================================================================================================================================================================================================
+
+no rows selected
+
+=======BLOCKS=================================================================================================================================================================================================
+SP2-0042: unknown command "##block###" - rest of line ignored.
+
+no rows selected
+
+SP2-0734: unknown command beginning "#blocking ..." - rest of line ignored.
+
+no rows selected
+
+SP2-0734: unknown command beginning "## blocked..." - rest of line ignored.
+
+no rows selected
+
+=======TABLESPACE USAGE=================================================================================================================================================================================================
+
+TABLESPACE_NAME                AUT MAX_TS_SIZE MAX_TS_PCT_USED CURR_TS_SIZE USED_TS_SIZE TS_PCT_USED FREE_TS_SIZE TS_PCT_FREE
+------------------------------ --- ----------- --------------- ------------ ------------ ----------- ------------ -----------
+USERS                          YES   191487.98           46.26     191487.5     88576.19       46.26    102911.31          54
+SYSAUX                         YES    64511.98           18.21        34714        11748       33.84        22966          66
+TEMP                           YES    32767.98            12.3        14038         4030       28.71        10008          71
+SYSTEM                         YES    64511.98            3.72        33014      2396.94        7.26     30617.06          93
+UNDOTBS1                       YES    64511.98             .32        55819       203.56         .36     55615.44         100
+
+
+Status   |Name                     |Size (GB)     |Used (GB)      |Free (GB)      |(Used) %
+---------|-------------------------|--------------|---------------|---------------|---------------
+ONLINE   |SYSTEM                   |         32.24|        2.34   |         29.90 |   7.26
+ONLINE   |SYSAUX                   |         33.90|       11.47   |         22.43 |  33.84
+ONLINE   |UNDOTBS1                 |         54.51|         .20   |         54.31 |   0.36
+ONLINE   |USERS                    |        187.00|       86.50   |        100.50 |  46.26
+ONLINE   |TEMP                     |         13.71|        9.77   |          3.94 |  71.29
+
+=======RMAN BACKUP 
+   SESSION_KEY|INPUT_TYPE   |STATUS                 |START_TIME                   |END_TIME
+--------------|-------------|-----------------------|-----------------------------|-----------------
+          1993|ARCHIVELOG   |COMPLETED              |29-OCT-2026 02:32:16         |29-OCT-2026 02:32
+          1990|DB INCR      |COMPLETED              |29-OCT-2026 02:17:52         |29-OCT-2026 02:31
+
+
+16 rows selected.
+
+======== Top SQL by CPU =====================================================================================
+
+SQL_ID       |      CPU_TIME|  ELAPSED_TIME|    EXECUTIONS|SQL_TEXT
+-------------|--------------|--------------|--------------|-----------------------------------------
+548ybzbv9yxt8|    3026075466|    3143890474|           179|MERGE INTO AUDIT_SMPL_ACC T1 USING ( SELE
+0gwc9vhhygvbb|    2513882623|    2608614891|        165201|DECLARE po dbms_aqadm.aq$_purge_options_t
+cz8wbmy7k5bxn|    2335561535|    2412020339|        165205|begin sys.dbms_aq_inv.internal_purge_queu
+51cbv6gutjn5b|    2093942064|    2341467213|            10| BEGIN    SYS.KUPW$WORKER.MAIN('SYS_EXPOR
+bgxtkrz2p3k08|    1460141680|    1526369342|       1156473|SELECT VALUE FROM SYS.V_$PARAMETER WHERE
+6vsrg6a0abzs6|     398307616|     485099732|         83512|SELECT E1.* FROM SERVICE_QUEUE E1 WHERE E
+4gp99vhmdgz6q|     346687871|     386672125|         57488|SELECT e1.* from SERVICE_QUEUE e1 ,SERVIC
+f0h5rpzmhju11|     310231858|     301989189|        963138|select SYS_CONTEXT('USERENV', 'SERVER_HOS
+4f6sa1yryx2nr|     292900452|     299072952|             4| BEGIN    SYS.KUPM$MCP.MAIN('SYS_EXPORT_S
+b6usrg82hwsa3|     244081072|     333692227|             2|call dbms_stats.gather_database_stats_job
+dqpwrs34cbf54|     223263378|     225697636|          1234|SELECT COUNT(*) FROM sys.v_$open_cursor W
+dqpwrs34cbf54|     212586336|     215268835|          1206|SELECT COUNT(*) FROM sys.v_$open_cursor W
+gw788nxk7vbwg|     209815585|     214015606|        165205|SELECT VALUE FROM SYS.V_$PARAMETER WHERE
+5dqz0hqtp9fru|     182671819|     174011527|       1293320|select /*+ connect_by_filtering index(sys
+9s5cdq3h4nfbj|     176749300|     184771470|        963203|select dummy from dual where  user = 'SYS
+9zg9qd9bm4spu|     169176821|     201861095|        319616|update user$ set spare6=DECODE(to_char(:2
+541mkbbbwrzuu|     159167654|     178178265|         27836|SELECT e1.* FROM SERVICE_QUEUE e1 ,   SER
+0k8522rmdzg4k|     149668459|     125749354|        302022|select privilege# from sysauth$ where (gr
+0272yg7hnufh2|     138089983|     394165571|             0|ALTER INDEX IAP_SAARTHI.AUDIT_SMPL_ACC$UK
+ghtwjr4d9csr5|      86546560|      89270962|           323|BEGIN AUDIT_SCHEDULE_LIST_V2(LOGINBRANCHC
+
+20 rows selected.
+
+======== Archive Log Generation (Last 7 Days) =====================================================================================
+
+DAY       |            GB
+----------|--------------
+2026-10-22|           .81
+2026-10-23|          1.65
+2026-10-24|           2.4
+2026-10-25|          1.48
+2026-10-26|         16.14
+2026-10-27|          1.76
+2026-10-28|          6.57
+2026-10-29|           .03
+
+8 rows selected.
+
+========Database Size =====================================================================================
+
+Database Size       |Used space          |Free space
+--------------------|--------------------|--------------------
+327 GB              |120 GB              |207 GB
+
